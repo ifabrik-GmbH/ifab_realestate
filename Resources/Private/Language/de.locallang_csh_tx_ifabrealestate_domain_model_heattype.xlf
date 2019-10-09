@@ -14,16 +14,15 @@
 					&lt;li&gt;Central&lt;/li&gt;
 					&lt;/ul&gt;
 				</source>
-				<target>Heizunsgart definieren.
+				<target>Heizungstyp definieren.
 					&lt;br/&gt;
 					&lt;b&gt;Beispiele:&lt;/b&gt;
 					&lt;br/&gt;
 					&lt;ul&gt;
-					&lt;li&gt;Offen&lt;/li&gt;
-					&lt;li&gt;Etage&lt;/li&gt;
-					&lt;li&gt;Zentral&lt;/li&gt;
-					&lt;li&gt;Fern&lt;/li&gt;
-					&lt;li&gt;Fussboden&lt;/li&gt;
+					&lt;li&gt;Ofen&lt;/li&gt;
+					&lt;li&gt;Etagenheizung&lt;/li&gt;
+					&lt;li&gt;Zentralheizung&lt;/li&gt;
+					&lt;li&gt;Fußbodenheizung&lt;/li&gt;
 					&lt;/ul&gt;
 				</target>
 			</trans-unit>

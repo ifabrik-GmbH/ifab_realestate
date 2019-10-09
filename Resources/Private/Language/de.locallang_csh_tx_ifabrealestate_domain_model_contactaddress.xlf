@@ -5,15 +5,15 @@
 		<body>
 			<trans-unit id="street.description">
 				<source>The name of the street</source>
-				<target>Der name der Straße</target>
+				<target>Straßenname</target>
 			</trans-unit>
 			<trans-unit id="number.description">
 				<source>The number of the building</source>
-				<target>Die Nummer des Gebäudes</target>
+				<target>Hausnummer</target>
 			</trans-unit>
 			<trans-unit id="area.description">
 				<source>The area in which the address is located.</source>
-				<target>Der Bereich, in dem sich die Adresse befindet.</target>
+				<target>Der Ort, in dem sich die Adresse befindet.</target>
 			</trans-unit>
 			<trans-unit id="zip.description">
 				<source>The ZIP code of the address</source>

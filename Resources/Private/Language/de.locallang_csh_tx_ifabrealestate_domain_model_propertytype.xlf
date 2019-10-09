@@ -14,13 +14,13 @@
 					&lt;li&gt;Apartment type&lt;/li&gt;
 					&lt;/ul&gt;
 				</source>
-				<target>Objektarttyp.
+				<target> genaue Angabe der Art des Objekts
 					&lt;br/&gt;
 					&lt;b&gt;Beispiele:&lt;/b&gt;
 					&lt;br/&gt;
 					&lt;ul&gt;
 					&lt;li&gt;Zimmertyp&lt;/li&gt;
-					&lt;li&gt;Parkingtyp&lt;/li&gt;
+					&lt;li&gt;Stellplatztyp&lt;/li&gt;
 					&lt;li&gt;Wohnungstyp&lt;/li&gt;
 					&lt;/ul&gt;
 				</target>

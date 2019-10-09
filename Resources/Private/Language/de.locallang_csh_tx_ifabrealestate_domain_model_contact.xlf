@@ -9,7 +9,7 @@
 			</trans-unit>
 			<trans-unit id="name.description">
 				<source>The name of the employee</source>
-				<target>Der Name des Mitarbeiters</target>
+				<target>Der Vorname des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="surname.description">
 				<source>The surname of the employee</source>
@@ -21,51 +21,51 @@
 			</trans-unit>
 			<trans-unit id="central_email.description">
 				<source>The central email of the employee</source>
-				<target>Die zentrale E-Mail des Mitarbeiters</target>
+				<target>Die zentrale E-Mail-Adresse des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="direct_email.description">
 				<source>The direct email of the employee</source>
-				<target>Die direkte E-Mail des Mitarbeiters</target>
+				<target>Die direkte E-Mail-Adresse des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="private_email.description">
 				<source>The private email of the employee</source>
-				<target>Die private E-Mail des Mitarbeiters</target>
+				<target>Die private E-Mail-Adresse des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="central_tel.description">
 				<source>The central telephone of the employee</source>
-				<target>Das zentrale Telefon des Mitarbeiters</target>
+				<target>Nummer der Telefonzentrale des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="direct_tel.description">
 				<source>The direct telephone of the employee</source>
-				<target>Das direkte Telefon des Mitarbeiters</target>
+				<target>Die direkte Telefondurchwahl des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="private_tel.description">
 				<source>The private telephone of the employee</source>
-				<target>Das private Telefon des Mitarbeiters</target>
+				<target>Die private Telefonnummer des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="fax.description">
 				<source>The fax of the employee</source>
-				<target>Das Fax des Mitarbeiters</target>
+				<target>Die Faxnummer des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="mobile_phone.description">
 				<source>The mobile phone of the employee</source>
-				<target></target>
+				<target>Die Mobilnummer des Mitarbeiters</target>
 			</trans-unit>
 			<trans-unit id="online_concent.description">
-				<source>Employee&#039;s concent if his address should be visible to the website or not.</source>
-				<target>Das Handy des Mitarbeiters</target>
+				<source>Employee's consent if his address should be visible on the website or not.</source>
+				<target>Einwilligung des Mitarbeiters, ob seine Adresse auf der Website sichtbar sein soll oder nicht.</target>
 			</trans-unit>
 			<trans-unit id="po_box.description">
 				<source>The post office of the contact</source>
-				<target>Das Postfach des Mitarbeiters</target>
+				<target>Die Postfachnummer des Kontakts</target>
 			</trans-unit>
 			<trans-unit id="po_zip.description">
 				<source>The post office ZIP of the contact</source>
-				<target>Das Postfach PLZ des Mitarbeiters</target>
+				<target>Die Postleitzahl des Postfachs des Kontakts</target>
 			</trans-unit>
 			<trans-unit id="po_area.description">
 				<source>The post office area of the contact</source>
-				<target>Der Postfachbereich des Mitarbeiters</target>
+				<target>Der Ort des Postfachs des Kontakts</target>
 			</trans-unit>
 			<trans-unit id="image.description">
 				<source>The image of the employee</source>
@@ -73,11 +73,11 @@
 			</trans-unit>
 			<trans-unit id="contact_address_rel.description">
 				<source>Select the address of the current contact</source>
-				<target>Wählen Sie die Adresse des aktuellen Mitarbeiters aus</target>
+				<target>Wählen Sie die Adresse des aktuellen Kontakts aus</target>
 			</trans-unit>
 			<trans-unit id="gender_rel.description">
 				<source>Select the gender of the current contact</source>
-				<target>Wählen Sie das Geschlecht des aktuellen Mitarbeiters aus</target>
+				<target>Wählen Sie das Geschlecht des aktuellen Kontakts</target>
 			</trans-unit>
 		</body>
 	</file>

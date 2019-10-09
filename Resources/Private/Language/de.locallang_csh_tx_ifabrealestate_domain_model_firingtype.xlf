@@ -21,20 +21,20 @@
 					&lt;li&gt;Pellet&lt;/li&gt;
 					&lt;/ul&gt;
 				</source>
-				<target>Befeurungsmethode definieren.
+				<target>Heizart definieren.
 					&lt;br/&gt;
 					&lt;b&gt;Beispiele:&lt;/b&gt;
 					&lt;br/&gt;
 					&lt;ul&gt;
-					&lt;li&gt;Oel&lt;/li&gt;
+					&lt;li&gt;Öl&lt;/li&gt;
 					&lt;li&gt;Gas&lt;/li&gt;
-					&lt;li&gt;Elektro&lt;/li&gt;
+					&lt;li&gt;Strom&lt;/li&gt;
 					&lt;li&gt;Alternativ&lt;/li&gt;
 					&lt;li&gt;Solar&lt;/li&gt;
 					&lt;li&gt;Erdwärme&lt;/li&gt;
 					&lt;li&gt;Luftwärmepumpe&lt;/li&gt;
-					&lt;li&gt;Fern&lt;/li&gt;
-					&lt;li&gt;Block&lt;/li&gt;
+					&lt;li&gt;Fernwärme&lt;/li&gt;
+					&lt;li&gt;Blockheizung&lt;/li&gt;
 					&lt;li&gt;Pellet&lt;/li&gt;
 					&lt;/ul&gt;
 				</target>

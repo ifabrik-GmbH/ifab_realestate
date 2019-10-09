@@ -5,7 +5,7 @@
 		<body>
 			<trans-unit id="file.description">
 				<source>Select a file</source>
-				<target>Datei Auswählen</target>
+				<target>Datei auswählen</target>
 			</trans-unit>
 			<trans-unit id="attachment_group_value_rel.description">
 				<source>Create an attachment group</source>

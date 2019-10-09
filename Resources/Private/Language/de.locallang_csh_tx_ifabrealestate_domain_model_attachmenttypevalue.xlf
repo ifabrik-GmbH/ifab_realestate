@@ -5,7 +5,7 @@
 		<body>
 			<trans-unit id="value.description">
 				<source>Define the value of the current group</source>
-				<target>Das Wert für die aktuelle Gruppe definieren</target>
+				<target>Wert für die aktuelle Gruppe definieren</target>
 			</trans-unit>
 			<trans-unit id="attachment_group_rel.description">
 				<source>Select a group for the current attachment</source>
