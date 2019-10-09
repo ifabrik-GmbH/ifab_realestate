@@ -1,0 +1,29 @@
+{
+    "name": "ifabrik/ifab-realestate",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "ifabrik GmbH",
+            "role": "Developer"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ifabrik\\IfabRealestate\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ifabrik\\IfabRealestate\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "ifab_realestate": "self.version",
+        "typo3-ter/ifab-realestate": "self.version"
+    }
+}

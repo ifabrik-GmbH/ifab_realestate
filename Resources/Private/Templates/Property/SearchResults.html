@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+	<div class="container" style="padding-top:50px;">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2><f:translate key="listing.title"/></h2>
+				<div class="container">
+					<div class="row">
+						<f:if condition="{settings.list.hidePagination} == 1">
+							<f:then>
+								<f:for each="{propertiess}" as="property">
+									<div class="col-sm-12">
+										<f:render partial="Property/Item" arguments="{_all}"/>
+									</div>
+								</f:for>
+							</f:then>
+							<f:else>
+								<f:widget.paginate objects="{propertiess}" as="propertiesPginated" configuration="{itemsPerPage: settings.list.paginate.itemsPerPage, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+									<f:for each="{propertiesPginated}" as="property">
+										<div class="col-sm-12">
+											<f:render partial="Property/Item" arguments="{_all}"/>
+										</div>
+									</f:for>
+								</f:widget.paginate>
+							</f:else>
+						</f:if>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</f:section>
+</html>

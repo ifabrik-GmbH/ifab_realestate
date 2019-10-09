@@ -1,0 +1,212 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:action</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:action_list</numIndex>
+										<numIndex index="1">Property->list;Property->show</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:action_detail</numIndex>
+										<numIndex index="1">Property->show;Property->list</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:action_search</numIndex>
+										<numIndex index="1">Property->search</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:action_search_results</numIndex>
+										<numIndex index="1">Property->searchResults</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+					<settings.listPid>
+						<TCEforms>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:pid_list</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+										<default>
+											<searchWholePhrase>1</searchWholePhrase>
+										</default>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms>
+					</settings.listPid>
+					<settings.searchResultsPid>
+						<TCEforms>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:pid_search_results</label>
+							<displayCond>FIELD:switchableControllerActions:=:Property->search</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+										<default>
+											<searchWholePhrase>1</searchWholePhrase>
+										</default>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms>
+					</settings.searchResultsPid>
+					<settings.detailPid>
+						<TCEforms>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:pid_detail</label>
+							<displayCond>
+								<OR>
+									<numIndex index="0">FIELD:switchableControllerActions:=:Property->list;Property->show</numIndex>
+									<numIndex index="1">FIELD:switchableControllerActions:=:Property->searchResults</numIndex>
+								</OR>
+							</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+										<default>
+											<searchWholePhrase>1</searchWholePhrase>
+										</default>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms>
+					</settings.detailPid>
+					<persistence.storagePid>
+						<TCEforms>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:pid_storage</label>
+							<displayCond>
+								<OR>
+									<numIndex index="0">FIELD:switchableControllerActions:=:Property->list;Property->show</numIndex>
+									<numIndex index="1">FIELD:switchableControllerActions:=:Property->searchResults</numIndex>
+								</OR>
+							</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>0</show_thumbs>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+										<default>
+											<searchWholePhrase>1</searchWholePhrase>
+										</default>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms>
+					</persistence.storagePid>
+				</el>
+			</ROOT>
+		</sDEF>
+		<options>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:tab_options</sheetTitle>
+					<displayCond>
+						<OR>
+							<numIndex index="0">FIELD:sDEF.switchableControllerActions:=:Property->list;Property->show</numIndex>
+							<numIndex index="1">FIELD:sDEF.switchableControllerActions:=:Property->searchResults</numIndex>
+						</OR>
+					</displayCond>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.list.hidePagination>
+						<TCEforms>
+							<displayCond>
+								<OR>
+									<numIndex index="0">FIELD:sDEF.switchableControllerActions:=:Property->list;Property->show</numIndex>
+									<numIndex index="1">FIELD:sDEF.switchableControllerActions:=:Property->searchResults</numIndex>
+								</OR>
+							</displayCond>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:pagination_hide</label>
+							<onChange>reload</onChange>
+							<config>
+								<default>0</default>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.list.hidePagination>
+					<settings.list.paginate.itemsPerPage>
+						<TCEforms>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:items-per-page</label>
+							<displayCond>FIELD:settings.list.hidePagination:REQ:FALSE</displayCond>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<default>10</default>
+								<eval>trim,int</eval>
+								<placeholder>10</placeholder>
+							</config>
+						</TCEforms>
+					</settings.list.paginate.itemsPerPage>
+					<settings.list.paginate.maxLinks>
+						<TCEforms>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:paginate_max-links</label>
+							<displayCond>FIELD:settings.list.hidePagination:REQ:FALSE</displayCond>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<default>5</default>
+								<eval>int</eval>
+								<placeholder>5</placeholder>
+							</config>
+						</TCEforms>
+					</settings.list.paginate.maxLinks>
+					<settings.list.maxItems>
+						<TCEforms>
+							<label>LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:max-items</label>
+							<displayCond>FIELD:settings.list.hidePagination:REQ:TRUE</displayCond>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<default>10</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</settings.list.maxItems>
+				</el>
+			</ROOT>
+		</options>
+	</sheets>
+</T3DataStructure>

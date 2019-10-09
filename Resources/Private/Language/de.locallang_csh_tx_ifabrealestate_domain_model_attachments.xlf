@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+		<header/>
+		<body>
+			<trans-unit id="file.description">
+				<source>Select a file</source>
+				<target>Datei Auswählen</target>
+			</trans-unit>
+			<trans-unit id="attachment_group_value_rel.description">
+				<source>Create an attachment group</source>
+				<target>Anhangsgruppe erstellen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+		<header/>
+		<body>
+			<trans-unit id="value.description">
+				<source>Define the value of the current group</source>
+				<target>Das Wert für die aktuelle Gruppe definieren</target>
+			</trans-unit>
+			<trans-unit id="attachment_group_rel.description">
+				<source>Select a group for the current attachment</source>
+				<target>Anhangsgruppe auswählen</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

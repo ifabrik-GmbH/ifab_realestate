@@ -1,0 +1,93 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+	<div class="container full" style="margin-top:100px;">
+		<div class="row">
+			<div class="col-sm-12 col-md-3 col-lg-4">
+				<f:if condition="{property.attachmentsRel}">
+					<f:for each="{property.attachmentsRel}" as="attachment" iteration="iterator">
+						<f:if condition="{iterator.isFirst}">
+							<f:image image="{attachment.file}" style="height:auto;width:100%;"/>
+						</f:if>
+					</f:for>
+				</f:if>
+			</div>
+			<div class="col-sm-12 col-md-9 col-lg-8">
+				<h2>{property.propertyTitle}</h2>
+				<div class="container full">
+					<div class="row">
+						<div class="col-sm-12 col-md-6">
+							<p>
+								<strong><f:translate key="tx_ifabrealestate_domain_model_property.rent_with_heat" /></strong>: {property.rentWithHeat}&euro; <br/>
+								<strong><f:translate key="tx_ifabrealestate_domain_model_property.cold_rent" /></strong>: {property.coldRent}&euro; <br/>
+							</p>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<p>
+								<strong><f:translate key="tx_ifabrealestate_domain_model_property.additional_costs" /></strong>: {property.additionalCosts}&euro; <br/>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container full" style="margin-top:50px;">
+		<div class="row">
+			<div class="col-sm-12 ">
+				<h3><f:translate key="more_details" /></h3>
+			</div>
+		</div>
+		<div class="row">
+			<ul class="nav nav-tabs" id="immo-{property.uid}" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="beschreibung-tab" data-toggle="tab" href="#beschreibung" role="tab" aria-controls="beschreibung" aria-selected="true"><f:translate key="tx_ifabrealestate_domain_model_property.property_description" /></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="lage-tab" data-toggle="tab" href="#lage" role="tab" aria-controls="lage" aria-selected="false"><f:translate key="tx_ifabrealestate_domain_model_property.property_location" /></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="equipment-tab" data-toggle="tab" href="#equipment" role="tab" aria-controls="equipment" aria-selected="false"><f:translate key="tx_ifabrealestate_domain_model_property.property_equipment" /></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="additional-tab" data-toggle="tab" href="#additional" role="tab" aria-controls="additional" aria-selected="false"><f:translate key="tx_ifabrealestate_domain_model_property.addition_information" /></a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="beschreibung" role="tabpanel" aria-labelledby="beschreibung-tab">{property.propertyDescription->f:format.raw()}</div>
+				<div class="tab-pane fade" id="lage" role="tabpanel" aria-labelledby="lage-tab">{property.propertyLocation->f:format.raw()}</div>
+				<div class="tab-pane fade" id="equipment" role="tabpanel" aria-labelledby="equipment-tab">{property.propertyEquipment->f:format.raw()}</div>
+				<div class="tab-pane fade" id="additional" role="tabpanel" aria-labelledby="additional-tab">{property.additionInformation->f:format.raw()}</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<h3>Grundriss</h3>
+				<f:if condition="{property.attachmentsRel}">
+					<f:for each="{property.attachmentsRel}" as="attachment" iteration="iterator">
+						<f:for each="{attachment.attachmentGroupValueRel}" as="groupValue">
+							<f:if condition="{groupValue.value} == 'Grundriss'">
+								<f:image image="{attachment.file}" style="height:auto;width:100%;"/>
+							</f:if>
+						</f:for>
+					</f:for>
+				</f:if>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<h3>Energiepass</h3>
+				<f:if condition="{property.attachmentsRel}">
+					<f:for each="{property.attachmentsRel}" as="attachment" iteration="iterator">
+						<f:for each="{attachment.attachmentGroupValueRel}" as="groupValue">
+							<f:if condition="{groupValue.value} == 'Energiepass'">
+								<f:link.typolink parameter="fileadmin/{attachment.file.originalResource.identifier}" class="btn btn-primary">Energieausweiss</f:link.typolink>
+							</f:if>
+						</f:for>
+					</f:for>
+				</f:if>
+			</div>
+		</div>
+	</div>
+
+</f:section>
+</html>

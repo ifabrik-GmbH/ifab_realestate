@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>Define a bathroom type.
+					&lt;br/&gt;
+					&lt;b&gt;Examples:&lt;/b&gt;
+					&lt;br/&gt;
+					&lt;ul&gt;
+						&lt;li&gt;Shower&lt;/li&gt;
+						&lt;li&gt;Tub&lt;/li&gt;
+					    &lt;li&gt;Window&lt;/li&gt;
+					    &lt;li&gt;Urinal&lt;/li&gt;
+						&lt;li&gt;Bidet&lt;/li&gt;
+					&lt;/ul&gt;
+				</source>
+				<target>Badtyp definieren.
+					&lt;br/&gt;
+					&lt;b&gt;Beispiele:&lt;/b&gt;
+					&lt;br/&gt;
+					&lt;ul&gt;
+					&lt;li&gt;Dusche&lt;/li&gt;
+					&lt;li&gt;Wanne&lt;/li&gt;
+					&lt;li&gt;Fenster&lt;/li&gt;
+					&lt;li&gt;Pissoir&lt;/li&gt;
+					&lt;li&gt;Bidet&lt;/li&gt;
+					&lt;/ul&gt;
+				</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

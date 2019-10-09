@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+		<header/>
+		<body>
+			<trans-unit id="floor.description">
+				<source>Indicates the floor number on which the current apartment is located.</source>
+				<target>Gibt die Etagenummer an, auf der sich die aktuelle Wohnung befindet.</target>
+			</trans-unit>
+			<trans-unit id="total_floors.description">
+				<source>Indicates the number of floors of the whole building</source>
+				<target>Gibt die Anzahl der Etagen an, auf der sich die aktuelle Wohnung befindet.</target>
+			</trans-unit>
+			<trans-unit id="apartment_number.description">
+				<source>Indicates the apartment number</source>
+				<target>Zeigt die Wohnungsnummer an</target>
+			</trans-unit>
+			<trans-unit id="extra_property_nature.description">
+				<source>Describes the extra nature of the property. For example: with furniture</source>
+				<target>Beschreibt die zusätzliche Art der Immobilie. Zum Beispiel: mobiliert</target>
+			</trans-unit>
+			<trans-unit id="purchase.description">
+				<source>The full price for the property purchase</source>
+				<target>Der volle Preis für den Immobilienkauf</target>
+			</trans-unit>
+			<trans-unit id="purchase_price_net.description">
+				<source>Indicates the net price for the property</source>
+				<target>Gibt den Nettopreis für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="purchase_price_gross.description">
+				<source>Indicates the gross price for the property</source>
+				<target>Gibt den Bruttopreis für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="net_cold_rent.description">
+				<source>Indicates the net cold rent price for the property</source>
+				<target>Gibt den Nettokaltmietpreis für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="cold_rent.description">
+				<source>Indicates the cold rent price for the property</source>
+				<target>Gibt den Brutokaltmietpreis für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="rent_with_heat.description">
+				<source>Indicates the rent preis including heating price for the property</source>
+				<target>Gibt den Mietpreis inklusive Heizpreis für die Immobilie an (Warmmiete)</target>
+			</trans-unit>
+			<trans-unit id="additional_costs.description">
+				<source>Indicates the additional costs for the property</source>
+				<target>Gibt den Nebenkostenpreis für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="heating_costs.description">
+				<source>Indicates the heating costs for the property</source>
+				<target>Gibt den Heizkostenpreis für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="flat_rate_rent.description">
+				<source>Indicates the flat rent costs for the property</source>
+				<target>Gibt die Pauschalmietkosten für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="rent_price_per_qm.description">
+				<source>Indicates the rent price per quadrat meter for the property</source>
+				<target>Gibt den Mietpreis pro Quadratmeter für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="purchase_price_per_qm.description">
+				<source>Indicates the purchase price per quadrat meter for the property</source>
+				<target>Gibt den Kaufpreis pro Quadratmeter für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="guarantee_price.description">
+				<source>Indicates the guarantee price for the property</source>
+				<target>Gibt den Kaution für die Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="guarantee_price_text.description">
+				<source>Indicates the amount of months for the guarantee price</source>
+				<target>Gibt z.B. die Anzahl der Monate für den Kaution an</target>
+			</trans-unit>
+			<trans-unit id="living_space.description">
+				<source>Indicates the living space of the property</source>
+				<target>Gibt die Wohnefläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="usable_area.description">
+				<source>Indicates the usable area of the property</source>
+				<target>Gibt die Nutzfläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="total_size.description">
+				<source>Indicates the total size of the property</source>
+				<target>Gibt die Gesamtfläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="load_area.description">
+				<source>Indicates the load area of the property</source>
+				<target>Gibt die Ladenfläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="storage_area.description">
+				<source>Indicates the storage area of the property</source>
+				<target>Gibt die Lagerfläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="sales_area.description">
+				<source>Indicates the sales area of the property</source>
+				<target>Gibt die Verkaufsfläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="free_area.description">
+				<source>Indicates the free area of the property</source>
+				<target>Gibt die Freifläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="office_area.description">
+				<source>Indicates the ofiice area of the property</source>
+				<target>Gibt die Buerofläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="office_part_area.description">
+				<source>Indicates the office part area of the property</source>
+				<target>Gibt die Bueroteilfläche der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="number_of_rooms.description">
+				<source>Indicates the number of rooms of the property</source>
+				<target>Gibt die Anzahl der Zimmern der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="number_of_bedrooms.description">
+				<source>Indicates the number of bedrooms of the property</source>
+				<target>Gibt die Anzahl der Schlafzimmern der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="number_of_bathrooms.description">
+				<source>Indicates the number of bathrooms of the property</source>
+				<target>Gibt die Anzahl der Badzimmern der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="number_of_balconies.description">
+				<source>Indicates the number of balconies of the property</source>
+				<target>Gibt die Anzahl der Balkone der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="number_of_terraces.description">
+				<source>Indicates the number of terraces of the property</source>
+				<target>Gibt die Anzahl der Terrassen der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="number_of_logia.description">
+				<source>Indicates the number of logia of the property</source>
+				<target>Gibt die Anzahl der Logia der Immobilie an</target>
+			</trans-unit>
+			<trans-unit id="wg_suitable.description">
+				<source>If the apartment is suitable for housing community</source>
+				<target>Wenn die Wohnung für Wohnungsgemeinschaft geeignet ist</target>
+			</trans-unit>
+			<trans-unit id="fireplace.description">
+				<source>If the apartment has a fireplace</source>
+				<target>Wenn die Wohnung einen Kamin hat</target>
+			</trans-unit>
+			<trans-unit id="clima.description">
+				<source>If the apartment has an air condition</source>
+				<target>Wenn die Wohnung eine Klimaanlage hat</target>
+			</trans-unit>
+			<trans-unit id="construction_year.description">
+				<source>The construction year</source>
+				<target>Baujahr</target>
+			</trans-unit>
+			<trans-unit id="construction_age.description">
+				<source>The construction age (New, old)</source>
+				<target>Alter (Altbau, Neubau)</target>
+			</trans-unit>
+			<trans-unit id="epart.description">
+				<source>epart</source>
+				<target>Epart</target>
+			</trans-unit>
+			<trans-unit id="expiration_date.description">
+				<source>The expiration date of the energy pass</source>
+				<target>Das Ablaufdatum des Energieausweises</target>
+			</trans-unit>
+			<trans-unit id="energy_consum_value.description">
+				<source>The value of the energy consumption</source>
+				<target>Der Wert des Energieverbrauchs</target>
+			</trans-unit>
+			<trans-unit id="primary_energy_source.description">
+				<source>The primary source of energy (Example: Gas)</source>
+				<target>Die primäre Energiequelle (Beispiel: Gas)</target>
+			</trans-unit>
+			<trans-unit id="electricity_value.description">
+				<source>The value of the electricity</source>
+				<target>Stromwert</target>
+			</trans-unit>
+			<trans-unit id="heat_value.description">
+				<source>The value of the heat</source>
+				<target>Wärmewert</target>
+			</trans-unit>
+			<trans-unit id="value_class.description">
+				<source>Class value (Example: A, B, C)</source>
+				<target>Wertklasse (Beispiele: A, B, C)</target>
+			</trans-unit>
+			<trans-unit id="creation_date.description">
+				<source>The creation date of the energy pass</source>
+				<target>Das Erstellungsdatum des Energieausweises</target>
+			</trans-unit>
+			<trans-unit id="creation_year.description">
+				<source>The creation year of the energy pass</source>
+				<target>Das Entstehungsjahr des Energieausweises</target>
+			</trans-unit>
+			<trans-unit id="building.description">
+				<source>The type of the building (Example: Living)</source>
+				<target>Die Art des Gebäudes (Beispiel: wohn)</target>
+			</trans-unit>
+			<trans-unit id="property_title.description">
+				<source>The property's title</source>
+				<target>Der Titel der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="property_location.description">
+				<source>The property's location</source>
+				<target>Der Lage der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="property_equipment.description">
+				<source>The property's equipment</source>
+				<target>Die Ausstattung der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="property_description.description">
+				<source>The property's description</source>
+				<target>Die Beschreibung der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="addition_information.description">
+				<source>The property's additional information</source>
+				<target>Die Zusätzliche Informationen der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="property_text.description">
+				<source>The property's text</source>
+				<target>Das Text der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="available_from.description">
+				<source>From when is the property available</source>
+				<target>Ab wann ist die Immobilie verfügbar</target>
+			</trans-unit>
+			<trans-unit id="property_release.description">
+				<source>If the address of the property should be hidden</source>
+				<target>Wenn die Adresse der Immobilie ausgeblendet werden soll</target>
+			</trans-unit>
+			<trans-unit id="pets.description">
+				<source>If pets are allowed</source>
+				<target>Wenn Haustiere erlaubt sind</target>
+			</trans-unit>
+			<trans-unit id="internal_property_number.description">
+				<source>The unique internal id of the property</source>
+				<target>Die eindeutige interne ID der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="external_property_number.description">
+				<source>The unique external id of the property</source>
+				<target>Die eindeutige externe ID der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="open_immo_id.description">
+				<source>The unique Openimmo id of the property</source>
+				<target>Die eindeutige OpenImmo ID der Immobilie</target>
+			</trans-unit>
+			<trans-unit id="property_usage_rel.description">
+				<source>Select the usage of this property</source>
+				<target>Wählen Sie die Nutzungsart dieser Immobilie aus</target>
+			</trans-unit>
+			<trans-unit id="marketing_method_rel.description">
+				<source>Select the marketing method of this property</source>
+				<target>Wählen Sie die Vermarktungsart dieser Immobilie aus</target>
+			</trans-unit>
+			<trans-unit id="property_nature_rel.description">
+				<source>Select the nature of the property</source>
+				<target>Wählen Sie die Objektart dieser Immobilie aus</target>
+			</trans-unit>
+			<trans-unit id="property_type_value_rel.description">
+				<source>Define the exact nature of the property</source>
+				<target>Objektarttyp definieren</target>
+			</trans-unit>
+			<trans-unit id="address_rel.description">
+				<source>Select the address in which the property is located.</source>
+				<target>Wählen Sie die Adresse aus, in der sich die Immobilie befindet.</target>
+			</trans-unit>
+			<trans-unit id="contact_rel.description">
+				<source>Select the contacts who manage this property.</source>
+				<target>Wählen Sie die Kontakte aus, die diese Immobilie verwalten</target>
+			</trans-unit>
+			<trans-unit id="bathroom_rel.description">
+				<source>Select the bathroom type</source>
+				<target>Wählen Sie den Badezimmertyp</target>
+			</trans-unit>
+			<trans-unit id="kitchen_rel.description">
+				<source>Select the kitchen type</source>
+				<target>Wählen Sie den Küchetyp</target>
+			</trans-unit>
+			<trans-unit id="floor_rel.description">
+				<source>Select the floor type</source>
+				<target>Wählen Sie den Bodentyp</target>
+			</trans-unit>
+			<trans-unit id="heat_rel.description">
+				<source>Select the heat method</source>
+				<target>Wählen Sie den Heizungsart</target>
+			</trans-unit>
+			<trans-unit id="elevator_rel.description">
+				<source>Select the elevator type</source>
+				<target>Wählen Sie den Aufzugstyp</target>
+			</trans-unit>
+			<trans-unit id="parking_rel.description">
+				<source>Select the parking method</source>
+				<target>Wählen Sie den Parkentyp</target>
+			</trans-unit>
+			<trans-unit id="firing_rel.description">
+				<source>Select the firing method</source>
+				<target>Wählen Sie den Befeurungsmethode</target>
+			</trans-unit>
+			<trans-unit id="attachments_rel.description">
+				<source>Create some attachments for the property</source>
+				<target>Erstellen Sie einige Anhänge für die Immobilie</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

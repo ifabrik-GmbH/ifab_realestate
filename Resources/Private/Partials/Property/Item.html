@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="container-full" style="margin-bottom: 50px">
+	<div class="row">
+		<div class="col-sm-12 col-md-3 col-lg-4">
+			<f:if condition="{property.attachmentsRel}">
+				<f:for each="{property.attachmentsRel}" as="attachment" iteration="iterator">
+					<f:if condition="{iterator.isFirst}">
+						<f:image image="{attachment.file}" style="height:auto;width:100%;"/>
+					</f:if>
+				</f:for>
+			</f:if>
+		</div>
+		<div class="col-sm-12 col-md-9 col-lg-8">
+			<h3>{property.propertyTitle}</h3>
+			<p>
+				<strong><f:translate key="tx_ifabrealestate_domain_model_property.rent_with_heat" /></strong>: {property.rentWithHeat}&euro; <br/>
+				<strong><f:translate key="tx_ifabrealestate_domain_model_property.cold_rent" /></strong>: {property.coldRent}&euro; <br/>
+				<strong><f:translate key="tx_ifabrealestate_domain_model_property.additional_costs" /></strong>: {property.additionalCosts}&euro; <br/>
+			</p>
+			<p>
+				{property.addressRel.street} {property.addressRel.number} <br/>
+				{property.addressRel.zip} {property.addressRel.area}
+			</p>
+			<f:link.action class="btn btn-primary" action="show" pageUid="{settings.detailPid}" arguments="{property:property}">Mehr</f:link.action>
+		</div>
+	</div>
+</div>
+</html>

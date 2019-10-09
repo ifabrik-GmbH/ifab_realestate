@@ -1,0 +1,61 @@
+<html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="content"><f:spaceless>
+	<f:form action="searchResults" class="form real_estate_ajax" object="{search}" pageUid="{settings.searchResultsPid}" name="search" noCache="true" method="post" data="{
+			xhr: '{f:uri.action(controller:\'Ajax\',action:\'ajaxResults\',pageUid:settings.listAjax,noCache: \'true\',pageType:settings.typeNum)}'
+		}">
+		<fieldset>
+			<div class="row">
+				<div class="col-sm-12 col-md-2">
+					<div class="form-group">
+						<f:form.select id="marketingMethods" class="form-control" property="marketingMethods" options="{marketingMethods}" optionValueField="uid" optionLabelField="name" prependOptionLabel="Marketing method" prependOptionValue=""/>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="form-group">
+						<f:form.textfield type="text" class="form-control" placeholder="Ort, Plz, Address" id="area" property="area" value="{search_area}"/>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-2">
+					<div class="form-group">
+						<f:form.select id="propertyNature" class="form-control" property="propertyNature" options="{propertyNature}" optionValueField="uid" optionLabelField="name" prependOptionLabel="Nature" prependOptionValue=""/>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-2">
+					<f:form.button class="btn btn-primary"><span class="foundProperties"></span> Treffer</f:form.button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-4">
+					<div class="form-group">
+						<f:form.textfield type="number" additionalAttributes="{min: prices.getMinRent, max: prices.getMaxRent}" class="form-control" placeholder="Preis bis {prices.getMaxRent} €" id="coldrent" property="maxColdRent" value="{search_max_coldrent}"/>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="form-group">
+						<f:form.textfield type="text" class="form-control" placeholder="Flaeche ab {minSurface} m²" id="minSurface" property="minSurface" value="{search_min_surface}"/>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="form-group">
+						<f:form.select class="form-control" property="rooms" >
+							<f:form.select.option value="">Zimmer</f:form.select.option>
+							<f:form.select.option value="1">ab 1 Zimmer</f:form.select.option>
+							<f:form.select.option value="1.5">ab 1.5 Zimmer</f:form.select.option>
+							<f:form.select.option value="2">ab 2 Zimmer</f:form.select.option>
+							<f:form.select.option value="2.5">ab 2.5 Zimmer</f:form.select.option>
+							<f:form.select.option value="3">ab 3 Zimmer</f:form.select.option>
+							<f:form.select.option value="3.5">ab 3.5 Zimmer</f:form.select.option>
+							<f:form.select.option value="4">ab 4 Zimmer</f:form.select.option>
+							<f:form.select.option value="4.5">ab 4.5 Zimmer</f:form.select.option>
+							<f:form.select.option value="5">ab 5 Zimmer</f:form.select.option>
+							<f:form.select.option value="5.5">ab 5.5 Zimmer</f:form.select.option>
+							<f:form.select.option value="6">ab 6+ Zimmer</f:form.select.option>
+						</f:form.select>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	</f:form>
+</f:spaceless></f:section>
+</html>

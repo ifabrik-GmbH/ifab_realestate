@@ -1,0 +1,75 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="ext-realestate view-plugin-box">
+	<!-- Action: {action} -->
+	<table class="table table-condensed table-hover table-settings">
+		<thead>
+		<tr>
+			<f:render section="findAction" arguments="{_all}"/>
+		</tr>
+		</thead>
+		<f:switch expression="{action.actionName}">
+			<f:case value="list">
+				<f:render section="List" arguments="{_all}"/>
+			</f:case>
+			<f:case value="search">
+				<f:render section="Search" arguments="{_all}"/>
+			</f:case>
+			<f:case value="show">
+				<f:render section="Show" arguments="{_all}"/>
+			</f:case>
+			<f:case value="searchResults">
+				<f:render section="List" arguments="{_all}"/>
+			</f:case>
+		</f:switch>
+	</table>
+</div>
+
+<f:section name="findAction">
+	<th colspan="2">{f:translate(key: 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:switchableControllerActions.{action.actionName}')}
+		<br/>
+		<small class="ext">{f:translate(key: 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:tx_ifab_realestate_domain_model.property')}</small>
+	</th>
+</f:section>
+
+<f:section name="List">
+	<tbody>
+	<f:if condition="{additionalSettings.settingslisthidePagination}==1">
+		<f:then>
+			<f:render section="_row" arguments="{key:'pagination_hide', value:'&#10004;'}"/>
+			<f:render section="_row" arguments="{key:'max-items', value:additionalSettings.settingslistmaxItems}"/>
+		</f:then>
+		<f:else>
+			<f:render section="_row" arguments="{key:'pagination_hide', value:'&#10008;'}"/>
+			<f:render section="_row" arguments="{key:'items-per-page', value:additionalSettings.settingslistpaginateitemsPerPage}"/>
+		</f:else>
+	</f:if>
+	</tbody>
+	<tbody class="special special-info">
+		<f:render section="_row" arguments="{key:'pid_list',value:generalSettings.settingslistPid.link}"/>
+		<f:render section="_row" arguments="{key:'pid_detail',value:generalSettings.settingsdetailPid.link}"/>
+		<f:render section="_row" arguments="{key:'pid_storage',value:generalSettings.persistencestoragePid.link}"/>
+	</tbody>
+</f:section>
+
+<f:section name="Search">
+	<tbody class="special special-info">
+		<f:render section="_row" arguments="{key:'pid_list',value:generalSettings.settingslistPid.link}"/>
+		<f:render section="_row" arguments="{key:'pid_search_results',value:generalSettings.settingssearchResultsPid.link}"/>
+	</tbody>
+</f:section>
+
+<f:section name="Show">
+	<tbody class="special special-info">
+		<f:render section="_row" arguments="{key:'pid_list',value:generalSettings.settingslistPid.link}"/>
+	</tbody>
+</f:section>
+
+<f:section name="_row">
+	<f:if condition="{value}">
+		<tr>
+			<th>{f:translate(key: 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_be.xlf:{key}')}</th>
+			<td>{value->f:format.raw()}</td>
+		</tr>
+	</f:if>
+</f:section>
+</html>

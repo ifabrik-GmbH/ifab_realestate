@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>Define a property usage.
+					&lt;br/&gt;
+					&lt;b&gt;Examples:&lt;/b&gt;
+					&lt;br/&gt;
+					&lt;ul&gt;
+					&lt;li&gt;Living&lt;/li&gt;
+					&lt;li&gt;Business&lt;/li&gt;
+					&lt;li&gt;Parking&lt;/li&gt;
+					&lt;li&gt;Storage&lt;/li&gt;
+					&lt;/ul&gt;
+				</source>
+				<target>Nutzungsart definieren.
+					&lt;br/&gt;
+					&lt;b&gt;Examples:&lt;/b&gt;
+					&lt;br/&gt;
+					&lt;ul&gt;
+					&lt;li&gt;Wohnen&lt;/li&gt;
+					&lt;li&gt;Gewerbe&lt;/li&gt;
+					&lt;li&gt;Anlage&lt;/li&gt;
+					&lt;li&gt;Waz&lt;/li&gt;
+					&lt;/ul&gt;
+				</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

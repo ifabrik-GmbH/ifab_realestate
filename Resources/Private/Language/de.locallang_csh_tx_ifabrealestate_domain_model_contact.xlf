@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+		<header/>
+		<body>
+			<trans-unit id="employee_number.description">
+				<source>The unique employee number if present.</source>
+				<target>Die eindeutige Mitarbeiternummer, falls vorhanden.</target>
+			</trans-unit>
+			<trans-unit id="name.description">
+				<source>The name of the employee</source>
+				<target>Der Name des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="surname.description">
+				<source>The surname of the employee</source>
+				<target>Der Nachname des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="title.description">
+				<source>The title of the employee</source>
+				<target>Der Titel des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="central_email.description">
+				<source>The central email of the employee</source>
+				<target>Die zentrale E-Mail des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="direct_email.description">
+				<source>The direct email of the employee</source>
+				<target>Die direkte E-Mail des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="private_email.description">
+				<source>The private email of the employee</source>
+				<target>Die private E-Mail des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="central_tel.description">
+				<source>The central telephone of the employee</source>
+				<target>Das zentrale Telefon des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="direct_tel.description">
+				<source>The direct telephone of the employee</source>
+				<target>Das direkte Telefon des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="private_tel.description">
+				<source>The private telephone of the employee</source>
+				<target>Das private Telefon des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="fax.description">
+				<source>The fax of the employee</source>
+				<target>Das Fax des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="mobile_phone.description">
+				<source>The mobile phone of the employee</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="online_concent.description">
+				<source>Employee&#039;s concent if his address should be visible to the website or not.</source>
+				<target>Das Handy des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="po_box.description">
+				<source>The post office of the contact</source>
+				<target>Das Postfach des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="po_zip.description">
+				<source>The post office ZIP of the contact</source>
+				<target>Das Postfach PLZ des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="po_area.description">
+				<source>The post office area of the contact</source>
+				<target>Der Postfachbereich des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>The image of the employee</source>
+				<target>Das Bild des Mitarbeiters</target>
+			</trans-unit>
+			<trans-unit id="contact_address_rel.description">
+				<source>Select the address of the current contact</source>
+				<target>Wählen Sie die Adresse des aktuellen Mitarbeiters aus</target>
+			</trans-unit>
+			<trans-unit id="gender_rel.description">
+				<source>Select the gender of the current contact</source>
+				<target>Wählen Sie das Geschlecht des aktuellen Mitarbeiters aus</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

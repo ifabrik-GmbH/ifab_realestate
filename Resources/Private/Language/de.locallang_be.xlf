@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2017-12-05T09:02:33Z">
+        <header>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="action">
+                <source>View mode</source>
+                <target>Ansicht</target>
+            </trans-unit>
+            <trans-unit id="action_list">
+                <source>List view</source>
+                <target>Listansicht</target>
+            </trans-unit>
+            <trans-unit id="action_detail">
+                <source>Detail view</source>
+                <target>Detailansicht</target>
+            </trans-unit>
+            <trans-unit id="action_search">
+                <source>Search view</source>
+                <target>Suche</target>
+            </trans-unit>
+            <trans-unit id="action_search_results">
+                <source>Search results view</source>
+                <target>Suchergebnisse</target>
+            </trans-unit>
+            <trans-unit id="pid_list">
+                <source>List view (Page-ID)</source>
+                <target>Listansicht (Seite-ID)</target>
+            </trans-unit>
+            <trans-unit id="pid_detail">
+                <source>Detail view (Page-ID)</source>
+                <target>Detailansicht (Seite-ID)</target>
+            </trans-unit>
+            <trans-unit id="pid_storage">
+                <source>Data source (Page-ID)</source>
+                <target>Datenquelle (Seite-ID)</target>
+            </trans-unit>
+            <trans-unit id="pid_search_results">
+                <source>Search results (Page-ID)</source>
+                <target>Suchergebnisse (Seite-ID)</target>
+            </trans-unit>
+            <trans-unit id="tab_options">
+                <source>Options</source>
+                <target>Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="pagination_hide">
+                <source>Hide pagination</source>
+                <target>Seitenblätter verstecken</target>
+            </trans-unit>
+            <trans-unit id="items-per-page">
+                <source>Items per page</source>
+                <target>Einträge pro Seite</target>
+            </trans-unit>
+            <trans-unit id="paginate_max-links">
+                <source>Max links</source>
+                <target>Maximale Anzahl von Links</target>
+            </trans-unit>
+            <trans-unit id="max-items">
+                <source>Max items</source>
+                <target>Maximale Anazahl von Einträge</target>
+            </trans-unit>
+            <trans-unit id="switchableControllerActions.list">
+                <source>List view of properties from a folder</source>
+                <target>Listeansicht von Immobilien</target>
+            </trans-unit>
+            <trans-unit id="switchableControllerActions.search">
+                <source>Search form (Ajax)</source>
+                <target>Suchformular (Ajax)</target>
+            </trans-unit>
+            <trans-unit id="switchableControllerActions.searchResults">
+                <source>Search results</source>
+                <target>Suchergebnisse</target>
+            </trans-unit>
+            <trans-unit id="switchableControllerActions.show">
+                <source>Detail view of properties</source>
+                <target>Detailansicht von Immobilien</target>
+            </trans-unit>
+            <trans-unit id="tx_ifab_realestate_domain_model.property">
+                <source>Ifabrik Real Estate</source>
+                <target>Ifabrik Immobilien</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>

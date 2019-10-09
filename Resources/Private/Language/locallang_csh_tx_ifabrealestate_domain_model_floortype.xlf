@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+			<source>Define a floor type.
+				&lt;br/&gt;
+				&lt;b&gt;Examples:&lt;/b&gt;
+				&lt;br/&gt;
+				&lt;ul&gt;
+				&lt;li&gt;Tiles&lt;/li&gt;
+				&lt;li&gt;Stone&lt;/li&gt;
+				&lt;li&gt;Carpet&lt;/li&gt;
+				&lt;li&gt;Parquet&lt;/li&gt;
+				&lt;li&gt;Engineered&lt;/li&gt;
+				&lt;li&gt;Laminate&lt;/li&gt;
+				&lt;li&gt;Synthetic&lt;/li&gt;
+				&lt;/ul&gt;
+			</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+		<header/>
+		<body>
+			<trans-unit id="tx_ifabrealestate_domain_model_property">
+				<source>Property</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.floor">
+				<source>Floor</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.total_floors">
+				<source>Total floors</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.apartment_number">
+				<source>Apartment number</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.extra_property_nature">
+				<source>Extra property nature</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.purchase">
+				<source>Purchase</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.purchase_price_net">
+				<source>Purchase price net</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.purchase_price_gross">
+				<source>Purchase price gross</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.net_cold_rent">
+				<source>Net cold rent</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.cold_rent">
+				<source>Cold rent</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.rent_with_heat">
+				<source>Rent with heat</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.additional_costs">
+				<source>Additional costs</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.heating_costs">
+				<source>Heating costs</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.flat_rate_rent">
+				<source>Flat rate rent</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.rent_price_per_qm">
+				<source>Rent price per qm</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.purchase_price_per_qm">
+				<source>Purchase price per qm</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.guarantee_price">
+				<source>Guarantee price</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.guarantee_price_text">
+				<source>Guarantee price text</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.living_space">
+				<source>Living space</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.usable_area">
+				<source>Usable area</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.total_size">
+				<source>Total size</source>et>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.load_area">
+				<source>Load area</source>et>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.storage_area">
+				<source>Storage area</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.sales_area">
+				<source>Sales area</source>rget>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.free_area">
+				<source>Free area</source>t>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.office_area">
+				<source>Office area</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.office_part_area">
+				<source>Office part area</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_rooms">
+				<source>Number of rooms</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_bedrooms">
+				<source>Number of bedrooms</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_bathrooms">
+				<source>Number of bathrooms</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_balconies">
+				<source>Number of balconies</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_terraces">
+				<source>Number of terraces</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_logia">
+				<source>Number of logia</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.wg_suitable">
+				<source>Wg suitable</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.fireplace">
+				<source>Fireplace</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.clima">
+				<source>Clima</source>target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.construction_year">
+				<source>Construction zear</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.construction_age">
+				<source>Construction age</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.epart">
+				<source>Epart</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.expiration_date">
+				<source>Expiration date</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.energy_consum_value">
+				<source>Energy consumption value</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.primary_energy_source">
+				<source>Primary energy source</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.electricity_value">
+				<source>Electricity value</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.heat_value">
+				<source>Heat value</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.value_class">
+				<source>Value class</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.creation_date">
+				<source>Creation date</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.creation_year">
+				<source>Creation year</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.building">
+				<source>Building</source>et>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_title">
+				<source>Property title</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_location">
+				<source>Property location</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_equipment">
+				<source>Property equipment</source>arget>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_description">
+				<source>Property description</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.addition_information">
+				<source>Additional information</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_text">
+				<source>Property text</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.available_from">
+				<source>Available from</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_release">
+				<source>Property's address release</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.pets">
+				<source>Pets</source>rget>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.internal_property_number">
+				<source>Internal property number</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.external_property_number">
+				<source>External property number</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.open_immo_id">
+				<source>Openimmo id</source>t>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_usage_rel">
+				<source>Select a property usage</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.marketing_method_rel">
+				<source>Select a marketing method</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_nature_rel">
+				<source>Select a property nature</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_type_value_rel">
+				<source>Define the exact property nature</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.address_rel">
+				<source>Select an address</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.contact_rel">
+				<source>Select a contact</source>t>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.bathroom_rel">
+				<source>Select the available bathroom types</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.kitchen_rel">
+				<source>Select the available kitchen types</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.floor_rel">
+				<source>Select the available floor types</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.heat_rel">
+				<source>Select the available heating methods</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.elevator_rel">
+				<source>Select the available elevator techniques</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.parking_rel">
+				<source>Select the available parking methods</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.firing_rel">
+				<source>Select the available firing methods</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.attachments_rel">
+				<source>Attachments</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyusage">
+				<source>Property usage</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyusage.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_marketingmethod">
+				<source>Marketing method</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_marketingmethod.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertynature">
+				<source>Property Nature</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertynature.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue">
+				<source>Property type value</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue.value">
+				<source>Value</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue.objektarttype_relation">
+				<source>Select a property type</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertytype">
+				<source>Property Type</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertytype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.number">
+				<source>Number</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.area">
+				<source>Area</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.state">
+				<source>State</source>rget>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.municipality_code">
+				<source>Municipality code</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.subdistrict">
+				<source>Subdistrict</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_address.regional_addition">
+				<source>Regional addition</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.employee_number">
+				<source>Employee Number</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.name">
+				<source>Name</source>et>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.surname">
+				<source>Surname</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.central_email">
+				<source>Central email</source>t>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.direct_email">
+				<source>Direct email</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.private_email">
+				<source>Private email</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.central_tel">
+				<source>central telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.direct_tel">
+				<source>Direct telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.private_tel">
+				<source>Private telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.fax">
+				<source>Fax</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.mobile_phone">
+				<source>Mobile phone</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.hide_address">
+				<source>Hide address</source>arget>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.po_box">
+				<source>Post office box</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.po_zip">
+				<source>Post office zip</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.po_area">
+				<source>Post office area</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.contact_address_rel">
+				<source>Select an address</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contact.gender_rel">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress">
+				<source>Contact address</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress.number">
+				<source>Number</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress.area">
+				<source>Area</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_bathroomtype">
+				<source>Bathroom type</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_bathroomtype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_kitchentype">
+				<source>Kitchen type</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_kitchentype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_floortype">
+				<source>Floor type</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_floortype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_heattype">
+				<source>Heat type</source>t>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_heattype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_elevatortype">
+				<source>Elevator type</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_elevatortype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_parking">
+				<source>Parking</source>arget>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_parking.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_firingtype">
+				<source>Firing type</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_firingtype.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachments">
+				<source>Attachments</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachments.file">
+				<source>File</source>>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroup">
+				<source>Attachment group</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroup.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachments.attachment_group_value_rel">
+				<source>Create an attachment group</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue">
+				<source>Attachment group value</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue.value">
+				<source>Value</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue.attachment_group_rel">
+				<source>Define an attachment group</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_gender.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="listing.title">
+				<source>Properties list</source>
+			</trans-unit>
+			<trans-unit id="more_details">
+				<source>More information</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
