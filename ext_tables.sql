@@ -134,7 +134,7 @@ CREATE TABLE tx_ifabrealestate_domain_model_propertytype (
 CREATE TABLE tx_ifabrealestate_domain_model_address (
 
 	street varchar(255) DEFAULT '' NOT NULL,
-	number varchar(255) DEFAULT '' NOT NULL,
+	address_number varchar(255) DEFAULT '' NOT NULL,
 	area varchar(255) DEFAULT '' NOT NULL,
 	zip varchar(255) DEFAULT '' NOT NULL,
 	state varchar(255) DEFAULT '' NOT NULL,
@@ -178,7 +178,7 @@ CREATE TABLE tx_ifabrealestate_domain_model_contact (
 CREATE TABLE tx_ifabrealestate_domain_model_contactaddress (
 
 	street varchar(255) DEFAULT '' NOT NULL,
-	number varchar(255) DEFAULT '' NOT NULL,
+	address_number varchar(255) DEFAULT '' NOT NULL,
 	area varchar(255) DEFAULT '' NOT NULL,
 	zip varchar(255) DEFAULT '' NOT NULL,
 

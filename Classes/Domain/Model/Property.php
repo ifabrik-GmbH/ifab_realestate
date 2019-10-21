@@ -15,385 +15,385 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Indicates the floor number on which the current  apartment is located.
-     * 
+     *
      * @var string
      */
     protected $floor = '';
 
     /**
      * Indicates the number of floors of the whole building
-     * 
+     *
      * @var string
      */
     protected $totalFloors = '';
 
     /**
      * Indicates the apartment number
-     * 
+     *
      * @var string
      */
     protected $apartmentNumber = '';
 
     /**
      * Describes the extra nature of the property. For example: with furniture
-     * 
+     *
      * @var string
      */
     protected $extraPropertyNature = '';
 
     /**
      * The full price for the property purchase
-     * 
+     *
      * @var string
      */
     protected $purchase = '';
 
     /**
      * Indicates the net price for the property
-     * 
+     *
      * @var string
      */
     protected $purchasePriceNet = '';
 
     /**
      * Indicates the gross price for the property
-     * 
+     *
      * @var string
      */
     protected $purchasePriceGross = '';
 
     /**
      * Indicates the net cold rent price for the property
-     * 
+     *
      * @var string
      */
     protected $netColdRent = '';
 
     /**
      * Indicates the cold rent price for the property
-     * 
+     *
      * @var string
      */
     protected $coldRent = '';
 
     /**
      * Indicates the rent including heating  price for the property
-     * 
+     *
      * @var string
      */
     protected $rentWithHeat = '';
 
     /**
      * Indicates the additional costs for the property
-     * 
+     *
      * @var string
      */
     protected $additionalCosts = '';
 
     /**
      * Indicates the heating costs for the property
-     * 
+     *
      * @var string
      */
     protected $heatingCosts = '';
 
     /**
      * Indicates the flat rent costs for the property
-     * 
+     *
      * @var string
      */
     protected $flatRateRent = '';
 
     /**
      * Indicates the rent price per quadrat meter for the property
-     * 
+     *
      * @var string
      */
     protected $rentPricePerQm = '';
 
     /**
      * Indicates the purchase price per quadrat meter for the property
-     * 
+     *
      * @var string
      */
     protected $purchasePricePerQm = '';
 
     /**
      * Indicates the guarantee price for the property
-     * 
+     *
      * @var string
      */
     protected $guaranteePrice = '';
 
     /**
      * Indicates the amount of months for the guarantee price
-     * 
+     *
      * @var string
      */
     protected $guaranteePriceText = '';
 
     /**
      * Indicates the living space of the property
-     * 
+     *
      * @var string
      */
     protected $livingSpace = '';
 
     /**
      * Indicates the usableArea of the property
-     * 
+     *
      * @var string
      */
     protected $usableArea = '';
 
     /**
      * Indicates the total size of the property
-     * 
+     *
      * @var string
      */
     protected $totalSize = '';
 
     /**
      * Indicates the load area of the property
-     * 
+     *
      * @var string
      */
     protected $loadArea = '';
 
     /**
      * Indicates the storage area of the property
-     * 
+     *
      * @var string
      */
     protected $storageArea = '';
 
     /**
      * Indicates the sales area of the property
-     * 
+     *
      * @var string
      */
     protected $salesArea = '';
 
     /**
      * Indicates the free area of the property
-     * 
+     *
      * @var string
      */
     protected $freeArea = '';
 
     /**
      * officeArea
-     * 
+     *
      * @var string
      */
     protected $officeArea = '';
 
     /**
      * officePartArea
-     * 
+     *
      * @var string
      */
     protected $officePartArea = '';
 
     /**
      * numberOfRooms
-     * 
+     *
      * @var string
      */
     protected $numberOfRooms = '';
 
     /**
      * numberOfBedrooms
-     * 
+     *
      * @var string
      */
     protected $numberOfBedrooms = '';
 
     /**
      * numberOfBathrooms
-     * 
+     *
      * @var string
      */
     protected $numberOfBathrooms = '';
 
     /**
      * numberOfBalconies
-     * 
+     *
      * @var string
      */
     protected $numberOfBalconies = '';
 
     /**
      * numberOfTerraces
-     * 
+     *
      * @var string
      */
     protected $numberOfTerraces = '';
 
     /**
      * numberOfLogia
-     * 
+     *
      * @var string
      */
     protected $numberOfLogia = '';
 
     /**
      * wgSuitable
-     * 
+     *
      * @var bool
      */
     protected $wgSuitable = false;
 
     /**
      * fireplace
-     * 
+     *
      * @var bool
      */
     protected $fireplace = false;
 
     /**
      * clima
-     * 
+     *
      * @var bool
      */
     protected $clima = false;
 
     /**
      * constructionYear
-     * 
+     *
      * @var string
      */
     protected $constructionYear = '';
 
     /**
      * constructionAge
-     * 
+     *
      * @var string
      */
     protected $constructionAge = '';
 
     /**
      * epart
-     * 
+     *
      * @var string
      */
     protected $epart = '';
 
     /**
      * expirationDate
-     * 
+     *
      * @var string
      */
     protected $expirationDate = '';
 
     /**
      * energyConsumValue
-     * 
+     *
      * @var string
      */
     protected $energyConsumValue = '';
 
     /**
      * primaryEnergySource
-     * 
+     *
      * @var string
      */
     protected $primaryEnergySource = '';
 
     /**
      * electricityValue
-     * 
+     *
      * @var string
      */
     protected $electricityValue = '';
 
     /**
      * heatValue
-     * 
+     *
      * @var string
      */
     protected $heatValue = '';
 
     /**
      * valueClass
-     * 
+     *
      * @var string
      */
     protected $valueClass = '';
 
     /**
      * creationDate
-     * 
+     *
      * @var string
      */
     protected $creationDate = '';
 
     /**
      * creationYear
-     * 
+     *
      * @var string
      */
     protected $creationYear = '';
 
     /**
      * building
-     * 
+     *
      * @var string
      */
     protected $building = '';
 
     /**
      * propertyTitle
-     * 
+     *
      * @var string
      */
     protected $propertyTitle = '';
 
     /**
      * propertyLocation
-     * 
+     *
      * @var string
      */
     protected $propertyLocation = '';
 
     /**
      * propertyEquipment
-     * 
+     *
      * @var string
      */
     protected $propertyEquipment = '';
 
     /**
      * propertyDescription
-     * 
+     *
      * @var string
      */
     protected $propertyDescription = '';
 
     /**
      * additionInformation
-     * 
+     *
      * @var string
      */
     protected $additionInformation = '';
 
     /**
      * propertyText
-     * 
+     *
      * @var string
      */
     protected $propertyText = '';
 
     /**
      * availableFrom
-     * 
+     *
      * @var string
      */
     protected $availableFrom = '';
 
     /**
      * propertyRelease
-     * 
+     *
      * @var bool
      */
     protected $propertyRelease = false;
@@ -407,122 +407,122 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * internalPropertyNumber
-     * 
+     *
      * @var string
      */
     protected $internalPropertyNumber = '';
 
     /**
      * externalPropertyNumber
-     * 
+     *
      * @var string
      */
     protected $externalPropertyNumber = '';
 
     /**
      * openImmoId
-     * 
+     *
      * @var string
      */
     protected $openImmoId = '';
 
     /**
      * Select the usage of this property
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyUsage>
      */
     protected $propertyUsageRel = null;
 
     /**
      * Select the marketing method of this property
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\MarketingMethod>
      */
     protected $marketingMethodRel = null;
 
     /**
      * Select the nature of the property
-     * 
+     *
      * @var \Ifabrik\IfabRealestate\Domain\Model\PropertyNature
      */
     protected $propertyNatureRel = null;
 
     /**
      * Define the exact nature of the property
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue>
-     * @cascade remove
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
      */
     protected $propertyTypeValueRel = null;
 
     /**
      * Select the address in which the property is located.
-     * 
+     *
      * @var \Ifabrik\IfabRealestate\Domain\Model\Address
      */
     protected $addressRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Contact>
      */
     protected $contactRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\BathroomType>
      */
     protected $bathroomRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\KitchenType>
      */
     protected $kitchenRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\FloorType>
      */
     protected $floorRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\HeatType>
      */
     protected $heatRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\ElevatorType>
      */
     protected $elevatorRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Parking>
      */
     protected $parkingRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\FiringType>
      */
     protected $firingRel = null;
 
     /**
      * Select the contacts who manage this property.
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachments>
-     * @cascade remove
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
      */
     protected $attachmentsRel = null;
 
@@ -541,7 +541,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Do not modify this method!
      * It will be rewritten on each save in the extension builder
      * You may modify the constructor of this class instead
-     * 
+     *
      * @return void
      */
     protected function initStorageObjects()
@@ -562,7 +562,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the floor
-     * 
+     *
      * @return string $floor
      */
     public function getFloor()
@@ -572,7 +572,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the floor
-     * 
+     *
      * @param string $floor
      * @return void
      */
@@ -583,7 +583,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the totalFloors
-     * 
+     *
      * @return string $totalFloors
      */
     public function getTotalFloors()
@@ -593,7 +593,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the totalFloors
-     * 
+     *
      * @param string $totalFloors
      * @return void
      */
@@ -604,7 +604,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the apartmentNumber
-     * 
+     *
      * @return string $apartmentNumber
      */
     public function getApartmentNumber()
@@ -614,7 +614,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the apartmentNumber
-     * 
+     *
      * @param string $apartmentNumber
      * @return void
      */
@@ -625,7 +625,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the extraPropertyNature
-     * 
+     *
      * @return string $extraPropertyNature
      */
     public function getExtraPropertyNature()
@@ -635,7 +635,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the extraPropertyNature
-     * 
+     *
      * @param string $extraPropertyNature
      * @return void
      */
@@ -646,7 +646,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a PropertyUsage
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyUsage $propertyUsageRel
      * @return void
      */
@@ -657,7 +657,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a PropertyUsage
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyUsage $propertyUsageRelToRemove The PropertyUsage to be removed
      * @return void
      */
@@ -668,7 +668,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyUsageRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyUsage> $propertyUsageRel
      */
     public function getPropertyUsageRel()
@@ -678,7 +678,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyUsageRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyUsage> $propertyUsageRel
      * @return void
      */
@@ -689,7 +689,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a MarketingMethod
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\MarketingMethod $marketingMethodRel
      * @return void
      */
@@ -700,7 +700,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a MarketingMethod
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\MarketingMethod $marketingMethodRelToRemove The MarketingMethod to be removed
      * @return void
      */
@@ -711,7 +711,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the marketingMethodRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\MarketingMethod> $marketingMethodRel
      */
     public function getMarketingMethodRel()
@@ -721,7 +721,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the marketingMethodRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\MarketingMethod> $marketingMethodRel
      * @return void
      */
@@ -732,7 +732,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyNatureRel
-     * 
+     *
      * @return \Ifabrik\IfabRealestate\Domain\Model\PropertyNature $propertyNatureRel
      */
     public function getPropertyNatureRel()
@@ -742,7 +742,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyNatureRel
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyNature $propertyNatureRel
      * @return void
      */
@@ -753,7 +753,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a PropertyTypeValue
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue $propertyTypeValueRel
      * @return void
      */
@@ -764,7 +764,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a PropertyTypeValue
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue $propertyTypeValueRelToRemove The PropertyTypeValue to be removed
      * @return void
      */
@@ -775,7 +775,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyTypeValueRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue> $propertyTypeValueRel
      */
     public function getPropertyTypeValueRel()
@@ -785,7 +785,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyTypeValueRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue> $propertyTypeValueRel
      * @return void
      */
@@ -796,7 +796,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the addressRel
-     * 
+     *
      * @return \Ifabrik\IfabRealestate\Domain\Model\Address $addressRel
      */
     public function getAddressRel()
@@ -806,7 +806,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the addressRel
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Address $addressRel
      * @return void
      */
@@ -817,7 +817,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Contact
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Contact $contactRel
      * @return void
      */
@@ -828,7 +828,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Contact
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Contact $contactRelToRemove The Contact to be removed
      * @return void
      */
@@ -839,7 +839,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the contactRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Contact> $contactRel
      */
     public function getContactRel()
@@ -849,7 +849,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the contactRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Contact> $contactRel
      * @return void
      */
@@ -860,7 +860,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the purchase
-     * 
+     *
      * @return string $purchase
      */
     public function getPurchase()
@@ -870,7 +870,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the purchase
-     * 
+     *
      * @param string $purchase
      * @return void
      */
@@ -881,7 +881,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the purchasePriceNet
-     * 
+     *
      * @return string $purchasePriceNet
      */
     public function getPurchasePriceNet()
@@ -891,7 +891,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the purchasePriceNet
-     * 
+     *
      * @param string $purchasePriceNet
      * @return void
      */
@@ -902,7 +902,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the purchasePriceGross
-     * 
+     *
      * @return string $purchasePriceGross
      */
     public function getPurchasePriceGross()
@@ -912,7 +912,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the purchasePriceGross
-     * 
+     *
      * @param string $purchasePriceGross
      * @return void
      */
@@ -923,7 +923,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the netColdRent
-     * 
+     *
      * @return string $netColdRent
      */
     public function getNetColdRent()
@@ -933,7 +933,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the netColdRent
-     * 
+     *
      * @param string $netColdRent
      * @return void
      */
@@ -944,7 +944,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the coldRent
-     * 
+     *
      * @return string $coldRent
      */
     public function getColdRent()
@@ -954,7 +954,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the coldRent
-     * 
+     *
      * @param string $coldRent
      * @return void
      */
@@ -965,7 +965,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the rentWithHeat
-     * 
+     *
      * @return string $rentWithHeat
      */
     public function getRentWithHeat()
@@ -975,7 +975,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the rentWithHeat
-     * 
+     *
      * @param string $rentWithHeat
      * @return void
      */
@@ -986,7 +986,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the additionalCosts
-     * 
+     *
      * @return string $additionalCosts
      */
     public function getAdditionalCosts()
@@ -996,7 +996,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the additionalCosts
-     * 
+     *
      * @param string $additionalCosts
      * @return void
      */
@@ -1007,7 +1007,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the heatingCosts
-     * 
+     *
      * @return string $heatingCosts
      */
     public function getHeatingCosts()
@@ -1017,7 +1017,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the heatingCosts
-     * 
+     *
      * @param string $heatingCosts
      * @return void
      */
@@ -1028,7 +1028,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the flatRateRent
-     * 
+     *
      * @return string $flatRateRent
      */
     public function getFlatRateRent()
@@ -1038,7 +1038,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the flatRateRent
-     * 
+     *
      * @param string $flatRateRent
      * @return void
      */
@@ -1049,7 +1049,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the rentPricePerQm
-     * 
+     *
      * @return string $rentPricePerQm
      */
     public function getRentPricePerQm()
@@ -1059,7 +1059,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the rentPricePerQm
-     * 
+     *
      * @param string $rentPricePerQm
      * @return void
      */
@@ -1070,7 +1070,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the purchasePricePerQm
-     * 
+     *
      * @return string $purchasePricePerQm
      */
     public function getPurchasePricePerQm()
@@ -1080,7 +1080,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the purchasePricePerQm
-     * 
+     *
      * @param string $purchasePricePerQm
      * @return void
      */
@@ -1091,7 +1091,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the guaranteePrice
-     * 
+     *
      * @return string $guaranteePrice
      */
     public function getGuaranteePrice()
@@ -1101,7 +1101,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the guaranteePrice
-     * 
+     *
      * @param string $guaranteePrice
      * @return void
      */
@@ -1112,7 +1112,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the guaranteePriceText
-     * 
+     *
      * @return string $guaranteePriceText
      */
     public function getGuaranteePriceText()
@@ -1122,7 +1122,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the guaranteePriceText
-     * 
+     *
      * @param string $guaranteePriceText
      * @return void
      */
@@ -1133,7 +1133,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the livingSpace
-     * 
+     *
      * @return string $livingSpace
      */
     public function getLivingSpace()
@@ -1143,7 +1143,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the livingSpace
-     * 
+     *
      * @param string $livingSpace
      * @return void
      */
@@ -1154,7 +1154,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the usableArea
-     * 
+     *
      * @return string $usableArea
      */
     public function getUsableArea()
@@ -1164,7 +1164,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the usableArea
-     * 
+     *
      * @param string $usableArea
      * @return void
      */
@@ -1175,7 +1175,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the totalSize
-     * 
+     *
      * @return string $totalSize
      */
     public function getTotalSize()
@@ -1185,7 +1185,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the totalSize
-     * 
+     *
      * @param string $totalSize
      * @return void
      */
@@ -1196,7 +1196,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the loadArea
-     * 
+     *
      * @return string $loadArea
      */
     public function getLoadArea()
@@ -1206,7 +1206,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the loadArea
-     * 
+     *
      * @param string $loadArea
      * @return void
      */
@@ -1217,7 +1217,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the storageArea
-     * 
+     *
      * @return string $storageArea
      */
     public function getStorageArea()
@@ -1227,7 +1227,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the storageArea
-     * 
+     *
      * @param string $storageArea
      * @return void
      */
@@ -1238,7 +1238,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the salesArea
-     * 
+     *
      * @return string $salesArea
      */
     public function getSalesArea()
@@ -1248,7 +1248,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the salesArea
-     * 
+     *
      * @param string $salesArea
      * @return void
      */
@@ -1259,7 +1259,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the freeArea
-     * 
+     *
      * @return string $freeArea
      */
     public function getFreeArea()
@@ -1269,7 +1269,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the freeArea
-     * 
+     *
      * @param string $freeArea
      * @return void
      */
@@ -1280,7 +1280,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the officeArea
-     * 
+     *
      * @return string $officeArea
      */
     public function getOfficeArea()
@@ -1290,7 +1290,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the officeArea
-     * 
+     *
      * @param string $officeArea
      * @return void
      */
@@ -1301,7 +1301,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the officePartArea
-     * 
+     *
      * @return string $officePartArea
      */
     public function getOfficePartArea()
@@ -1311,7 +1311,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the officePartArea
-     * 
+     *
      * @param string $officePartArea
      * @return void
      */
@@ -1322,7 +1322,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the numberOfRooms
-     * 
+     *
      * @return string $numberOfRooms
      */
     public function getNumberOfRooms()
@@ -1332,7 +1332,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the numberOfRooms
-     * 
+     *
      * @param string $numberOfRooms
      * @return void
      */
@@ -1343,7 +1343,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the numberOfBedrooms
-     * 
+     *
      * @return string $numberOfBedrooms
      */
     public function getNumberOfBedrooms()
@@ -1353,7 +1353,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the numberOfBedrooms
-     * 
+     *
      * @param string $numberOfBedrooms
      * @return void
      */
@@ -1364,7 +1364,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the numberOfBathrooms
-     * 
+     *
      * @return string $numberOfBathrooms
      */
     public function getNumberOfBathrooms()
@@ -1374,7 +1374,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the numberOfBathrooms
-     * 
+     *
      * @param string $numberOfBathrooms
      * @return void
      */
@@ -1385,7 +1385,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the numberOfBalconies
-     * 
+     *
      * @return string $numberOfBalconies
      */
     public function getNumberOfBalconies()
@@ -1395,7 +1395,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the numberOfBalconies
-     * 
+     *
      * @param string $numberOfBalconies
      * @return void
      */
@@ -1406,7 +1406,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the numberOfTerraces
-     * 
+     *
      * @return string $numberOfTerraces
      */
     public function getNumberOfTerraces()
@@ -1416,7 +1416,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the numberOfTerraces
-     * 
+     *
      * @param string $numberOfTerraces
      * @return void
      */
@@ -1427,7 +1427,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the numberOfLogia
-     * 
+     *
      * @return string $numberOfLogia
      */
     public function getNumberOfLogia()
@@ -1437,7 +1437,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the numberOfLogia
-     * 
+     *
      * @param string $numberOfLogia
      * @return void
      */
@@ -1448,7 +1448,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the wgSuitable
-     * 
+     *
      * @return bool $wgSuitable
      */
     public function getWgSuitable()
@@ -1458,7 +1458,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the wgSuitable
-     * 
+     *
      * @param bool $wgSuitable
      * @return void
      */
@@ -1469,7 +1469,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the boolean state of wgSuitable
-     * 
+     *
      * @return bool
      */
     public function isWgSuitable()
@@ -1479,7 +1479,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a BathroomType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\BathroomType $bathroomRel
      * @return void
      */
@@ -1490,7 +1490,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a BathroomType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\BathroomType $bathroomRelToRemove The BathroomType to be removed
      * @return void
      */
@@ -1501,7 +1501,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the bathroomRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\BathroomType> $bathroomRel
      */
     public function getBathroomRel()
@@ -1511,7 +1511,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the bathroomRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\BathroomType> $bathroomRel
      * @return void
      */
@@ -1522,7 +1522,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a KitchenType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\KitchenType $kitchenRel
      * @return void
      */
@@ -1533,7 +1533,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a KitchenType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\KitchenType $kitchenRelToRemove The KitchenType to be removed
      * @return void
      */
@@ -1544,7 +1544,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the kitchenRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\KitchenType> $kitchenRel
      */
     public function getKitchenRel()
@@ -1554,7 +1554,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the kitchenRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\KitchenType> $kitchenRel
      * @return void
      */
@@ -1565,7 +1565,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the fireplace
-     * 
+     *
      * @return bool $fireplace
      */
     public function getFireplace()
@@ -1575,7 +1575,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the fireplace
-     * 
+     *
      * @param bool $fireplace
      * @return void
      */
@@ -1586,7 +1586,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the boolean state of fireplace
-     * 
+     *
      * @return bool
      */
     public function isFireplace()
@@ -1596,7 +1596,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the clima
-     * 
+     *
      * @return bool $clima
      */
     public function getClima()
@@ -1606,7 +1606,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the clima
-     * 
+     *
      * @param bool $clima
      * @return void
      */
@@ -1617,7 +1617,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the boolean state of clima
-     * 
+     *
      * @return bool
      */
     public function isClima()
@@ -1627,7 +1627,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a FloorType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\FloorType $floorRel
      * @return void
      */
@@ -1638,7 +1638,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a FloorType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\FloorType $floorRelToRemove The FloorType to be removed
      * @return void
      */
@@ -1649,7 +1649,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the floorRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\FloorType> $floorRel
      */
     public function getFloorRel()
@@ -1659,7 +1659,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the floorRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\FloorType> $floorRel
      * @return void
      */
@@ -1670,7 +1670,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a HeatType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\HeatType $heatRel
      * @return void
      */
@@ -1681,7 +1681,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a HeatType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\HeatType $heatRelToRemove The HeatType to be removed
      * @return void
      */
@@ -1692,7 +1692,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the heatRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\HeatType> $heatRel
      */
     public function getHeatRel()
@@ -1702,7 +1702,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the heatRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\HeatType> $heatRel
      * @return void
      */
@@ -1713,7 +1713,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a ElevatorType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\ElevatorType $elevatorRel
      * @return void
      */
@@ -1724,7 +1724,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a ElevatorType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\ElevatorType $elevatorRelToRemove The ElevatorType to be removed
      * @return void
      */
@@ -1735,7 +1735,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the elevatorRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\ElevatorType> $elevatorRel
      */
     public function getElevatorRel()
@@ -1745,7 +1745,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the elevatorRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\ElevatorType> $elevatorRel
      * @return void
      */
@@ -1756,7 +1756,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Parking
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Parking $parkingRel
      * @return void
      */
@@ -1767,7 +1767,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Parking
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Parking $parkingRelToRemove The Parking to be removed
      * @return void
      */
@@ -1778,7 +1778,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the parkingRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Parking> $parkingRel
      */
     public function getParkingRel()
@@ -1788,7 +1788,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the parkingRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Parking> $parkingRel
      * @return void
      */
@@ -1799,7 +1799,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the constructionYear
-     * 
+     *
      * @return string $constructionYear
      */
     public function getConstructionYear()
@@ -1809,7 +1809,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the constructionYear
-     * 
+     *
      * @param string $constructionYear
      * @return void
      */
@@ -1820,7 +1820,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the constructionAge
-     * 
+     *
      * @return string $constructionAge
      */
     public function getConstructionAge()
@@ -1830,7 +1830,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the constructionAge
-     * 
+     *
      * @param string $constructionAge
      * @return void
      */
@@ -1841,7 +1841,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the epart
-     * 
+     *
      * @return string $epart
      */
     public function getEpart()
@@ -1851,7 +1851,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the epart
-     * 
+     *
      * @param string $epart
      * @return void
      */
@@ -1862,7 +1862,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the expirationDate
-     * 
+     *
      * @return string $expirationDate
      */
     public function getExpirationDate()
@@ -1872,7 +1872,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the expirationDate
-     * 
+     *
      * @param string $expirationDate
      * @return void
      */
@@ -1883,7 +1883,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the energyConsumValue
-     * 
+     *
      * @return string $energyConsumValue
      */
     public function getEnergyConsumValue()
@@ -1893,7 +1893,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the energyConsumValue
-     * 
+     *
      * @param string $energyConsumValue
      * @return void
      */
@@ -1904,7 +1904,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the primaryEnergySource
-     * 
+     *
      * @return string $primaryEnergySource
      */
     public function getPrimaryEnergySource()
@@ -1914,7 +1914,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the primaryEnergySource
-     * 
+     *
      * @param string $primaryEnergySource
      * @return void
      */
@@ -1925,7 +1925,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the electricityValue
-     * 
+     *
      * @return string $electricityValue
      */
     public function getElectricityValue()
@@ -1935,7 +1935,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the electricityValue
-     * 
+     *
      * @param string $electricityValue
      * @return void
      */
@@ -1946,7 +1946,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the heatValue
-     * 
+     *
      * @return string $heatValue
      */
     public function getHeatValue()
@@ -1956,7 +1956,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the heatValue
-     * 
+     *
      * @param string $heatValue
      * @return void
      */
@@ -1967,7 +1967,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a FiringType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\FiringType $firingRel
      * @return void
      */
@@ -1978,7 +1978,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a FiringType
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\FiringType $firingRelToRemove The FiringType to be removed
      * @return void
      */
@@ -1989,7 +1989,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the firingRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\FiringType> $firingRel
      */
     public function getFiringRel()
@@ -1999,7 +1999,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the firingRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\FiringType> $firingRel
      * @return void
      */
@@ -2010,7 +2010,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the valueClass
-     * 
+     *
      * @return string $valueClass
      */
     public function getValueClass()
@@ -2020,7 +2020,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the valueClass
-     * 
+     *
      * @param string $valueClass
      * @return void
      */
@@ -2031,7 +2031,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the creationDate
-     * 
+     *
      * @return string $creationDate
      */
     public function getCreationDate()
@@ -2041,7 +2041,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the creationDate
-     * 
+     *
      * @param string $creationDate
      * @return void
      */
@@ -2052,7 +2052,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the creationYear
-     * 
+     *
      * @return string $creationYear
      */
     public function getCreationYear()
@@ -2062,7 +2062,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the creationYear
-     * 
+     *
      * @param string $creationYear
      * @return void
      */
@@ -2073,7 +2073,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the building
-     * 
+     *
      * @return string $building
      */
     public function getBuilding()
@@ -2083,7 +2083,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the building
-     * 
+     *
      * @param string $building
      * @return void
      */
@@ -2094,7 +2094,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyTitle
-     * 
+     *
      * @return string $propertyTitle
      */
     public function getPropertyTitle()
@@ -2104,7 +2104,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyTitle
-     * 
+     *
      * @param string $propertyTitle
      * @return void
      */
@@ -2115,7 +2115,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyLocation
-     * 
+     *
      * @return string $propertyLocation
      */
     public function getPropertyLocation()
@@ -2125,7 +2125,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyLocation
-     * 
+     *
      * @param string $propertyLocation
      * @return void
      */
@@ -2136,7 +2136,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyEquipment
-     * 
+     *
      * @return string $propertyEquipment
      */
     public function getPropertyEquipment()
@@ -2146,7 +2146,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyEquipment
-     * 
+     *
      * @param string $propertyEquipment
      * @return void
      */
@@ -2157,7 +2157,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyDescription
-     * 
+     *
      * @return string $propertyDescription
      */
     public function getPropertyDescription()
@@ -2167,7 +2167,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyDescription
-     * 
+     *
      * @param string $propertyDescription
      * @return void
      */
@@ -2178,7 +2178,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the additionInformation
-     * 
+     *
      * @return string $additionInformation
      */
     public function getAdditionInformation()
@@ -2188,7 +2188,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the additionInformation
-     * 
+     *
      * @param string $additionInformation
      * @return void
      */
@@ -2199,7 +2199,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyText
-     * 
+     *
      * @return string $propertyText
      */
     public function getPropertyText()
@@ -2209,7 +2209,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyText
-     * 
+     *
      * @param string $propertyText
      * @return void
      */
@@ -2220,7 +2220,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the availableFrom
-     * 
+     *
      * @return string $availableFrom
      */
     public function getAvailableFrom()
@@ -2230,7 +2230,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the availableFrom
-     * 
+     *
      * @param string $availableFrom
      * @return void
      */
@@ -2241,7 +2241,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the propertyRelease
-     * 
+     *
      * @return bool $propertyRelease
      */
     public function getPropertyRelease()
@@ -2251,7 +2251,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the propertyRelease
-     * 
+     *
      * @param bool $propertyRelease
      * @return void
      */
@@ -2262,7 +2262,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the boolean state of propertyRelease
-     * 
+     *
      * @return bool
      */
     public function isPropertyRelease()
@@ -2304,7 +2304,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the internalPropertyNumber
-     * 
+     *
      * @return string $internalPropertyNumber
      */
     public function getInternalPropertyNumber()
@@ -2314,7 +2314,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the internalPropertyNumber
-     * 
+     *
      * @param string $internalPropertyNumber
      * @return void
      */
@@ -2325,7 +2325,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the externalPropertyNumber
-     * 
+     *
      * @return string $externalPropertyNumber
      */
     public function getExternalPropertyNumber()
@@ -2335,7 +2335,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the externalPropertyNumber
-     * 
+     *
      * @param string $externalPropertyNumber
      * @return void
      */
@@ -2346,7 +2346,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the openImmoId
-     * 
+     *
      * @return string $openImmoId
      */
     public function getOpenImmoId()
@@ -2356,7 +2356,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the openImmoId
-     * 
+     *
      * @param string $openImmoId
      * @return void
      */
@@ -2367,7 +2367,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Adds a Attachments
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Attachments $attachmentsRel
      * @return void
      */
@@ -2378,7 +2378,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Removes a Attachments
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Attachments $attachmentsRelToRemove The Attachments to be removed
      * @return void
      */
@@ -2389,7 +2389,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the attachmentsRel
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachments> $attachmentsRel
      */
     public function getAttachmentsRel()
@@ -2399,7 +2399,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the attachmentsRel
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachments> $attachmentsRel
      * @return void
      */

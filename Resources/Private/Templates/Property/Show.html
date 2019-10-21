@@ -80,7 +80,7 @@
 					<f:for each="{property.attachmentsRel}" as="attachment" iteration="iterator">
 						<f:for each="{attachment.attachmentGroupValueRel}" as="groupValue">
 							<f:if condition="{groupValue.value} == 'Energiepass'">
-								<f:link.typolink parameter="fileadmin/{attachment.file.originalResource.identifier}" class="btn btn-primary">Energieausweiss</f:link.typolink>
+								<f:link.typolink parameter="{attachment.file.originalResource.storage.configuration.basePath}{attachment.file.originalResource.identifier}" class="btn btn-primary">Energieausweiss</f:link.typolink>
 							</f:if>
 						</f:for>
 					</f:for>

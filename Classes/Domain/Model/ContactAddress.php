@@ -15,35 +15,35 @@ class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * The name of the street
-     * 
+     *
      * @var string
      */
     protected $street = '';
 
     /**
      * The number of the building
-     * 
+     *
      * @var string
      */
-    protected $number = '';
+    protected $addressNumber = '';
 
     /**
      * The area in which the address is located.
-     * 
+     *
      * @var string
      */
     protected $area = '';
 
     /**
      * The ZIP code of the address
-     * 
+     *
      * @var string
      */
     protected $zip = '';
 
     /**
      * Returns the street
-     * 
+     *
      * @return string $street
      */
     public function getStreet()
@@ -53,7 +53,7 @@ class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the street
-     * 
+     *
      * @param string $street
      * @return void
      */
@@ -63,29 +63,29 @@ class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the number
-     * 
-     * @return string $number
+     * Returns the addressNumber
+     *
+     * @return string $addressNumber
      */
-    public function getNumber()
+    public function getAddressNumber ()
     {
-        return $this->number;
+        return $this->addressNumber ;
     }
 
     /**
-     * Sets the number
-     * 
-     * @param string $number
+     * Sets the addressNumber
+     *
+     * @param string $addressNumber
      * @return void
      */
-    public function setNumber($number)
+    public function setAddressNumber ($addressNumber)
     {
-        $this->number = $number;
+        $this->addressNumber  = $addressNumber;
     }
 
     /**
      * Returns the area
-     * 
+     *
      * @return string $area
      */
     public function getArea()
@@ -95,7 +95,7 @@ class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the area
-     * 
+     *
      * @param string $area
      * @return void
      */
@@ -106,7 +106,7 @@ class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the zip
-     * 
+     *
      * @return string $zip
      */
     public function getZip()
@@ -116,7 +116,7 @@ class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the zip
-     * 
+     *
      * @param string $zip
      * @return void
      */

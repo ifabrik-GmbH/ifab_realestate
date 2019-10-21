@@ -17,15 +17,24 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
     /**
      * propertyRepository
-     * 
+     *
      * @var \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository
-     * @inject
      */
     protected $propertyRepository = null;
 
     /**
+     * Inject the propertyRepository
+     *
+     * @param \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository
+     */
+    public function injectPropertyRepository(\Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository)
+    {
+        $this->propertyRepository = $propertyRepository;
+    }
+
+    /**
      * action list
-     * 
+     *
      * @return void
      */
     public function listAction()
@@ -46,7 +55,7 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
     /**
      * action show
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Property $property
      * @return void
      */
@@ -57,7 +66,7 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
     /**
      * action search
-     * 
+     *
      * @return void
      */
     public function searchAction()
@@ -76,7 +85,6 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             'propertyNature' => $propertyNature,
             'marketingMethods' => $marketingMethods,
             'prices' => $prices,
-            'contentObjectData' => $this->configurationManager->getContentObject()->data,
             'pageData'          => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
         ]);
     }
@@ -104,7 +112,6 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
         $this->view->assignMultiple([
             'propertiess' => $getSearchedProperties,
-            'contentObjectData' => $this->configurationManager->getContentObject()->data,
             'pageData'          => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
         ]);
     }

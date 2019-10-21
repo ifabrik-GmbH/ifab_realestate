@@ -15,84 +15,84 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * The unique employee number if present.
-     * 
+     *
      * @var string
      */
     protected $employeeNumber = '';
 
     /**
      * The name of the employee
-     * 
+     *
      * @var string
      */
     protected $name = '';
 
     /**
      * The surname of the employee
-     * 
+     *
      * @var string
      */
     protected $surname = '';
 
     /**
      * The title of the employee
-     * 
+     *
      * @var string
      */
     protected $title = '';
 
     /**
      * The central email of the employee
-     * 
+     *
      * @var string
      */
     protected $centralEmail = '';
 
     /**
      * The direct email of the employee
-     * 
+     *
      * @var string
      */
     protected $directEmail = '';
 
     /**
      * The private email of the employee
-     * 
+     *
      * @var string
      */
     protected $privateEmail = '';
 
     /**
      * The central telephone of the employee
-     * 
+     *
      * @var string
      */
     protected $centralTel = '';
 
     /**
      * The direct telephone of the employee
-     * 
+     *
      * @var string
      */
     protected $directTel = '';
 
     /**
      * The private telephone of the employee
-     * 
+     *
      * @var string
      */
     protected $privateTel = '';
 
     /**
      * The fax of the employee
-     * 
+     *
      * @var string
      */
     protected $fax = '';
 
     /**
      * The mobile phone of the employee
-     * 
+     *
      * @var string
      */
     protected $mobilePhone = '';
@@ -106,50 +106,50 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * The post office of the contact
-     * 
+     *
      * @var string
      */
     protected $poBox = '';
 
     /**
      * The post office ZIP of the contact
-     * 
+     *
      * @var string
      */
     protected $poZip = '';
 
     /**
      * The post office area of the contact
-     * 
+     *
      * @var string
      */
     protected $poArea = '';
 
     /**
      * The image of the employee
-     * 
+     *
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
-     * @cascade remove
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
      */
     protected $image = null;
 
     /**
      * Select the address of the current contact
-     * 
+     *
      * @var \Ifabrik\IfabRealestate\Domain\Model\ContactAddress
      */
     protected $contactAddressRel = null;
 
     /**
      * Select the address of the current contact
-     * 
+     *
      * @var \Ifabrik\IfabRealestate\Domain\Model\Gender
      */
     protected $genderRel = null;
 
     /**
      * Returns the employeeNumber
-     * 
+     *
      * @return string $employeeNumber
      */
     public function getEmployeeNumber()
@@ -159,7 +159,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the employeeNumber
-     * 
+     *
      * @param string $employeeNumber
      * @return void
      */
@@ -170,7 +170,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the name
-     * 
+     *
      * @return string $name
      */
     public function getName()
@@ -180,7 +180,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the name
-     * 
+     *
      * @param string $name
      * @return void
      */
@@ -191,7 +191,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the surname
-     * 
+     *
      * @return string $surname
      */
     public function getSurname()
@@ -201,7 +201,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the surname
-     * 
+     *
      * @param string $surname
      * @return void
      */
@@ -212,7 +212,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the title
-     * 
+     *
      * @return string $title
      */
     public function getTitle()
@@ -222,7 +222,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the title
-     * 
+     *
      * @param string $title
      * @return void
      */
@@ -233,7 +233,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the centralEmail
-     * 
+     *
      * @return string $centralEmail
      */
     public function getCentralEmail()
@@ -243,7 +243,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the centralEmail
-     * 
+     *
      * @param string $centralEmail
      * @return void
      */
@@ -254,7 +254,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the directEmail
-     * 
+     *
      * @return string $directEmail
      */
     public function getDirectEmail()
@@ -264,7 +264,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the directEmail
-     * 
+     *
      * @param string $directEmail
      * @return void
      */
@@ -275,7 +275,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the privateEmail
-     * 
+     *
      * @return string $privateEmail
      */
     public function getPrivateEmail()
@@ -285,7 +285,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the privateEmail
-     * 
+     *
      * @param string $privateEmail
      * @return void
      */
@@ -296,7 +296,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the centralTel
-     * 
+     *
      * @return string $centralTel
      */
     public function getCentralTel()
@@ -306,7 +306,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the centralTel
-     * 
+     *
      * @param string $centralTel
      * @return void
      */
@@ -317,7 +317,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the directTel
-     * 
+     *
      * @return string $directTel
      */
     public function getDirectTel()
@@ -327,7 +327,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the directTel
-     * 
+     *
      * @param string $directTel
      * @return void
      */
@@ -338,7 +338,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the privateTel
-     * 
+     *
      * @return string $privateTel
      */
     public function getPrivateTel()
@@ -348,7 +348,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the privateTel
-     * 
+     *
      * @param string $privateTel
      * @return void
      */
@@ -359,7 +359,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the fax
-     * 
+     *
      * @return string $fax
      */
     public function getFax()
@@ -369,7 +369,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the fax
-     * 
+     *
      * @param string $fax
      * @return void
      */
@@ -380,7 +380,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the mobilePhone
-     * 
+     *
      * @return string $mobilePhone
      */
     public function getMobilePhone()
@@ -390,7 +390,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the mobilePhone
-     * 
+     *
      * @param string $mobilePhone
      * @return void
      */
@@ -401,7 +401,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the hideAddress
-     * 
+     *
      * @return bool $hideAddress
      */
     public function getHideAddress()
@@ -411,7 +411,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the hideAddress
-     * 
+     *
      * @param bool $hideAddress
      * @return void
      */
@@ -422,7 +422,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the boolean state of hideAddress
-     * 
+     *
      * @return bool
      */
     public function isHideAddress()
@@ -432,7 +432,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the poBox
-     * 
+     *
      * @return string $poBox
      */
     public function getPoBox()
@@ -442,7 +442,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the poBox
-     * 
+     *
      * @param string $poBox
      * @return void
      */
@@ -453,7 +453,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the poZip
-     * 
+     *
      * @return string $poZip
      */
     public function getPoZip()
@@ -463,7 +463,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the poZip
-     * 
+     *
      * @param string $poZip
      * @return void
      */
@@ -474,7 +474,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the poArea
-     * 
+     *
      * @return string $poArea
      */
     public function getPoArea()
@@ -484,7 +484,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the poArea
-     * 
+     *
      * @param string $poArea
      * @return void
      */
@@ -495,7 +495,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the contactAddressRel
-     * 
+     *
      * @return \Ifabrik\IfabRealestate\Domain\Model\ContactAddress $contactAddressRel
      */
     public function getContactAddressRel()
@@ -505,7 +505,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the contactAddressRel
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\ContactAddress $contactAddressRel
      * @return void
      */
@@ -516,7 +516,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the image
-     * 
+     *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
      */
     public function getImage()
@@ -526,7 +526,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the image
-     * 
+     *
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
      * @return void
      */
@@ -537,7 +537,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the genderRel
-     * 
+     *
      * @return \Ifabrik\IfabRealestate\Domain\Model\Gender $genderRel
      */
     public function getGenderRel()
@@ -547,7 +547,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the genderRel
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Gender $genderRel
      * @return void
      */

@@ -15,74 +15,74 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * The name of the street
-     * 
+     *
      * @var string
-     * @validate NotEmpty
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $street = '';
 
     /**
      * The number of the building
-     * 
+     *
      * @var string
-     * @validate NotEmpty
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
-    protected $number = '';
+    protected $addressNumber = '';
 
     /**
      * The area in which the address is located.
-     * 
+     *
      * @var string
-     * @validate NotEmpty
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $area = '';
 
     /**
      * The ZIP code of the address
-     * 
+     *
      * @var string
-     * @validate NotEmpty
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $zip = '';
 
     /**
      * The state in which the address is located.
-     * 
+     *
      * @var string
      */
     protected $state = '';
 
     /**
      * The country in which the address is located.
-     * 
+     *
      * @var string
      */
     protected $country = '';
 
     /**
      * The municipality code in which the address is located.
-     * 
+     *
      * @var string
      */
     protected $municipalityCode = '';
 
     /**
      * The subdistrict code in which the address is located.
-     * 
+     *
      * @var string
      */
     protected $subdistrict = '';
 
     /**
      * The additional region in which the address is located.
-     * 
+     *
      * @var string
      */
     protected $regionalAddition = '';
 
     /**
      * Returns the street
-     * 
+     *
      * @return string $street
      */
     public function getStreet()
@@ -92,7 +92,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the street
-     * 
+     *
      * @param string $street
      * @return void
      */
@@ -102,29 +102,29 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the number
-     * 
-     * @return string $number
+     * Returns the addressNumber
+     *
+     * @return string $addressNumber
      */
-    public function getNumber()
+    public function getAddressNumber ()
     {
-        return $this->number;
+        return $this->addressNumber ;
     }
 
     /**
-     * Sets the number
-     * 
-     * @param string $number
+     * Sets the addressNumber
+     *
+     * @param string $addressNumber
      * @return void
      */
-    public function setNumber($number)
+    public function setAddressNumber ($addressNumber)
     {
-        $this->number = $number;
+        $this->addressNumber  = $addressNumber;
     }
 
     /**
      * Returns the area
-     * 
+     *
      * @return string $area
      */
     public function getArea()
@@ -134,7 +134,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the area
-     * 
+     *
      * @param string $area
      * @return void
      */
@@ -145,7 +145,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the zip
-     * 
+     *
      * @return string $zip
      */
     public function getZip()
@@ -155,7 +155,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the zip
-     * 
+     *
      * @param string $zip
      * @return void
      */
@@ -166,7 +166,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the state
-     * 
+     *
      * @return string $state
      */
     public function getState()
@@ -176,7 +176,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the state
-     * 
+     *
      * @param string $state
      * @return void
      */
@@ -187,7 +187,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the country
-     * 
+     *
      * @return string $country
      */
     public function getCountry()
@@ -197,7 +197,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the country
-     * 
+     *
      * @param string $country
      * @return void
      */
@@ -208,7 +208,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the municipalityCode
-     * 
+     *
      * @return string $municipalityCode
      */
     public function getMunicipalityCode()
@@ -218,7 +218,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the municipalityCode
-     * 
+     *
      * @param string $municipalityCode
      * @return void
      */
@@ -229,7 +229,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the subdistrict
-     * 
+     *
      * @return string $subdistrict
      */
     public function getSubdistrict()
@@ -239,7 +239,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the subdistrict
-     * 
+     *
      * @param string $subdistrict
      * @return void
      */
@@ -250,7 +250,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the regionalAddition
-     * 
+     *
      * @return string $regionalAddition
      */
     public function getRegionalAddition()
@@ -260,7 +260,7 @@ class Address extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the regionalAddition
-     * 
+     *
      * @param string $regionalAddition
      * @return void
      */
