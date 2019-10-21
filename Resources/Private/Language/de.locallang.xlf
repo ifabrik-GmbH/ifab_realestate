@@ -21,7 +21,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.extra_property_nature">
 				<source>Extra property nature</source>
-				<target>Objektart zusatz</target>
+				<target>Objektart Zusatz</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.purchase">
 				<source>Purchase</source>
@@ -61,11 +61,11 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.rent_price_per_qm">
 				<source>Rent price per qm</source>
-				<target>Mietpreis pro Qm</target>
+				<target>Mietpreis pro qm</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.purchase_price_per_qm">
 				<source>Purchase price per qm</source>
-				<target>Kaufpreis pro Qm</target>
+				<target>Kaufpreis pro qm</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.guarantee_price">
 				<source>Guarantee price</source>
@@ -77,39 +77,39 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.living_space">
 				<source>Living space</source>
-				<target>Wohnflaeche</target>
+				<target>Wohnfläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.usable_area">
 				<source>Usable area</source>
-				<target>Nutzflaeche</target>
+				<target>Nutzfläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.total_size">
 				<source>Total size</source>
-				<target>Gesamtflaeche</target>
+				<target>Gesamtfläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.load_area">
 				<source>Load area</source>
-				<target>Ladenflaeche</target>
+				<target>Ladefläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.storage_area">
 				<source>Storage area</source>
-				<target>Lagerflaeche</target>
+				<target>Lagerfläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.sales_area">
 				<source>Sales area</source>
-				<target>Verkaufsflaeche</target>
+				<target>Verkaufsfläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.free_area">
 				<source>Free area</source>
-				<target>Freiflaeche</target>
+				<target>Freifläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.office_area">
 				<source>Office area</source>
-				<target>Bueroflaeche</target>
+				<target>Bürofläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.office_part_area">
 				<source>Office part area</source>
-				<target>Bueroteilflaeche</target>
+				<target>Büro Teilfläche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_rooms">
 				<source>Number of rooms</source>
@@ -133,27 +133,27 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_logia">
 				<source>Number of logia</source>
-				<target>Anzahl Logia</target>
+				<target>Anzahl Loggien</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.wg_suitable">
 				<source>Wg suitable</source>
-				<target>WG geeignet</target>
+				<target>WG-geeignet</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.fireplace">
 				<source>Fireplace</source>
 				<target>Kamin</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.clima">
-				<source>Clima</source>
-				<target>Klimatisiert</target>
+				<source>air condition</source>
+				<target>Klimaanlage</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.construction_year">
-				<source>Construction zear</source>
+				<source>Construction year</source>
 				<target>Baujahr</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.construction_age">
 				<source>Construction age</source>
-				<target>Alter</target>
+				<target>Baualter (Altbau/Neubau)</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.epart">
 				<source>Epart</source>
@@ -165,11 +165,11 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.energy_consum_value">
 				<source>Energy consumption value</source>
-				<target>Energieverbrauchkennwert</target>
+				<target>Energieverbrauchskennwert</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.primary_energy_source">
 				<source>Primary energy source</source>
-				<target>Primaerenergietraeger</target>
+				<target>Primärenergieträger</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.electricity_value">
 				<source>Electricity value</source>
@@ -193,7 +193,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.building">
 				<source>Building</source>
-				<target>Gebaeudeart</target>
+				<target>Gebäudeart</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_title">
 				<source>Property title</source>
@@ -213,15 +213,15 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.addition_information">
 				<source>Additional information</source>
-				<target>Sonstige angaben</target>
+				<target>Sonstige Angaben</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_text">
 				<source>Property text</source>
-				<target>Objekt Text</target>
+				<target>Objekt Beschreibungstext</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.available_from">
 				<source>Available from</source>
-				<target>Verfügbar_ab</target>
+				<target>Verfügbar ab</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_release">
 				<source>Property's address release</source>
@@ -241,7 +241,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.open_immo_id">
 				<source>Openimmo id</source>
-				<target>Openimmo obid</target>
+				<target>Openimmo ID</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_usage_rel">
 				<source>Select a property usage</source>
@@ -257,7 +257,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_type_value_rel">
 				<source>Define the exact property nature</source>
-				<target>Objektarttyp definieren</target>
+				<target>Objekttyp definieren</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.address_rel">
 				<source>Select an address</source>
@@ -269,15 +269,15 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.bathroom_rel">
 				<source>Select the available bathroom types</source>
-				<target>Badtyp auswählen</target>
+				<target>Art des Badezimmers auswählen</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.kitchen_rel">
 				<source>Select the available kitchen types</source>
-				<target>Küchetyp auswählen</target>
+				<target>Art der Küche auswählen</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.floor_rel">
 				<source>Select the available floor types</source>
-				<target>Bodentyp auswählen</target>
+				<target>Art des Fußbodens auswählen</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.heat_rel">
 				<source>Select the available heating methods</source>
@@ -285,7 +285,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.elevator_rel">
 				<source>Select the available elevator techniques</source>
-				<target>Fahrstuhl auswählen</target>
+				<target>Fahrstuhlart auswählen</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.parking_rel">
 				<source>Select the available parking methods</source>
@@ -293,7 +293,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.firing_rel">
 				<source>Select the available firing methods</source>
-				<target>Befeuerung auswählen</target>
+				<target>Beheizungsmethode auswählen</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.attachments_rel">
 				<source>Attachments</source>
@@ -325,7 +325,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue">
 				<source>Property type value</source>
-				<target>Objektarttyp wert</target>
+				<target>Wert der Objektart</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue.value">
 				<source>Value</source>
@@ -333,11 +333,11 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue.objektarttype_relation">
 				<source>Select a property type</source>
-				<target>Objektarttyp auswählen</target>
+				<target>Objektart auswählen</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_propertytype">
 				<source>Property Type</source>
-				<target>Objektarttyp</target>
+				<target>Objekttyp</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_propertytype.name">
 				<source>Name</source>
@@ -377,11 +377,11 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_address.subdistrict">
 				<source>Subdistrict</source>
-				<target>Gemarkung</target>
+				<target>Landkreis</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_address.regional_addition">
 				<source>Regional addition</source>
-				<target>Regionaler zusatz</target>
+				<target>Regionaler Zusatz</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact">
 				<source>Contact</source>
@@ -389,7 +389,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.employee_number">
 				<source>Employee Number</source>
-				<target>Personennummer</target>
+				<target>Personalnummer</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.name">
 				<source>Name</source>
@@ -397,7 +397,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.surname">
 				<source>Surname</source>
-				<target>Name</target>
+				<target>Nachname</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.title">
 				<source>Title</source>
@@ -409,23 +409,23 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.direct_email">
 				<source>Direct email</source>
-				<target>E-Mail Direkt</target>
+				<target>E-Mail direkt</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.private_email">
 				<source>Private email</source>
-				<target>E-Mail Privat</target>
+				<target>E-Mail privat</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.central_tel">
 				<source>central telephone</source>
-				<target>Telefon zentrale</target>
+				<target>Telefonzentrale</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.direct_tel">
 				<source>Direct telephone</source>
-				<target>Telefon Direkt</target>
+				<target>Telefondurchwahl</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.private_tel">
 				<source>Private telephone</source>
-				<target>Telefon Privat</target>
+				<target>Telefon privat</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.fax">
 				<source>Fax</source>
@@ -437,7 +437,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.hide_address">
 				<source>Hide address</source>
-				<target>Adresse verstecken</target>
+				<target>Adresse verbergen</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.po_box">
 				<source>Post office box</source>
@@ -457,7 +457,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.contact_address_rel">
 				<source>Select an address</source>
-				<target>Adresse Auswählen</target>
+				<target>Adresse auswählen</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.gender_rel">
 				<source>Gender</source>
@@ -465,7 +465,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress">
 				<source>Contact address</source>
-				<target>Kontaktenadresse</target>
+				<target>Kontaktadresse</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress.street">
 				<source>Street</source>
@@ -485,7 +485,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_bathroomtype">
 				<source>Bathroom type</source>
-				<target>Badtyp</target>
+				<target>Art des Badezimmers</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_bathroomtype.name">
 				<source>Name</source>
@@ -493,7 +493,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_kitchentype">
 				<source>Kitchen type</source>
-				<target>Küchetyp</target>
+				<target>Art der Küche</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_kitchentype.name">
 				<source>Name</source>
@@ -501,7 +501,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_floortype">
 				<source>Floor type</source>
-				<target>Bodentyp</target>
+				<target>Art des Fußbodens</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_floortype.name">
 				<source>Name</source>
@@ -525,7 +525,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_parking">
 				<source>Parking</source>
-				<target>stellplatzart</target>
+				<target>Art des Stellplatzes</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_parking.name">
 				<source>Name</source>
@@ -533,7 +533,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_firingtype">
 				<source>Firing type</source>
-				<target>Befeuerung</target>
+				<target>Art der Beheizung</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_firingtype.name">
 				<source>Name</source>
@@ -561,7 +561,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue">
 				<source>Attachment group value</source>
-				<target>Anhangsgruppewert</target>
+				<target>Wert der Anhangsgruppe</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue.value">
 				<source>Value</source>
@@ -585,7 +585,7 @@
 			</trans-unit>
 			<trans-unit id="more_details">
 				<source>More</source>
-				<target>Mehr informationen</target>
+				<target>Mehr Informationen</target>
 			</trans-unit>
 		</body>
 	</file>

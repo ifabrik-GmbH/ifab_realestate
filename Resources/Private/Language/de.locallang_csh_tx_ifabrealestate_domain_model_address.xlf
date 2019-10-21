@@ -5,15 +5,15 @@
 		<body>
 			<trans-unit id="street.description">
 				<source>The name of the street</source>
-				<target>Straßenname</target>
+				<target>Der name der Straße</target>
 			</trans-unit>
 			<trans-unit id="number.description">
 				<source>The number of the building</source>
-				<target>Hausnummer</target>
+				<target>Die Nummer des Gebäudes</target>
 			</trans-unit>
 			<trans-unit id="area.description">
 				<source>The area in which the address is located.</source>
-				<target>Der Ort, in dem sich die Adresse befindet.</target>
+				<target>Der Bereich, in dem sich die Adresse befindet.</target>
 			</trans-unit>
 			<trans-unit id="zip.description">
 				<source>The ZIP code of the address</source>
@@ -21,23 +21,23 @@
 			</trans-unit>
 			<trans-unit id="state.description">
 				<source>The state in which the address is located.</source>
-				<target>Das Bundesland, in dem sich die Adresse befindet.</target>
+				<target>Der Bundesland, in dem sich die Adresse befindet</target>
 			</trans-unit>
 			<trans-unit id="country.description">
 				<source>The country in which the address is located.</source>
-				<target>Das Land, in dem sich die Adresse befindet.</target>
+				<target>Der Land, in dem sich die Adresse befindet.</target>
 			</trans-unit>
 			<trans-unit id="municipality_code.description">
 				<source>The municipality code in which the address is located.</source>
-				<target>Die Gemeindenummer, in dem sich die Adresse befindet.</target>
+				<target>Der Gemeindecode, in dem sich die Adresse befindet.</target>
 			</trans-unit>
 			<trans-unit id="subdistrict.description">
 				<source>The subdistrict code in which the address is located.</source>
-				<target>Der Landkreis, in dem sich die Adresse befindet.</target>
+				<target>Der Gemarkung, in dem sich die Adresse befindet.</target>
 			</trans-unit>
 			<trans-unit id="regional_addition.description">
 				<source>The additional region in which the address is located.</source>
-				<target>Zusätzliche Region, in dem sich die Adresse befindet.</target>
+				<target>Der Regionaler zusatz, in dem sich die Adresse befindet.</target>
 			</trans-unit>
 		</body>
 	</file>
