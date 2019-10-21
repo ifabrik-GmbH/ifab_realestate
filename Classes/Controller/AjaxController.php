@@ -32,45 +32,29 @@ class AjaxController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     protected $settings;
 
     /**
-     * @var
-     */
-    protected $viewConfig;
-
-    /**
-     * @var
-     */
-    protected $extbaseFrameworkConfiguration;
-
-    /**
      * propertyRepository
-     * 
+     *
      * @var \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository
-     * @inject
      */
     protected $propertyRepository = null;
 
     /**
-     * Initialize Action
+     * Inject the propertyRepository
+     *
+     * @param \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository
      */
-    public function initializeAction(): void
+    public function injectPropertyRepository(\Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository)
     {
-        $this->settings = array_merge($this->settings);
-        $this->viewConfig = GeneralUtility::makeInstance(StandaloneView::class);
-        $this->extbaseFrameworkConfiguration = $this->configurationManager->getConfiguration(ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK);
-        $this->viewConfig->setTemplateRootPaths($this->extbaseFrameworkConfiguration['view']['templateRootPaths']);
-        $this->viewConfig->setLayoutRootPaths($this->extbaseFrameworkConfiguration['view']['layoutRootPaths']);
-        $this->viewConfig->setPartialRootPaths($this->extbaseFrameworkConfiguration['view']['partialRootPaths']);
+        $this->propertyRepository = $propertyRepository;
     }
-
 
     /**
      * action list
-     * 
+     *
      * @return void
      */
     public function ajaxResultsAction() : void
     {
-        $this->viewConfig->setTemplate('Property/AjaxSearch.html');
         $args = $this->request->getArguments();
         $searchArguments = $args['search'];
 
