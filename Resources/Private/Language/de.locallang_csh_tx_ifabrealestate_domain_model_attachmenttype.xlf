@@ -5,7 +5,7 @@
 		<body>
 			<trans-unit id="name.description">
 				<source>Define the name of the current group</source>
-				<target>Gruppenname definieren</target>
+				<target>Gruppename definieren</target>
 			</trans-unit>
 		</body>
 	</file>

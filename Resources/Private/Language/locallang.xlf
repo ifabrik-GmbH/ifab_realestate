@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2019-09-19T13:37:37Z" product-name="ifab_realestate">
 		<header/>
 		<body>
 			<trans-unit id="tx_ifabrealestate_domain_model_property">
-				<source>Property</source>>
+				<source>Property</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.floor">
 				<source>Floor</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.total_floors">
-				<source>Total floors</source>>
+				<source>Total floors</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.apartment_number">
 				<source>Apartment number</source>
@@ -19,7 +19,7 @@
 				<source>Extra property nature</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.purchase">
-				<source>Purchase</source>>
+				<source>Purchase</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.purchase_price_net">
 				<source>Purchase price net</source>
@@ -28,7 +28,7 @@
 				<source>Purchase price gross</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.net_cold_rent">
-				<source>Net cold rent</source>>
+				<source>Net cold rent</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.cold_rent">
 				<source>Cold rent</source>
@@ -64,22 +64,22 @@
 				<source>Usable area</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.total_size">
-				<source>Total size</source>et>
+				<source>Total size</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.load_area">
-				<source>Load area</source>et>
+				<source>Load area</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.storage_area">
 				<source>Storage area</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.sales_area">
-				<source>Sales area</source>rget>
+				<source>Sales area</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.free_area">
-				<source>Free area</source>t>
+				<source>Free area</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.office_area">
-				<source>Office area</source>>
+				<source>Office area</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.office_part_area">
 				<source>Office part area</source>
@@ -88,7 +88,7 @@
 				<source>Number of rooms</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_bedrooms">
-				<source>Number of bedrooms</source>>
+				<source>Number of bedrooms</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.number_of_bathrooms">
 				<source>Number of bathrooms</source>
@@ -109,10 +109,10 @@
 				<source>Fireplace</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.clima">
-				<source>Clima</source>target>
+				<source>air condition</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.construction_year">
-				<source>Construction zear</source>
+				<source>Construction year</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.construction_age">
 				<source>Construction age</source>
@@ -145,7 +145,7 @@
 				<source>Creation year</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.building">
-				<source>Building</source>et>
+				<source>Building</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_title">
 				<source>Property title</source>
@@ -154,7 +154,7 @@
 				<source>Property location</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_equipment">
-				<source>Property equipment</source>arget>
+				<source>Property equipment</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_description">
 				<source>Property description</source>
@@ -172,7 +172,7 @@
 				<source>Property's address release</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.pets">
-				<source>Pets</source>rget>
+				<source>Pets</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.internal_property_number">
 				<source>Internal property number</source>
@@ -181,7 +181,7 @@
 				<source>External property number</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.open_immo_id">
-				<source>Openimmo id</source>t>
+				<source>Openimmo id</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_usage_rel">
 				<source>Select a property usage</source>
@@ -199,7 +199,7 @@
 				<source>Select an address</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.contact_rel">
-				<source>Select a contact</source>t>
+				<source>Select a contact</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.bathroom_rel">
 				<source>Select the available bathroom types</source>
@@ -274,7 +274,7 @@
 				<source>Zip</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_address.state">
-				<source>State</source>rget>
+				<source>State</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_address.country">
 				<source>Country</source>
@@ -295,7 +295,7 @@
 				<source>Employee Number</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.name">
-				<source>Name</source>et>
+				<source>Name</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.surname">
 				<source>Surname</source>
@@ -304,10 +304,10 @@
 				<source>Title</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.central_email">
-				<source>Central email</source>t>
+				<source>Central email</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.direct_email">
-				<source>Direct email</source>>
+				<source>Direct email</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.private_email">
 				<source>Private email</source>
@@ -328,7 +328,7 @@
 				<source>Mobile phone</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.hide_address">
-				<source>Hide address</source>arget>
+				<source>Hide address</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contact.po_box">
 				<source>Post office box</source>
@@ -349,7 +349,7 @@
 				<source>Gender</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress">
-				<source>Contact address</source>>
+				<source>Contact address</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_contactaddress.street">
 				<source>Street</source>
@@ -382,7 +382,7 @@
 				<source>Name</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_heattype">
-				<source>Heat type</source>t>
+				<source>Heat type</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_heattype.name">
 				<source>Name</source>
@@ -394,7 +394,7 @@
 				<source>Name</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_parking">
-				<source>Parking</source>arget>
+				<source>Parking</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_parking.name">
 				<source>Name</source>
@@ -409,16 +409,16 @@
 				<source>Attachments</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_attachments.file">
-				<source>File</source>>
+				<source>File</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroup">
 				<source>Attachment group</source>
 			</trans-unit>
-			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroup.name">
-				<source>Name</source>
-			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_attachments.attachment_group_value_rel">
 				<source>Create an attachment group</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroup.name">
+				<source>Name</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue">
 				<source>Attachment group value</source>
@@ -436,10 +436,10 @@
 				<source>Name</source>
 			</trans-unit>
 			<trans-unit id="listing.title">
-				<source>Properties list</source>
+				<source>Listing for Property</source>
 			</trans-unit>
 			<trans-unit id="more_details">
-				<source>More information</source>
+				<source>More</source>
 			</trans-unit>
 		</body>
 	</file>

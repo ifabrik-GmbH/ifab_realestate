@@ -20,9 +20,6 @@
             <trans-unit id="action_search_results">
                 <source>Search results view</source>
             </trans-unit>
-            <trans-unit id="action_ajax">
-                <source>Ajax results</source>
-            </trans-unit>
             <trans-unit id="pid_list">
                 <source>List view (Page-ID)</source>
             </trans-unit>
@@ -63,7 +60,7 @@
                 <source>Detail view of properties</source>
             </trans-unit>
             <trans-unit id="tx_ifab_realestate_domain_model.property">
-                <source>Ifabrik Real Estate</source>
+                <source>ifabrik Real Estate</source>
             </trans-unit>
 
         </body>
