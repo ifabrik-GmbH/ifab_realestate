@@ -17,8 +17,8 @@
 								</f:for>
 							</f:then>
 							<f:else>
-								<f:widget.paginate objects="{propertiess}" as="propertiesPginated" configuration="{itemsPerPage: settings.list.paginate.itemsPerPage, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
-									<f:for each="{propertiesPginated}" as="property">
+								<f:widget.paginate objects="{propertiess}" as="propertiesPaginated" configuration="{itemsPerPage: settings.list.paginate.itemsPerPage, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+									<f:for each="{propertiesPaginated}" as="property">
 										<div class="col-sm-12">
 											<f:render partial="Property/Item" arguments="{_all}"/>
 										</div>
