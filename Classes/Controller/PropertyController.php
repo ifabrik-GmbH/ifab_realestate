@@ -108,8 +108,7 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         else {
             $getSearchedProperties = $this->propertyRepository->searchResults($searchArguments);
         }
-
-
+        
         $this->view->assignMultiple([
             'propertiess' => $getSearchedProperties,
             'pageData'          => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],

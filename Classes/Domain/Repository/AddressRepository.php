@@ -32,7 +32,7 @@ class AddressRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
                 $query->logicalOr(
                     [
                         $query->like('street', '%' . $subject . '%'),
-                        $query->like('number', '%' . $subject . '%'),
+                        $query->like('address_number', '%' . $subject . '%'),
                         $query->like('area', '%' . $subject . '%'),
                         $query->like('zip', '%' . $subject . '%')
                     ]
