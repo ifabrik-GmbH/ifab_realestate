@@ -1,16 +1,20 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Domain\Model;
 
+
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 /***
  *
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * ContactAddress
  */
-class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class ContactAddress extends AbstractEntity
 {
 
     /**
@@ -67,9 +71,9 @@ class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      *
      * @return string $addressNumber
      */
-    public function getAddressNumber ()
+    public function getAddressNumber()
     {
-        return $this->addressNumber ;
+        return $this->addressNumber;
     }
 
     /**
@@ -78,9 +82,9 @@ class ContactAddress extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param string $addressNumber
      * @return void
      */
-    public function setAddressNumber ($addressNumber)
+    public function setAddressNumber($addressNumber)
     {
-        $this->addressNumber  = $addressNumber;
+        $this->addressNumber = $addressNumber;
     }
 
     /**

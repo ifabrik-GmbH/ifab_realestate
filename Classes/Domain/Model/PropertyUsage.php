@@ -1,16 +1,20 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Domain\Model;
 
+
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 /***
  *
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * PropertyUsage
  */
-class PropertyUsage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class PropertyUsage extends AbstractEntity
 {
 
     /**
@@ -20,14 +24,14 @@ class PropertyUsage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * Business
      * Parking
      * Storage
-     * 
+     *
      * @var string
      */
     protected $name = '';
 
     /**
      * Returns the name
-     * 
+     *
      * @return string $name
      */
     public function getName()
@@ -37,7 +41,7 @@ class PropertyUsage extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the name
-     * 
+     *
      * @param string $name
      * @return void
      */

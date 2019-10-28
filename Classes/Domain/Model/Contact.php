@@ -1,5 +1,10 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Domain\Model;
+
+
+use TYPO3\CMS\Extbase\Domain\Model\FileReference;
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 
 /***
@@ -7,10 +12,11 @@ namespace Ifabrik\IfabRealestate\Domain\Model;
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * Contact
  */
-class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Contact extends AbstractEntity
 {
 
     /**
@@ -410,6 +416,16 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
+     * Returns the boolean state of hideAddress
+     *
+     * @return bool
+     */
+    public function isHideAddress()
+    {
+        return $this->hideAddress;
+    }
+
+    /**
      * Sets the hideAddress
      *
      * @param bool $hideAddress
@@ -418,16 +434,6 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setHideAddress($hideAddress)
     {
         $this->hideAddress = $hideAddress;
-    }
-
-    /**
-     * Returns the boolean state of hideAddress
-     *
-     * @return bool
-     */
-    public function isHideAddress()
-    {
-        return $this->hideAddress;
     }
 
     /**
@@ -509,7 +515,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\ContactAddress $contactAddressRel
      * @return void
      */
-    public function setContactAddressRel(\Ifabrik\IfabRealestate\Domain\Model\ContactAddress $contactAddressRel)
+    public function setContactAddressRel(ContactAddress $contactAddressRel)
     {
         $this->contactAddressRel = $contactAddressRel;
     }
@@ -517,7 +523,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the image
      *
-     * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
+     * @return FileReference $image
      */
     public function getImage()
     {
@@ -530,7 +536,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
      * @return void
      */
-    public function setImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image)
+    public function setImage(FileReference $image)
     {
         $this->image = $image;
     }
@@ -551,7 +557,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\Gender $genderRel
      * @return void
      */
-    public function setGenderRel(\Ifabrik\IfabRealestate\Domain\Model\Gender $genderRel)
+    public function setGenderRel(Gender $genderRel)
     {
         $this->genderRel = $genderRel;
     }

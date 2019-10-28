@@ -115,7 +115,6 @@ return [
                 ]
             ],
         ],
-
         'street' => [
             'exclude' => true,
             'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_contactaddress.street',
@@ -152,6 +151,5 @@ return [
                 'eval' => 'trim'
             ],
         ],
-
     ],
 ];

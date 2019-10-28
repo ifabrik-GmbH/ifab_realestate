@@ -1,16 +1,22 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Domain\Model;
 
+
+use TYPO3\CMS\Extbase\Domain\Model\FileReference;
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /***
  *
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * Attachments
  */
-class Attachments extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Attachments extends AbstractEntity
 {
 
     /**
@@ -49,7 +55,7 @@ class Attachments extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      */
     protected function initStorageObjects()
     {
-        $this->attachmentGroupValueRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $this->attachmentGroupValueRel = new ObjectStorage();
     }
 
     /**
@@ -68,7 +74,7 @@ class Attachments extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $file
      * @return void
      */
-    public function setFile(\TYPO3\CMS\Extbase\Domain\Model\FileReference $file)
+    public function setFile(FileReference $file)
     {
         $this->file = $file;
     }
@@ -76,29 +82,31 @@ class Attachments extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Adds a attachmentGroupValueRel
      *
-     * @param \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue $attachmentTypeValueRel
+     * @param \TYPO3\CMS\Extbase\Domain\Model\Attachmentgroupvalue $attachmentTypeValueRel
      * @return void
      */
-    public function addAttachmentGroupValueRel(\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue $attachmentGroupValueRel)
-    {
+    public function addAttachmentGroupValueRel(
+        Attachmentgroupvalue $attachmentGroupValueRel
+    ) {
         $this->attachmentGroupValueRel->attach($attachmentGroupValueRel);
     }
 
     /**
      * Removes a attachmentGroupValueRel
      *
-     * @param \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue $attachmentTypeValueRelToRemove The AttachmentTypeValue to be removed
+     * @param \TYPO3\CMS\Extbase\Domain\Model\Attachmentgroupvalue $attachmentTypeValueRelToRemove The AttachmentTypeValue to be removed
      * @return void
      */
-    public function removeAttachmentGroupValueRel(\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue $attachmentGroupValueRelToRemove)
-    {
+    public function removeAttachmentGroupValueRel(
+        Attachmentgroupvalue $attachmentGroupValueRelToRemove
+    ) {
         $this->attachmentGroupValueRel->detach($attachmentGroupValueRelToRemove);
     }
 
     /**
      * Returns the attachmentTypeValueRel
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue> $attachmentGroupValueRel
+     * @return ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue> $attachmentGroupValueRel
      */
     public function getAttachmentGroupValueRel()
     {
@@ -108,10 +116,10 @@ class Attachments extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the attachmentGroupValueRel
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue> $attachmentGroupValueRel
+     * @param ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue> $attachmentGroupValueRel
      * @return void
      */
-    public function setAttachmentGroupValueRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $attachmentGroupValueRel)
+    public function setAttachmentGroupValueRel(ObjectStorage $attachmentGroupValueRel)
     {
         $this->attachmentGroupValueRel = $attachmentGroupValueRel;
     }

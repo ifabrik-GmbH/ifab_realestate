@@ -1,35 +1,40 @@
 <?php
-namespace Ifabrik\IfabRealestate\Domain\Model;
 
+namespace Ifabrik\IfabRealestate\Domain\Model;
+use \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup;
+
+
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 /***
  *
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * attachmentGroupRel
  */
-class Attachmentgroupvalue extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Attachmentgroupvalue extends AbstractEntity
 {
 
     /**
      * value
-     * 
+     *
      * @var string
      */
     protected $value = '';
 
     /**
      * attachmentGroupRel
-     * 
+     *
      * @var \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup
      */
     protected $attachmentGroupRel = null;
 
     /**
      * Returns the value
-     * 
+     *
      * @return string $value
      */
     public function getValue()
@@ -39,7 +44,7 @@ class Attachmentgroupvalue extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntit
 
     /**
      * Sets the value
-     * 
+     *
      * @param string $value
      * @return void
      */
@@ -50,7 +55,7 @@ class Attachmentgroupvalue extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntit
 
     /**
      * Returns the attachmentGroupRel
-     * 
+     *
      * @return \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup $attachmentGroupRel
      */
     public function getAttachmentGroupRel()
@@ -60,11 +65,11 @@ class Attachmentgroupvalue extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntit
 
     /**
      * Sets the $attachmentGroupRel
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup $attachmentGroupRel
      * @return void
      */
-    public function setAttachmentGroupRel(\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup $attachmentGroupRel)
+    public function setAttachmentGroupRel(Attachmentgroup $attachmentGroupRel)
     {
         $this->attachmentGroupRel = $attachmentGroupRel;
     }

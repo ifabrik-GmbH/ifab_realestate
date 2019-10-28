@@ -15,21 +15,21 @@ class PropertyTypeValue extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * The property type value.
-     * 
+     *
      * @var string
      */
     protected $value = '';
 
     /**
      * objektarttypeRelation
-     * 
+     *
      * @var \Ifabrik\IfabRealestate\Domain\Model\PropertyType
      */
     protected $objektarttypeRelation = null;
 
     /**
      * Returns the value
-     * 
+     *
      * @return string $value
      */
     public function getValue()
@@ -39,7 +39,7 @@ class PropertyTypeValue extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the value
-     * 
+     *
      * @param string $value
      * @return void
      */
@@ -50,7 +50,7 @@ class PropertyTypeValue extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Returns the objektarttypeRelation
-     * 
+     *
      * @return \Ifabrik\IfabRealestate\Domain\Model\PropertyType $objektarttypeRelation
      */
     public function getObjektarttypeRelation()
@@ -60,11 +60,11 @@ class PropertyTypeValue extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the objektarttypeRelation
-     * 
+     *
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyType $objektarttypeRelation
      * @return void
      */
-    public function setObjektarttypeRelation(\Ifabrik\IfabRealestate\Domain\Model\PropertyType $objektarttypeRelation)
+    public function setObjektarttypeRelation(PropertyType $objektarttypeRelation)
     {
         $this->objektarttypeRelation = $objektarttypeRelation;
     }

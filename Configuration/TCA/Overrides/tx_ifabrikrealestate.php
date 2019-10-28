@@ -1,13 +1,12 @@
 <?php
 
 // Hide the pages field and recursive dropdown
-$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['IfabRealestate_ifabrealestate']
-    = 'recursive,select_key,pages';
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['IfabRealestate_ifabrealestate'] = 'recursive,select_key,pages';
 
 // Hide tables
 $GLOBALS['TCA']['tx_ifabrealestate_domain_model_attachments']['ctrl']['hideTable'] = true;
-$GLOBALS['TCA']['tx_ifabrealestate_domain_model_attachmentgroupvalue']['ctrl']['hideTable']     = true;
-$GLOBALS['TCA']['tx_ifabrealestate_domain_model_propertytypevalue']['ctrl']['hideTable']     = true;
+$GLOBALS['TCA']['tx_ifabrealestate_domain_model_attachmentgroupvalue']['ctrl']['hideTable'] = true;
+$GLOBALS['TCA']['tx_ifabrealestate_domain_model_propertytypevalue']['ctrl']['hideTable'] = true;
 
 // Change icons
 $GLOBALS['TCA']["tx_ifabrealestate_domain_model_address"]['ctrl']['iconfile'] = "EXT:ifab_realestate/Resources/Public/Icons/address.svg";

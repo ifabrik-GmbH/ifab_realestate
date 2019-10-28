@@ -1,16 +1,15 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Controller;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Extbase\Mvc\View\JsonView;
-use TYPO3\CMS\Fluid\View\StandaloneView;
 
 /***
  *
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * PropertyController
  */
@@ -27,48 +26,44 @@ class AjaxController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
     protected $defaultViewObjectName = JsonView::class;
 
     /**
-     * @var
-     */
-    protected $settings;
-
-    /**
-     * propertyRepository
+     * assigned variable to call the property repository
      *
      * @var \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository
      */
     protected $propertyRepository = null;
 
     /**
-     * Inject the propertyRepository
+     * Injects the property repository
      *
      * @param \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository
      */
-    public function injectPropertyRepository(\Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository)
-    {
+    public function injectPropertyRepository(
+        \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository
+    ) {
         $this->propertyRepository = $propertyRepository;
     }
 
     /**
-     * action list
+     *
+     * action list gives back the amount of found properties
      *
      * @return void
+     * @throws \TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException
      */
-    public function ajaxResultsAction() : void
+    public function ajaxResultsAction(): void
     {
         $args = $this->request->getArguments();
         $searchArguments = $args['search'];
 
         $getSearchedProperties = $this->propertyRepository->searchResults($searchArguments);
-        if ($getSearchedProperties !== null)
-        {
+        if ($getSearchedProperties !== null) {
             $results = count($getSearchedProperties);
-        }
-        else {
+        } else {
             $results = 0;
         }
-        $anzahl = $results;
+        $count = $results;
 
-        $this->view->setVariablesToRender(['anzahl']);
-        $this->view->assign('anzahl', $anzahl);
+        $this->view->setVariablesToRender(['count']);
+        $this->view->assign('count', $count);
     }
 }

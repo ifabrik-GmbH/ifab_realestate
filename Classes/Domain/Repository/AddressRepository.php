@@ -1,33 +1,49 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Domain\Repository;
 
+use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
+use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
+use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /***
  *
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * The repository for Addresses
  */
-class AddressRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
+class AddressRepository extends Repository
 {
-    public function initializeObject() {
-        $querySettings =  $this->objectManager->get(Typo3QuerySettings::class);
-        $querySettings->setRespectStoragePage(FALSE);
+
+    /**
+     * initialize a query setting which allows to get all the properties without checking the PID.
+     */
+    public function initializeObject()
+    {
+        $querySettings = $this->objectManager->get(Typo3QuerySettings::class);
+        $querySettings->setRespectStoragePage(false);
     }
 
+    /**
+     * returns a list of properties defined by the address search parameter.
+     *
+     * @param array $searchParameter
+     * @return QueryResultInterface|array
+     * @throws InvalidQueryException
+     */
     public function findSelectedAddresses($searchParameter)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setRespectStoragePage(FALSE);
+        $query->getQuerySettings()->setRespectStoragePage(false);
         $constrains = array();
         $trimmedParameter = trim($searchParameter);
         $subjectParameter = explode(' ', $trimmedParameter);
         $subjectConstrains = array();
-        foreach ($subjectParameter as $subject)
-        {
+        foreach ($subjectParameter as $subject) {
             $subjectConstrains[] =
                 $query->logicalOr(
                     [
@@ -39,23 +55,18 @@ class AddressRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
                 );
         }
 
-        if (count($subjectConstrains) > 1)
-        {
+        if (count($subjectConstrains) > 1) {
             $constrains[] = $query->logicalOr($subjectConstrains);
-        }
-        else
-        {
+        } else {
             $constrains[] = $subjectConstrains[0];
         }
 
-        if (!empty($constrains))
-        {
+        if (!empty($constrains)) {
             $query->matching(
                 $query->logicalAnd($constrains)
             );
             return $query->execute();
-        }
-        else {
+        } else {
             return null;
         }
     }

@@ -3,66 +3,66 @@
 $tableName = 'tx_ifabrealestate_domain_model_property';
 
 // Lebel
-$GLOBALS['TCA'][$tableName]['ctrl']['label']           = 'property_title';
-$GLOBALS['TCA'][$tableName]['ctrl']['label_alt']       = 'internal_property_number, external_property_number, open_immo_id';
+$GLOBALS['TCA'][$tableName]['ctrl']['label'] = 'property_title';
+$GLOBALS['TCA'][$tableName]['ctrl']['label_alt'] = 'internal_property_number, external_property_number, open_immo_id';
 $GLOBALS['TCA'][$tableName]['ctrl']['label_alt_force'] = 1;
 
 // Palettes
 $GLOBALS['TCA'][$tableName]['palettes'] = [
     'property_palette_100' => [
-        'showitem'  =>
+        'showitem' =>
             'sys_language_uid, l10n_parent, l10n_diffsource,'
     ],
     'property_palette_0' => [
-        'showitem'  =>
+        'showitem' =>
             'internal_property_number, external_property_number, open_immo_id,'
     ],
     'property_palette_1' => [
-        'showitem'  =>
+        'showitem' =>
             'cold_rent, additional_costs, rent_with_heat,'
     ],
     'property_palette_2' => [
-        'showitem'  =>
+        'showitem' =>
             'guarantee_price, guarantee_price_text,'
     ],
     'property_palette_3' => [
-        'showitem'  =>
+        'showitem' =>
             'purchase, purchase_price_net, purchase_price_gross,'
     ],
     'property_palette_4' => [
-        'showitem'  =>
+        'showitem' =>
             'apartment_number, floor, total_floors,'
     ],
     'property_palette_5' => [
-        'showitem'  =>
+        'showitem' =>
             'living_space, number_of_rooms, number_of_bedrooms, number_of_bathrooms,'
     ],
     'property_palette_6' => [
-        'showitem'  =>
+        'showitem' =>
             'usable_area, total_size, load_area, storage_area,'
     ],
     'property_palette_7' => [
-        'showitem'  =>
+        'showitem' =>
             'sales_area, free_area, office_area, office_part_area,'
     ],
     'property_palette_8' => [
-        'showitem'  =>
+        'showitem' =>
             'wg_suitable, fireplace, clima,'
     ],
     'property_palette_9' => [
-        'showitem'  =>
+        'showitem' =>
             'number_of_balconies, number_of_terraces, number_of_logia,'
     ],
     'property_palette_10' => [
-        'showitem'  =>
+        'showitem' =>
             'epart, creation_date, expiration_date, creation_year,'
     ],
     'property_palette_11' => [
-        'showitem'  =>
+        'showitem' =>
             'energy_consum_value, heat_value, electricity_value,'
     ],
     'property_palette_12' => [
-        'showitem'  =>
+        'showitem' =>
             'primary_energy_source, value_class,'
     ],
 ];
@@ -106,12 +106,12 @@ $GLOBALS['TCA'][$tableName]['types'][1] = [
 // gender
 $GLOBALS['TCA'][$tableName]['columns']['address_rel'] = [
     'exclude' => 0,
-    'label'   => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_property.address_rel',
+    'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_property.address_rel',
     'config' => [
         'type' => 'select',
         'renderType' => 'selectSingle',
         'items' => [
-            [ 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:select_empty', '' ],
+            ['LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:select_empty', ''],
         ],
         'foreign_table' => 'tx_ifabrealestate_domain_model_address',
     ],
