@@ -2,13 +2,19 @@
 
 namespace Ifabrik\IfabRealestate\Helper;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Database\ConnectionPool;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 
 class DatabaseQueries
 {
-    public static function findCheapiestImmo()
+
+    /**
+     * finds the cheapest property in order to display the value on the search form
+     *
+     * @return mixed
+     */
+    public static function findCheapestProperty()
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tx_ifabrealestate_domain_model_property')->createQueryBuilder();
         $getMinPrice = $queryBuilder
@@ -20,7 +26,12 @@ class DatabaseQueries
         return $getMinPrice['minprice'];
     }
 
-    public static function findMostExpensiveImmo()
+    /**
+     * finds the most expensive property in order to display the value on the search form
+     *
+     * @return mixed
+     */
+    public static function findMostExpensiveProperty()
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tx_ifabrealestate_domain_model_property')->createQueryBuilder();
         $getMaxPrice = $queryBuilder
@@ -32,6 +43,11 @@ class DatabaseQueries
         return $getMaxPrice['maxprice'];
     }
 
+    /**
+     * gets all the marketing methods in order to display them in the search form
+     *
+     * @return mixed
+     */
     public static function findMarketingMethods()
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tx_ifabrealestate_domain_model_marketingmethod')->createQueryBuilder();
@@ -44,6 +60,11 @@ class DatabaseQueries
         return $getMarketingMethods;
     }
 
+    /**
+     * gets all the property natures in order to display them in the search form
+     *
+     * @return mixed
+     */
     public static function findPropertyNature()
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tx_ifabrealestate_domain_model_propertynature')->createQueryBuilder();
@@ -56,6 +77,11 @@ class DatabaseQueries
         return $getPropertyNature;
     }
 
+    /**
+     * finds the smallest property in order to display the value on the search form
+     *
+     * @return mixed
+     */
     public static function findMinSurface()
     {
         $queryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tx_ifabrealestate_domain_model_property')->createQueryBuilder();

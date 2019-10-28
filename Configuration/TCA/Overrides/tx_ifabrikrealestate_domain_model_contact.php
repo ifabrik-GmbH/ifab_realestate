@@ -1,33 +1,33 @@
 <?php
 
-$tableName= "tx_ifabrealestate_domain_model_contact";
+$tableName = "tx_ifabrealestate_domain_model_contact";
 
 // Lebel
-$GLOBALS['TCA'][$tableName]['ctrl']['label']           = '';
-$GLOBALS['TCA'][$tableName]['ctrl']['label_alt']       = 'title, surname, name, employee_number';
+$GLOBALS['TCA'][$tableName]['ctrl']['label'] = '';
+$GLOBALS['TCA'][$tableName]['ctrl']['label_alt'] = 'title, surname, name, employee_number';
 $GLOBALS['TCA'][$tableName]['ctrl']['label_alt_force'] = 1;
 $GLOBALS['TCA'][$tableName]['ctrl']['thumbnail'] = 'image';
 
 // Palettes
 $GLOBALS['TCA'][$tableName]['palettes'] = [
     'contact_palette_100' => [
-        'showitem'  =>
+        'showitem' =>
             'sys_language_uid, l10n_parent, l10n_diffsource,'
     ],
     'contact_palette_0' => [
-        'showitem'  =>
+        'showitem' =>
             'title, name, surname,'
     ],
     'contact_palette_1' => [
-        'showitem'  =>
+        'showitem' =>
             'central_email, direct_email, private_email,'
     ],
     'contact_palette_2' => [
-        'showitem'  =>
+        'showitem' =>
             'central_tel, direct_tel, private_tel, mobile_phone,'
     ],
     'contact_palette_3' => [
-        'showitem'  =>
+        'showitem' =>
             'po_box, po_zip, po_area,'
     ],
 ];
@@ -59,7 +59,7 @@ $GLOBALS['TCA'][$tableName]['columns']['contact_address_rel'] = [
         'type' => 'select',
         'renderType' => 'selectSingle',
         'items' => [
-            [ 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:select_empty', '' ],
+            ['LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:select_empty', ''],
         ],
         'foreign_table' => 'tx_ifabrealestate_domain_model_contactaddress',
         'minitems' => 0,

@@ -4,7 +4,7 @@ return [
         'title' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_property',
         'label' => 'property_title',
         'tstamp' => 'tstamp',
-        'sortBy' =>'sorting',
+        'sortBy' => 'sorting',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
         'versioningWS' => true,
@@ -116,7 +116,6 @@ return [
                 ]
             ],
         ],
-
         'floor' => [
             'exclude' => true,
             'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_property.floor',
@@ -687,7 +686,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'marketing_method_rel' => [
             'exclude' => true,
@@ -713,7 +711,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'property_nature_rel' => [
             'exclude' => true,
@@ -742,7 +739,6 @@ return [
                     'showAllLocalizationLink' => 1
                 ],
             ],
-
         ],
         'address_rel' => [
             'exclude' => true,
@@ -779,7 +775,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'bathroom_rel' => [
             'exclude' => true,
@@ -805,7 +800,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'kitchen_rel' => [
             'exclude' => true,
@@ -831,7 +825,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'floor_rel' => [
             'exclude' => true,
@@ -857,7 +850,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'heat_rel' => [
             'exclude' => true,
@@ -883,7 +875,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'elevator_rel' => [
             'exclude' => true,
@@ -909,7 +900,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'parking_rel' => [
             'exclude' => true,
@@ -935,7 +925,6 @@ return [
                     ],
                 ],
             ],
-            
         ],
         'firing_rel' => [
             'exclude' => true,
@@ -961,7 +950,7 @@ return [
                     ],
                 ],
             ],
-            
+
         ],
         'attachments_rel' => [
             'exclude' => true,
@@ -980,8 +969,6 @@ return [
                     'showAllLocalizationLink' => 1
                 ],
             ],
-
         ],
-    
     ],
 ];

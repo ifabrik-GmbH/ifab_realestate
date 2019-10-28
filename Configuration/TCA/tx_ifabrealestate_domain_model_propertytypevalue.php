@@ -115,7 +115,6 @@ return [
                 ]
             ],
         ],
-
         'value' => [
             'exclude' => true,
             'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_propertytypevalue.value',
@@ -136,7 +135,6 @@ return [
                 'maxitems' => 1,
             ],
         ],
-    
         'property' => [
             'config' => [
                 'type' => 'passthrough',

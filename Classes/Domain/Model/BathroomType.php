@@ -1,28 +1,32 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Domain\Model;
 
+
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 /***
  *
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * BathroomType
  */
-class BathroomType extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class BathroomType extends AbstractEntity
 {
 
     /**
      * name
-     * 
+     *
      * @var string
      */
     protected $name = '';
 
     /**
      * Returns the name
-     * 
+     *
      * @return string $name
      */
     public function getName()
@@ -32,7 +36,7 @@ class BathroomType extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the name
-     * 
+     *
      * @param string $name
      * @return void
      */

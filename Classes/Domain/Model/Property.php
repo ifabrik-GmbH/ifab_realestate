@@ -1,5 +1,8 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Domain\Model;
+
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 
 /***
@@ -650,7 +653,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyUsage $propertyUsageRel
      * @return void
      */
-    public function addPropertyUsageRel(\Ifabrik\IfabRealestate\Domain\Model\PropertyUsage $propertyUsageRel)
+    public function addPropertyUsageRel(PropertyUsage $propertyUsageRel)
     {
         $this->propertyUsageRel->attach($propertyUsageRel);
     }
@@ -661,7 +664,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyUsage $propertyUsageRelToRemove The PropertyUsage to be removed
      * @return void
      */
-    public function removePropertyUsageRel(\Ifabrik\IfabRealestate\Domain\Model\PropertyUsage $propertyUsageRelToRemove)
+    public function removePropertyUsageRel(PropertyUsage $propertyUsageRelToRemove)
     {
         $this->propertyUsageRel->detach($propertyUsageRelToRemove);
     }
@@ -682,7 +685,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyUsage> $propertyUsageRel
      * @return void
      */
-    public function setPropertyUsageRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $propertyUsageRel)
+    public function setPropertyUsageRel(ObjectStorage $propertyUsageRel)
     {
         $this->propertyUsageRel = $propertyUsageRel;
     }
@@ -693,7 +696,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\MarketingMethod $marketingMethodRel
      * @return void
      */
-    public function addMarketingMethodRel(\Ifabrik\IfabRealestate\Domain\Model\MarketingMethod $marketingMethodRel)
+    public function addMarketingMethodRel(MarketingMethod $marketingMethodRel)
     {
         $this->marketingMethodRel->attach($marketingMethodRel);
     }
@@ -704,7 +707,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\MarketingMethod $marketingMethodRelToRemove The MarketingMethod to be removed
      * @return void
      */
-    public function removeMarketingMethodRel(\Ifabrik\IfabRealestate\Domain\Model\MarketingMethod $marketingMethodRelToRemove)
+    public function removeMarketingMethodRel(MarketingMethod $marketingMethodRelToRemove)
     {
         $this->marketingMethodRel->detach($marketingMethodRelToRemove);
     }
@@ -725,7 +728,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\MarketingMethod> $marketingMethodRel
      * @return void
      */
-    public function setMarketingMethodRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $marketingMethodRel)
+    public function setMarketingMethodRel(ObjectStorage $marketingMethodRel)
     {
         $this->marketingMethodRel = $marketingMethodRel;
     }
@@ -746,7 +749,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyNature $propertyNatureRel
      * @return void
      */
-    public function setPropertyNatureRel(\Ifabrik\IfabRealestate\Domain\Model\PropertyNature $propertyNatureRel)
+    public function setPropertyNatureRel(PropertyNature $propertyNatureRel)
     {
         $this->propertyNatureRel = $propertyNatureRel;
     }
@@ -757,7 +760,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue $propertyTypeValueRel
      * @return void
      */
-    public function addPropertyTypeValueRel(\Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue $propertyTypeValueRel)
+    public function addPropertyTypeValueRel(PropertyTypeValue $propertyTypeValueRel)
     {
         $this->propertyTypeValueRel->attach($propertyTypeValueRel);
     }
@@ -768,7 +771,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue $propertyTypeValueRelToRemove The PropertyTypeValue to be removed
      * @return void
      */
-    public function removePropertyTypeValueRel(\Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue $propertyTypeValueRelToRemove)
+    public function removePropertyTypeValueRel(PropertyTypeValue $propertyTypeValueRelToRemove)
     {
         $this->propertyTypeValueRel->detach($propertyTypeValueRelToRemove);
     }
@@ -789,7 +792,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue> $propertyTypeValueRel
      * @return void
      */
-    public function setPropertyTypeValueRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $propertyTypeValueRel)
+    public function setPropertyTypeValueRel(ObjectStorage $propertyTypeValueRel)
     {
         $this->propertyTypeValueRel = $propertyTypeValueRel;
     }
@@ -810,7 +813,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\Address $addressRel
      * @return void
      */
-    public function setAddressRel(\Ifabrik\IfabRealestate\Domain\Model\Address $addressRel)
+    public function setAddressRel(Address $addressRel)
     {
         $this->addressRel = $addressRel;
     }
@@ -821,7 +824,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\Contact $contactRel
      * @return void
      */
-    public function addContactRel(\Ifabrik\IfabRealestate\Domain\Model\Contact $contactRel)
+    public function addContactRel(Contact $contactRel)
     {
         $this->contactRel->attach($contactRel);
     }
@@ -832,7 +835,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\Contact $contactRelToRemove The Contact to be removed
      * @return void
      */
-    public function removeContactRel(\Ifabrik\IfabRealestate\Domain\Model\Contact $contactRelToRemove)
+    public function removeContactRel(Contact $contactRelToRemove)
     {
         $this->contactRel->detach($contactRelToRemove);
     }
@@ -853,7 +856,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Contact> $contactRel
      * @return void
      */
-    public function setContactRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $contactRel)
+    public function setContactRel(ObjectStorage $contactRel)
     {
         $this->contactRel = $contactRel;
     }
@@ -1483,7 +1486,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\BathroomType $bathroomRel
      * @return void
      */
-    public function addBathroomRel(\Ifabrik\IfabRealestate\Domain\Model\BathroomType $bathroomRel)
+    public function addBathroomRel(BathroomType $bathroomRel)
     {
         $this->bathroomRel->attach($bathroomRel);
     }
@@ -1494,7 +1497,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\BathroomType $bathroomRelToRemove The BathroomType to be removed
      * @return void
      */
-    public function removeBathroomRel(\Ifabrik\IfabRealestate\Domain\Model\BathroomType $bathroomRelToRemove)
+    public function removeBathroomRel(BathroomType $bathroomRelToRemove)
     {
         $this->bathroomRel->detach($bathroomRelToRemove);
     }
@@ -1515,7 +1518,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\BathroomType> $bathroomRel
      * @return void
      */
-    public function setBathroomRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $bathroomRel)
+    public function setBathroomRel(ObjectStorage $bathroomRel)
     {
         $this->bathroomRel = $bathroomRel;
     }
@@ -1526,7 +1529,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\KitchenType $kitchenRel
      * @return void
      */
-    public function addKitchenRel(\Ifabrik\IfabRealestate\Domain\Model\KitchenType $kitchenRel)
+    public function addKitchenRel(KitchenType $kitchenRel)
     {
         $this->kitchenRel->attach($kitchenRel);
     }
@@ -1537,7 +1540,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\KitchenType $kitchenRelToRemove The KitchenType to be removed
      * @return void
      */
-    public function removeKitchenRel(\Ifabrik\IfabRealestate\Domain\Model\KitchenType $kitchenRelToRemove)
+    public function removeKitchenRel(KitchenType $kitchenRelToRemove)
     {
         $this->kitchenRel->detach($kitchenRelToRemove);
     }
@@ -1558,7 +1561,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\KitchenType> $kitchenRel
      * @return void
      */
-    public function setKitchenRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $kitchenRel)
+    public function setKitchenRel(ObjectStorage $kitchenRel)
     {
         $this->kitchenRel = $kitchenRel;
     }
@@ -1631,7 +1634,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\FloorType $floorRel
      * @return void
      */
-    public function addFloorRel(\Ifabrik\IfabRealestate\Domain\Model\FloorType $floorRel)
+    public function addFloorRel(FloorType $floorRel)
     {
         $this->floorRel->attach($floorRel);
     }
@@ -1642,7 +1645,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\FloorType $floorRelToRemove The FloorType to be removed
      * @return void
      */
-    public function removeFloorRel(\Ifabrik\IfabRealestate\Domain\Model\FloorType $floorRelToRemove)
+    public function removeFloorRel(FloorType $floorRelToRemove)
     {
         $this->floorRel->detach($floorRelToRemove);
     }
@@ -1663,7 +1666,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\FloorType> $floorRel
      * @return void
      */
-    public function setFloorRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $floorRel)
+    public function setFloorRel(ObjectStorage $floorRel)
     {
         $this->floorRel = $floorRel;
     }
@@ -1674,7 +1677,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\HeatType $heatRel
      * @return void
      */
-    public function addHeatRel(\Ifabrik\IfabRealestate\Domain\Model\HeatType $heatRel)
+    public function addHeatRel(HeatType $heatRel)
     {
         $this->heatRel->attach($heatRel);
     }
@@ -1685,7 +1688,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\HeatType $heatRelToRemove The HeatType to be removed
      * @return void
      */
-    public function removeHeatRel(\Ifabrik\IfabRealestate\Domain\Model\HeatType $heatRelToRemove)
+    public function removeHeatRel(HeatType $heatRelToRemove)
     {
         $this->heatRel->detach($heatRelToRemove);
     }
@@ -1706,7 +1709,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\HeatType> $heatRel
      * @return void
      */
-    public function setHeatRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $heatRel)
+    public function setHeatRel(ObjectStorage $heatRel)
     {
         $this->heatRel = $heatRel;
     }
@@ -1717,7 +1720,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\ElevatorType $elevatorRel
      * @return void
      */
-    public function addElevatorRel(\Ifabrik\IfabRealestate\Domain\Model\ElevatorType $elevatorRel)
+    public function addElevatorRel(ElevatorType $elevatorRel)
     {
         $this->elevatorRel->attach($elevatorRel);
     }
@@ -1728,7 +1731,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\ElevatorType $elevatorRelToRemove The ElevatorType to be removed
      * @return void
      */
-    public function removeElevatorRel(\Ifabrik\IfabRealestate\Domain\Model\ElevatorType $elevatorRelToRemove)
+    public function removeElevatorRel(ElevatorType $elevatorRelToRemove)
     {
         $this->elevatorRel->detach($elevatorRelToRemove);
     }
@@ -1749,7 +1752,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\ElevatorType> $elevatorRel
      * @return void
      */
-    public function setElevatorRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $elevatorRel)
+    public function setElevatorRel(ObjectStorage $elevatorRel)
     {
         $this->elevatorRel = $elevatorRel;
     }
@@ -1760,7 +1763,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\Parking $parkingRel
      * @return void
      */
-    public function addParkingRel(\Ifabrik\IfabRealestate\Domain\Model\Parking $parkingRel)
+    public function addParkingRel(Parking $parkingRel)
     {
         $this->parkingRel->attach($parkingRel);
     }
@@ -1771,7 +1774,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\Parking $parkingRelToRemove The Parking to be removed
      * @return void
      */
-    public function removeParkingRel(\Ifabrik\IfabRealestate\Domain\Model\Parking $parkingRelToRemove)
+    public function removeParkingRel(Parking $parkingRelToRemove)
     {
         $this->parkingRel->detach($parkingRelToRemove);
     }
@@ -1792,7 +1795,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Parking> $parkingRel
      * @return void
      */
-    public function setParkingRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $parkingRel)
+    public function setParkingRel(ObjectStorage $parkingRel)
     {
         $this->parkingRel = $parkingRel;
     }
@@ -1971,7 +1974,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\FiringType $firingRel
      * @return void
      */
-    public function addFiringRel(\Ifabrik\IfabRealestate\Domain\Model\FiringType $firingRel)
+    public function addFiringRel(FiringType $firingRel)
     {
         $this->firingRel->attach($firingRel);
     }
@@ -1982,7 +1985,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\FiringType $firingRelToRemove The FiringType to be removed
      * @return void
      */
-    public function removeFiringRel(\Ifabrik\IfabRealestate\Domain\Model\FiringType $firingRelToRemove)
+    public function removeFiringRel(FiringType $firingRelToRemove)
     {
         $this->firingRel->detach($firingRelToRemove);
     }
@@ -2003,7 +2006,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\FiringType> $firingRel
      * @return void
      */
-    public function setFiringRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $firingRel)
+    public function setFiringRel(ObjectStorage $firingRel)
     {
         $this->firingRel = $firingRel;
     }
@@ -2371,7 +2374,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\Attachments $attachmentsRel
      * @return void
      */
-    public function addAttachmentsRel(\Ifabrik\IfabRealestate\Domain\Model\Attachments $attachmentsRel)
+    public function addAttachmentsRel(Attachments $attachmentsRel)
     {
         $this->attachmentsRel->attach($attachmentsRel);
     }
@@ -2382,7 +2385,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \Ifabrik\IfabRealestate\Domain\Model\Attachments $attachmentsRelToRemove The Attachments to be removed
      * @return void
      */
-    public function removeAttachmentsRel(\Ifabrik\IfabRealestate\Domain\Model\Attachments $attachmentsRelToRemove)
+    public function removeAttachmentsRel(Attachments $attachmentsRelToRemove)
     {
         $this->attachmentsRel->detach($attachmentsRelToRemove);
     }
@@ -2403,7 +2406,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachments> $attachmentsRel
      * @return void
      */
-    public function setAttachmentsRel(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $attachmentsRel)
+    public function setAttachmentsRel(ObjectStorage $attachmentsRel)
     {
         $this->attachmentsRel = $attachmentsRel;
     }

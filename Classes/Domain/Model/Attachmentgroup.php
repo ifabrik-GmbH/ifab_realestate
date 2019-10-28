@@ -1,4 +1,5 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Domain\Model;
 
 
@@ -7,6 +8,7 @@ namespace Ifabrik\IfabRealestate\Domain\Model;
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * AttachmentGroup
  */
@@ -15,14 +17,14 @@ class Attachmentgroup extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * name
-     * 
+     *
      * @var string
      */
     protected $name = '';
 
     /**
      * Returns the name
-     * 
+     *
      * @return string $name
      */
     public function getName()
@@ -32,7 +34,7 @@ class Attachmentgroup extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 
     /**
      * Sets the name
-     * 
+     *
      * @param string $name
      * @return void
      */

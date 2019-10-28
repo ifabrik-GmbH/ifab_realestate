@@ -1,14 +1,19 @@
 <?php
+
 namespace Ifabrik\IfabRealestate\Controller;
 
 
 use Ifabrik\IfabRealestate\Helper\DatabaseQueries;
+use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
+use Ifabrik\IfabRealestate\Domain\Model\Property;
+use Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository;
 
 /***
  *
  *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
  *
  ***/
+
 /**
  * PropertyController
  */
@@ -16,26 +21,27 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 {
 
     /**
-     * propertyRepository
+     * assigned variable to call the property repository
      *
      * @var \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository
      */
     protected $propertyRepository = null;
 
     /**
-     * Inject the propertyRepository
+     * Injects the property repository
      *
      * @param \Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository
      */
-    public function injectPropertyRepository(\Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository $propertyRepository)
-    {
+    public function injectPropertyRepository(PropertyRepository $propertyRepository
+    ) {
         $this->propertyRepository = $propertyRepository;
     }
 
     /**
-     * action list
+     * returns all the available properties. Including the pagination settings.
      *
      * @return void
+     * @throws InvalidQueryException
      */
     public function listAction()
     {
@@ -43,10 +49,9 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         $maxItems = intval($settings['list']['maxItems']);
         $hiddenPagination = intval($settings['list']['hidePagination']);
 
-        if ($hiddenPagination === 1  && $maxItems) {
+        if ($hiddenPagination === 1 && $maxItems) {
             $properties = $this->propertyRepository->findAllAvailableProperties($maxItems);
-        }
-        else {
+        } else {
             $properties = $this->propertyRepository->findAllAvailableProperties();
         }
 
@@ -54,45 +59,47 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     }
 
     /**
-     * action show
+     * returns all the information about the selected property
      *
      * @param \Ifabrik\IfabRealestate\Domain\Model\Property $property
      * @return void
      */
-    public function showAction(\Ifabrik\IfabRealestate\Domain\Model\Property $property)
+    public function showAction(Property $property)
     {
         $this->view->assign('property', $property);
     }
 
     /**
-     * action search
+     * searches for the data in the database and gives back a list for some of the search fields.
      *
      * @return void
      */
     public function searchAction()
     {
-        $cheapiestProperty = DatabaseQueries::findCheapiestImmo();
-        $mostExpensiveProperty = DatabaseQueries::findMostExpensiveImmo();
+        $cheapestProperty = DatabaseQueries::findCheapestProperty();
+        $mostExpensiveProperty = DatabaseQueries::findMostExpensiveProperty();
         $marketingMethods = DatabaseQueries::findMarketingMethods();
         $propertyNature = DatabaseQueries::findPropertyNature();
         $minSurface = DatabaseQueries::findMinSurface();
         $prices = array(
-            'getMinRent' => $cheapiestProperty,
-            'getMaxRent' => $mostExpensiveProperty);
+            'getMinRent' => $cheapestProperty,
+            'getMaxRent' => $mostExpensiveProperty
+        );
 
         $this->view->assignMultiple([
             'minSurface' => $minSurface,
             'propertyNature' => $propertyNature,
             'marketingMethods' => $marketingMethods,
             'prices' => $prices,
-            'pageData'          => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
+            'pageData' => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
         ]);
     }
 
     /**
-     * action searchResults
+     * returns a list of the searched properties. Including the pagination settings.
      *
      * @return void
+     * @throws InvalidQueryException
      */
     public function searchResultsAction()
     {
@@ -102,16 +109,15 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         $maxItems = intval($settings['list']['maxItems']);
         $hiddenPagination = intval($settings['list']['hidePagination']);
 
-        if ($hiddenPagination === 1  && $maxItems) {
+        if ($hiddenPagination === 1 && $maxItems) {
             $getSearchedProperties = $this->propertyRepository->searchResults($searchArguments, $maxItems);
-        }
-        else {
+        } else {
             $getSearchedProperties = $this->propertyRepository->searchResults($searchArguments);
         }
-        
+
         $this->view->assignMultiple([
             'propertiess' => $getSearchedProperties,
-            'pageData'          => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
+            'pageData' => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
         ]);
     }
 }

@@ -137,7 +137,6 @@ return [
                 'maxitems' => 1,
             ],
         ],
-    
         'attachments' => [
             'config' => [
                 'type' => 'passthrough',
