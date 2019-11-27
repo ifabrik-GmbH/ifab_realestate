@@ -1,3 +1,11 @@
+/**
+* License: This file is part of the package ifabrik/ifab_realestate.
+* For the full copyright and license information, please read the
+* license file that was distributed with this source code.
+*
+* @copyright 2019 i-fabrik GmbH
+* @author    Aristeidis Karavas
+*/
 
 plugin.tx_ifabrealestate_ifabrealestate {
     view {

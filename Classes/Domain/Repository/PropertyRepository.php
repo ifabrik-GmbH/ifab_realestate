@@ -1,7 +1,14 @@
 <?php
+/**
+ * License: This file is part of the package ifabrik/ifab_realestate.
+ * For the full copyright and license information, please read the
+ * license file that was distributed with this source code.
+ *
+ * @copyright 2019 i-fabrik GmbH
+ * @author    Aristeidis Karavas
+ */
 
 namespace Ifabrik\IfabRealestate\Domain\Repository;
-
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
@@ -9,12 +16,6 @@ use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use TYPO3\CMS\Extbase\Persistence\Generic\Typo3QuerySettings;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
-
-/***
- *
- *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
- *
- ***/
 
 /**
  * The repository for Properties

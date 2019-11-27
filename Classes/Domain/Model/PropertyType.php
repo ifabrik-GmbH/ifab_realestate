@@ -1,15 +1,16 @@
 <?php
+/**
+ * License: This file is part of the package ifabrik/ifab_realestate.
+ * For the full copyright and license information, please read the
+ * license file that was distributed with this source code.
+ *
+ * @copyright 2019 i-fabrik GmbH
+ * @author    Aristeidis Karavas
+ */
 
 namespace Ifabrik\IfabRealestate\Domain\Model;
 
-
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
-
-/***
- *
- *  (c) 2019 ifabrik GmbH <info@ifababrik.de>, ifabrik GmbH
- *
- ***/
 
 /**
  * PropertyType

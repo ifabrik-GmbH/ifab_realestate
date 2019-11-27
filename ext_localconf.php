@@ -1,4 +1,13 @@
 <?php
+/**
+ * License: This file is part of the package ifabrik/ifab_realestate.
+ * For the full copyright and license information, please read the
+ * license file that was distributed with this source code.
+ *
+ * @copyright 2019 i-fabrik GmbH
+ * @author    Aristeidis Karavas
+ */
+
 defined('TYPO3_MODE') || die('Access denied.');
 
 call_user_func(
