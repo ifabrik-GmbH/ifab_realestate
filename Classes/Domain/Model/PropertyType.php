@@ -4,7 +4,7 @@
  * For the full copyright and license information, please read the
  * license file that was distributed with this source code.
  *
- * @copyright 2019 i-fabrik GmbH
+ * @copyright concept & creation by ifabrik.de, Leipzig
  * @author    Aristeidis Karavas
  */
 
