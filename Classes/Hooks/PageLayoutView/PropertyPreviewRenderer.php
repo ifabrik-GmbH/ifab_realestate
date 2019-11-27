@@ -1,9 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: aristeidis
- * Date: 08.10.2019
- * Time: 13:52
+ * License: This file is part of the package ifabrik/ifab_realestate.
+ * For the full copyright and license information, please read the
+ * license file that was distributed with this source code.
+ *
+ * @copyright concept & creation by ifabrik.de, Leipzig
+ * @author    Aristeidis Karavas
  */
 
 namespace Ifabrik\IfabRealestate\Hooks\PageLayoutView;
