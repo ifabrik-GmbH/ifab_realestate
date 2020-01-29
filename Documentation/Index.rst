@@ -15,7 +15,7 @@ News system
 .. only:: html
 
 	:Classification:
-		ifab_class_ad
+		 ifab_realestate
 
 	:Version:
 		|release|
@@ -32,18 +32,25 @@ News system
 	:Author:
 		i-fabrik GmbH
 
+    :Email:
+        info@ifabrik.de
+
 	:License:
-		This document is published under the Open Content License
-		available from http://www.opencontent.org/opl.shtml
+       This extension documentation is published under the
+       `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
+       license
 
 	:Rendered:
 		|today|
 
-	The content of this document is related to TYPO3,
-	a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
+**TYPO3**
+
+   The content of this document is related to TYPO3 CMS,
+   a GNU/GPL CMS/Framework available from `typo3.org
+   <https://typo3.org/>`_ .
 
 
-**Sitemap:**
+**Table of Contents:**
 
    :ref:`sitemap`
 
