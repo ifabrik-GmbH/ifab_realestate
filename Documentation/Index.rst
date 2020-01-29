@@ -60,11 +60,7 @@ News system
 	:glob:
 
     Introduction/Index
+    Administrator/Index
     Editor/Index
     Installation/Index
-    Configuration/Index
-    Developer/Index
     KnownProblems/Index
-    ToDoList/Index
-    ChangeLog/Index
-    Sitemap
