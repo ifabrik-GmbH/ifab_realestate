@@ -12,3 +12,4 @@ This section covers the installation and the minimum TypoScript requirements in 
 
     Installation/Index
     Templates/Index
+    TypoScript/Index
