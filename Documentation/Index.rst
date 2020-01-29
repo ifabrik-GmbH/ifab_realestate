@@ -1,79 +1,63 @@
-.. every .rst file should include Includes.txt
-.. use correct path!
+.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
 
 .. include:: Includes.txt
 
 
-.. Every manual should have a start label for cross-referencing to
-.. start page. Do not remove this!
-
 .. _start:
 
 =============================================================
-Extension Name
+News system
 =============================================================
 
-:Version:
-   |release|
+.. only:: html
 
-:Language:
-   en
+	:Classification:
+		ifab_class_ad
 
-:Authors:
-   Your name
+	:Version:
+		|release|
 
-:Email:
-   you@domain.tld
+	:Language:
+		en
 
-:License:
-   This extension documentation is published under the
-   `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
-   license
+	:Keywords:
+		news
 
-{extension.description}
+	:Copyright:
+		2020
 
-**TYPO3**
+	:Author:
+		i-fabrik GmbH
 
-   The content of this document is related to TYPO3 CMS,
-   a GNU/GPL CMS/Framework available from `typo3.org
-   <https://typo3.org/>`_ .
+	:License:
+		This document is published under the Open Content License
+		available from http://www.opencontent.org/opl.shtml
 
-**Community Documentation:**
+	:Rendered:
+		|today|
 
-   This documentation is community documentation for the TYPO3 extension {extension.name}
-
-   It is maintained as part of this third party extension.
-
-   If you find an error or something is missing, please:
-   `Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/issues/new>`__
-
-**Extension Manual**
-
-   This documentation is for the TYPO3 extension <extkey>.
-
-
-
-**For Contributors**
-
-   You are welcome to help improve this guide. Just click on "Edit me on GitHub"
-   on the top right to submit your change request.
+	The content of this document is related to TYPO3,
+	a GNU/GPL CMS/Framework available from `www.typo3.org <http://www.typo3.org/>`_.
 
 
 **Sitemap:**
 
    :ref:`sitemap`
 
-
 .. toctree::
-   :maxdepth: 3
-   :hidden:
+	:maxdepth: 3
+	:titlesonly:
+	:glob:
 
-
-   Introduction/Index
-   Editor/Index
-   Installation/Index
-   Configuration/Index
-   Developer/Index
-   KnownProblems/Index
-   Sitemap
-
+    Introduction/Index
+    Editor/Index
+    Installation/Index
+    Configuration/Index
+    Developer/Index
+    KnownProblems/Index
+    ToDoList/Index
+    ChangeLog/Index
+    Sitemap
