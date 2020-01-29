@@ -2,7 +2,7 @@
 For administrators
 ==================
 
-This chapter describes how to manage the extension from a superuser point of view.
+This section covers the installation and the minimum TypoScript requirements in order to get the extension up and running.
 
 .. toctree::
     :maxdepth: 5

@@ -39,7 +39,7 @@ Non Composer
 Preparation
 ===========
 
-The extension ships some TypoScript which needs to be included.
+The extension is delivered with TypoScript, which needs to be included.
 
 - Switch on the Template module
 - Go to your root page
