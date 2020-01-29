@@ -9,28 +9,28 @@ Screenshots
 
 **Ajax search**
 
-.. figure:: ../../Images/slider_content.png
+.. figure:: ../../Images/ajaxSearch.png
     :class: with-shadow
     :width: 80%
-    :alt: Slider Content
+    :alt: Ajax search
 
 **List view**
 
-.. figure:: ../../Images/main_settings.png
+.. figure:: ../../Images/list.png
     :class: with-shadow
     :width: 80%
-    :alt: Main Settings
+    :alt: List view
 
 **Detail view**
 
-.. figure:: ../../Images/advanced_settings.png
+.. figure:: ../../Images/show.png
     :class: with-shadow
     :width: 80%
-    :alt: Advanced Settings
+    :alt: Show view
 
 **BackEnd**
 
-.. figure:: ../../Images/advanced_settings.png
+.. figure:: ../../Images/backend.png
     :class: with-shadow
     :width: 80%
-    :alt: Advanced Settings
+    :alt: Backend

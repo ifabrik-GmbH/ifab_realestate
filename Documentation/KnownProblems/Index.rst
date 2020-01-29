@@ -6,6 +6,7 @@
 ==============
 Known Problems
 ==============
+If you find a bug or something doesn't work properly, please contact us via
 
-Use this section for informing about any type of of problem
-that are not necessarily named in the bug tracker such as performance issues, ...
+- **E-mail** : info@ifabrik.de
+- **Github** : Create an issue
