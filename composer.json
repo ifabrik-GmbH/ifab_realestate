@@ -23,7 +23,7 @@
         }
     },
     "replace": {
-        "ifab_realestate": "self.version",
+        "ifab-realestate": "self.version",
         "typo3-ter/ifab-realestate": "self.version"
     }
 }
