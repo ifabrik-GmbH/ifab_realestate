@@ -45,6 +45,6 @@ The extension is delivered with TypoScript, which needs to be included.
 - Go to your root page
 - Switch to the Edit the whole template record
 - Switch to the Includes tab
-- Choose the **Ifabrik Real Estate** static template
+- Choose the **ifabrik Real Estate** static template
 - Save and close
 

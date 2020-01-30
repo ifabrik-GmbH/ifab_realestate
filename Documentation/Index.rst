@@ -24,7 +24,7 @@ News system
 		en
 
 	:Keywords:
-		news
+		ifab_realestate
 
 	:Copyright:
 		2020
