@@ -1,14 +1,14 @@
 {
     "name": "ifabrik/ifab-realestate",
     "type": "typo3-cms-extension",
-    "description": "",
+    "description": "This extension offers the possibility to create publications of real estate such as apartments, houses, garages etc. It provides numerous object properties for definition, all of which can be displayed in the FrontEnd. Using an Ajax search, the real estate objects can be displayed and sorted. An integration of the objects via an automatic OpenImmo import is also possible since the extension is based on the OpenImmo structure.",
     "authors": [
         {
             "name": "ifabrik GmbH",
             "role": "Developer"
         }
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "require": {
         "typo3/cms-core": "^9.5"
     },
