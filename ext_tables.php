@@ -17,14 +17,14 @@ call_user_func(
         \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
             'Ifabrik.IfabRealestate',
             'Ifabrealestate',
-            'Ifabrik Real-estate'
+            'ifabrik Real Estate'
         );
 
         $pluginSignature = str_replace('_', '', 'ifab_realestate') . '_ifabrealestate';
         $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($pluginSignature, 'FILE:EXT:ifab_realestate/Configuration/FlexForms/flexform_ifabrealestate.xml');
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ifab_realestate', 'Configuration/TypoScript', 'Ifabrik Real Estate');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('ifab_realestate', 'Configuration/TypoScript', 'ifabrik Real Estate');
 
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_ifabrealestate_domain_model_property', 'EXT:ifab_realestate/Resources/Private/Language/locallang_csh_tx_ifabrealestate_domain_model_property.xlf');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_ifabrealestate_domain_model_property');
