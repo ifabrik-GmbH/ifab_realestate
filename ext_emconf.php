@@ -10,7 +10,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'ifabrik Real Estate',
-    'description' => '',
+    'description' => 'This extension offers the possibility to create publications of real estate such as apartments, houses, garages etc. It provides numerous object properties for definition, all of which can be displayed in the FrontEnd. Using an Ajax search, the real estate objects can be displayed and sorted. An integration of the objects via an automatic OpenImmo import is also possible since the extension is based on the OpenImmo structure.',
     'category' => 'plugin',
     'author' => 'ifabrik GmbH',
     'author_email' => 'info@ifabrik.de',
@@ -18,7 +18,7 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => 1,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'constraints' => [
         'depends' => [
             'typo3' => '9.5.0-9.5.99',
