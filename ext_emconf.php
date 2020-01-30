@@ -9,11 +9,11 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Ifabrik Real Estate',
+    'title' => 'ifabrik Real Estate',
     'description' => '',
     'category' => 'plugin',
     'author' => 'ifabrik GmbH',
-    'author_email' => 'info@ifababrik.de',
+    'author_email' => 'info@ifabrik.de',
     'state' => 'beta',
     'uploadfolder' => 1,
     'createDirs' => '',

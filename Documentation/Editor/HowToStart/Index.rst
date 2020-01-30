@@ -28,27 +28,27 @@ A plugin is used to render a defined selection of records in the FrontEnd. Follo
 Detail page
 ^^^^^^^^^^^
 - Create a new page “Detail” which will be used to show the full property record. Insert the plugin **ifabrik Real Estate**. The 2nd tab “Plugin” is used to configure the extension.
-- Make sure that on the first dropwdown field the **ifabrik Real-estate** is selected.
+- Make sure that on the first dropwdown field the **ifabrik Real Estate** is selected.
 - Under the Plugin options and the 'View Mode' select the **Detail view**
 
 List page
 ^^^^^^^^^
 - Create a new page “List” which will be used to show a list of the created properties. Insert the plugin **ifabrik Real Estate**. The 2nd tab “Plugin” is used to configure the extension.
-- Make sure that on the first dropwdown field the **ifabrik Real-estate** is selected.
+- Make sure that on the first dropwdown field the **ifabrik Real Estate** is selected.
 - Under the Plugin options and the 'View Mode' select the **List view**
 - On the **Detail view** field, select the detail view page.
 
 Search results page
 ^^^^^^^^^^^^^^^^^^^
 - Create a new page “Search results” which will be used to show a list of properties with specific search parameters. Insert the plugin **ifabrik Real Estate**. The 2nd tab “Plugin” is used to configure the extension.
-- Make sure that on the first dropwdown field the **ifabrik Real-estate** is selected.
+- Make sure that on the first dropwdown field the **ifabrik Real Estate** is selected.
 - Under the Plugin options and the 'View Mode' select the **Search results view**
 - On the **Detail view** field, select the detail view page.
 
 Search page
 ^^^^^^^^^^^
 - Create a new page “Search” which will be used to show a form. Insert the plugin **ifabrik Real Estate**. The 2nd tab “Plugin” is used to configure the extension.
-- Make sure that on the first dropwdown field the **ifabrik Real-estate** is selected.
+- Make sure that on the first dropwdown field the **ifabrik Real Estate** is selected.
 - Under the Plugin options and the 'View Mode' select the **Search view**
 - On the **Search results** field, select the search results' view page.
 
