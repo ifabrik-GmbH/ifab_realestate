@@ -201,7 +201,7 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_location">
 				<source>Property location</source>
-				<target>Adresse</target>
+				<target>Lage</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_equipment">
 				<source>Property equipment</source>
