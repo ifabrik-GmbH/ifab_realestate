@@ -26,6 +26,12 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $floor = '';
 
     /**
+     * @var string
+     */
+    protected $pathSegment;
+
+
+    /**
      * Indicates the number of floors of the whole building
      *
      * @var string
@@ -2412,4 +2418,25 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     {
         $this->attachmentsRel = $attachmentsRel;
     }
+
+    /**
+     * Get path segment
+     *
+     * @return string
+     */
+    public function getPathSegment()
+    {
+        return $this->pathSegment;
+    }
+
+    /**
+     * Set path segment
+     *
+     * @param string $pathSegment
+     */
+    public function setPathSegment($pathSegment)
+    {
+        $this->pathSegment = $pathSegment;
+    }
+
 }

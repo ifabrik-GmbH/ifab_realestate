@@ -8,22 +8,29 @@
 				<h2><f:translate key="listing.title"/></h2>
 				<div class="container">
 					<div class="row">
-						<f:if condition="{settings.list.hidePagination} == 1">
+						<f:if condition="{propertiess}">
 							<f:then>
-								<f:for each="{propertiess}" as="property">
-									<div class="col-sm-12">
-										<f:render partial="Property/Item" arguments="{_all}"/>
-									</div>
-								</f:for>
+								<f:if condition="{settings.list.hidePagination} == 1">
+									<f:then>
+										<f:for each="{propertiess}" as="property">
+											<div class="col-sm-12">
+												<f:render partial="Property/Item" arguments="{_all}"/>
+											</div>
+										</f:for>
+									</f:then>
+									<f:else>
+										<f:widget.paginate objects="{propertiess}" as="propertiesPaginated" configuration="{itemsPerPage: settings.list.paginate.itemsPerPage, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10}">
+											<f:for each="{propertiesPaginated}" as="property">
+												<div class="col-sm-12">
+													<f:render partial="Property/Item" arguments="{_all}"/>
+												</div>
+											</f:for>
+										</f:widget.paginate>
+									</f:else>
+								</f:if>
 							</f:then>
 							<f:else>
-								<f:widget.paginate objects="{propertiess}" as="propertiesPaginated" configuration="{itemsPerPage: settings.list.paginate.itemsPerPage, insertAbove: 0, insertBelow: 1, maximumNumberOfLinks: 10, addQueryStringMethod: 'POST,GET'}">
-									<f:for each="{propertiesPaginated}" as="property">
-										<div class="col-sm-12">
-											<f:render partial="Property/Item" arguments="{_all}"/>
-										</div>
-									</f:for>
-								</f:widget.paginate>
+								<p>There are no properties. Make sure you set them to public under the <strong>management tab</strong></p>
 							</f:else>
 						</f:if>
 					</div>

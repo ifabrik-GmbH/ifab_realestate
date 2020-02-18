@@ -51,7 +51,6 @@ CREATE TABLE tx_ifabrealestate_domain_model_property (
 	creation_year varchar(255) DEFAULT '' NOT NULL,
 	building varchar(255) DEFAULT '' NOT NULL,
 	property_title varchar(255) DEFAULT '' NOT NULL,
-	propert_title varchar(255) DEFAULT '' NOT NULL,
 	property_location text,
 	property_equipment text,
 	property_description text,
@@ -77,6 +76,7 @@ CREATE TABLE tx_ifabrealestate_domain_model_property (
 	parking_rel int(11) unsigned DEFAULT '0' NOT NULL,
 	firing_rel int(11) unsigned DEFAULT '0' NOT NULL,
 	attachments_rel int(11) unsigned DEFAULT '0' NOT NULL,
+	path_segment varchar(255) DEFAULT '' NOT NULL,
 
 );
 

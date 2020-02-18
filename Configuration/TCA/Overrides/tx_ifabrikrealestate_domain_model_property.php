@@ -72,7 +72,7 @@ $GLOBALS['TCA'][$tableName]['types'][1] = [
     'showitem' => '
 	    --div--;LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tab_general, 
 	        --palette--;;property_palette_100,
-            --palette--;;property_palette_0, property_title, property_text, property_description, property_equipment, property_location, addition_information,
+            --palette--;;property_palette_0, property_title, path_segment, property_text, property_description, property_equipment, property_location, addition_information,
         --div--;LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tab_property_category, 
             property_usage_rel, marketing_method_rel, property_nature_rel, property_type_value_rel,
         --div--;LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tab_prices, 
@@ -114,5 +114,24 @@ $GLOBALS['TCA'][$tableName]['columns']['address_rel'] = [
             ['LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:select_empty', ''],
         ],
         'foreign_table' => 'tx_ifabrealestate_domain_model_address',
+    ],
+];
+
+$GLOBALS['TCA'][$tableName]['columns']['path_segment'] = [
+    'exclude' => 0,
+    'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_property.path_segment',
+    'config' => [
+        'type' => 'slug',
+        'size' => 50,
+        'generatorOptions' => [
+            'fields' => ['uid','property_title'],
+            'fieldSeparator' => '-',
+            'replacements' => [
+                '/' => '-'
+            ],
+        ],
+        'fallbackCharacter' => '-',
+        'eval' => 'uniqueInSite',
+        'default' => ''
     ],
 ];

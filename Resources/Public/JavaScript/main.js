@@ -6,7 +6,8 @@ $(document).ready(function ($) {
 			$.ajax({
 				url: form.attr('data-xhr'),
 				cache: false,
-				data: form.serialize(),
+				method: 'POST',
+				data: data.serialize(),
 				success: function (result) {
 					$('.foundProperties').empty().append(result);
 

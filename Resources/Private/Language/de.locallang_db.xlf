@@ -91,6 +91,10 @@
 				<source>Load area</source>
 				<target>Ladefläche</target>
 			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.path_segment">
+				<source>Path segment</source>
+				<target>Url Pfad</target>
+			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.storage_area">
 				<source>Storage area</source>
 				<target>Lagerfläche</target>
