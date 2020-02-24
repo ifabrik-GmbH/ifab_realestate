@@ -32,13 +32,13 @@ ifabrik Real Estate
 	:Author:
 		i-fabrik GmbH
 
-    :Email:
-        info@ifabrik.de
+        :Email:
+                info@ifabrik.de
 
-    :License:
-       This extension documentation is published under the
-       `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
-       license
+        :License:
+               This extension documentation is published under the
+      	       `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
+               license
 
 	:Rendered:
 		|today|
