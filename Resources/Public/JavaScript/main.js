@@ -19,7 +19,11 @@ $(document).ready(function ($) {
 		}
 	};
 
-	$('form.real_estate_ajax select, form.class_ad_ajax input').on('change', function (ev) {
+	$('form.real_estate_ajax select').on('change', function (ev) {
+		ev.preventDefault();
+		service.ajaxCall($(this));
+	});
+	$('form.real_estate_ajax input').on('keyup', function (ev) {
 		ev.preventDefault();
 		service.ajaxCall($(this));
 	});
