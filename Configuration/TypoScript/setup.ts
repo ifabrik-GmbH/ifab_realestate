@@ -54,3 +54,9 @@ page.includeJSFooter {
     ajaxRealEstateResults = EXT:ifab_realestate/Resources/Public/JavaScript/main.js
 }
 
+config.pageTitleProviders {
+    ifabrikRealEstate {
+        provider = Ifabrik\IfabRealestate\PageTitle\RealEstatePageProvider
+        before = altPageTitle
+    }
+
