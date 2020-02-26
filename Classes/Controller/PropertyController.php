@@ -11,6 +11,8 @@
 namespace Ifabrik\IfabRealestate\Controller;
 
 use Ifabrik\IfabRealestate\Helper\DatabaseQueries;
+use Ifabrik\IfabRealestate\PageTitle\RealEstatePageProvider;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use Ifabrik\IfabRealestate\Domain\Model\Property;
 use Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository;
@@ -47,8 +49,8 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     public function listAction()
     {
         $settings = $this->settings;
-        $maxItems = intval($settings['list']['maxItems']);
-        $hiddenPagination = intval($settings['list']['hidePagination']);
+        $maxItems = (int)$settings['list']['maxItems'];
+        $hiddenPagination = (int)$settings['list']['hidePagination'];
 
         if ($hiddenPagination === 1 && $maxItems) {
             $properties = $this->propertyRepository->findAllAvailableProperties($maxItems);
@@ -67,6 +69,8 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function showAction(Property $property)
     {
+        $pageTitleProvider = GeneralUtility::makeInstance(RealEstatePageProvider::class);
+        $pageTitleProvider->setTitle($property->getPropertyTitle());
         $this->view->assign('property', $property);
     }
 
