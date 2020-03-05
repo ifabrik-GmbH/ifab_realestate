@@ -12,9 +12,11 @@ namespace Ifabrik\IfabRealestate\Controller;
 
 use Ifabrik\IfabRealestate\Helper\DatabaseQueries;
 use Ifabrik\IfabRealestate\PageTitle\RealEstatePageProvider;
+use TYPO3\CMS\Core\MetaTag\MetaTagManagerRegistry;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use Ifabrik\IfabRealestate\Domain\Model\Property;
+use TYPO3\CMS\Extbase\Service\ImageService;
 use Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository;
 
 /**
@@ -22,6 +24,36 @@ use Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository;
  */
 class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
+    /**
+     * @var \TYPO3\CMS\Core\MetaTag\MetaTagManagerRegistry
+     */
+    protected $metaTagManagerRegistry;
+
+    /**
+     * @var \TYPO3\CMS\Extbase\Service\ImageService;
+     */
+    protected $imageService;
+
+    /**
+     * @var string
+     */
+    protected $url;
+
+    public function __construct(
+        MetaTagManagerRegistry $metaTagManagerRegistry,
+        ImageService $imageService
+    )
+    {
+        parent::__construct();
+        $this->metaTagManagerRegistry = $metaTagManagerRegistry;
+        $this->imageService = $imageService;
+    }
+
+    public function initializeAction()
+    {
+        parent::initializeAction();
+        $this->url = $this->uriBuilder->getRequest()->getRequestUri();
+    }
 
     /**
      * assigned variable to call the property repository
@@ -71,6 +103,11 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     {
         $pageTitleProvider = GeneralUtility::makeInstance(RealEstatePageProvider::class);
         $pageTitleProvider->setTitle($property->getPropertyTitle());
+
+        $imageUrl = $this->getSharingImage($property);
+        $this->addMetaTags($property, $imageUrl);
+
+
         $this->view->assign('property', $property);
     }
 
@@ -111,8 +148,8 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         $args = $this->request->getArguments();
         $searchArguments = $args['search'];
         $settings = $this->settings;
-        $maxItems = intval($settings['list']['maxItems']);
-        $hiddenPagination = intval($settings['list']['hidePagination']);
+        $maxItems = (int)$settings['list']['maxItems'];
+        $hiddenPagination = (int)$settings['list']['hidePagination'];
 
         if ($hiddenPagination === 1 && $maxItems) {
             $getSearchedProperties = $this->propertyRepository->searchResults($searchArguments, $maxItems);
@@ -124,5 +161,88 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             'propertiess' => $getSearchedProperties,
             'pageData' => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
         ]);
+    }
+
+    /**
+     * @param \Ifabrik\IfabRealestate\Domain\Model\Property $property
+     * @param $imageUrl
+     * @return void
+     */
+    public function addMetaTags($property, $imageUrl)
+    {
+        $staticMetaTags = $this->settings['realestate']['metaTags'];
+        $completeMetaTags = [];
+       foreach ($staticMetaTags as $key => $metaTagProvider)
+       {
+           switch ($key){
+               case 'general':
+                   $metaTagProvider['subject'] = $property->getPropertyTitle();
+                   $metaTagProvider['description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
+                   $metaTagProvider['url'] =$this->url;
+                   $completeMetaTags[] = $metaTagProvider;
+                   break;
+               case 'facebook':
+                   $metaTagProvider['og:title'] = $property->getPropertyTitle();
+                   $metaTagProvider['og:description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
+                   $metaTagProvider['og:url'] =$this->url;
+                   $metaTagProvider['og:image'] =$imageUrl;
+                   $completeMetaTags[] = $metaTagProvider;
+                   break;
+               case 'twitter':
+                   if (isset($metaTagProvider['twitter:card']))
+                   {
+                       $removeTwitterCard = $this->metaTagManagerRegistry->getManagerForProperty('twitter:card');
+                       $removeTwitterCard->removeProperty('twitter:card');
+                   }
+                   $metaTagProvider['twitter:title'] = $property->getPropertyTitle();
+                   $metaTagProvider['twitter:description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
+                   $metaTagProvider['twitter:url'] =$this->url;
+                   $metaTagProvider['twitter:image'] =$imageUrl;
+                   $metaTagProvider['twitter:image:alt'] =$property->getPropertyTitle();
+                   $completeMetaTags[] = $metaTagProvider;
+                   break;
+
+           }
+       }
+        $finalTagList = array_merge( ...$completeMetaTags);
+        foreach ($finalTagList as $key => $metaTagValue) {
+            $metaTag = $this->metaTagManagerRegistry->getManagerForProperty($key);
+            $metaTag->getProperty($key);
+            $metaTag->addProperty($key, $metaTagValue);
+        }
+    }
+
+    /**
+     *
+     * returns the url of the image
+     * @param $property
+     * @return string
+     */
+    public function getSharingImage($property)
+    {
+        $imageUrl = '';
+        $dimensions = [
+            'width' => $this->settings['realestate']['metaTags']['image']['dimensions']['width'],
+            'height' => $this->settings['realestate']['metaTags']['image']['dimensions']['height']
+        ];
+        if (count($property->getAttachmentsRel())>0)
+        {
+            foreach ($property->getAttachmentsRel() as $attachment)
+            {
+                if ($attachment->getIsSharingImage())
+                {
+                    $imagePath = $attachment->getFile()->getOriginalResource()->getOriginalFile()->getPublicUrl();
+                    $processedImage = $this->imageService->applyProcessingInstructions(
+                        $this->imageService->getImage($imagePath, null, false), $dimensions);
+                    $imageUrl = $this->request->getBaseUri().trim($this->imageService->getImageUri($processedImage),'/');
+                    break;
+                }
+                $imageUrl = '';
+            }
+        }
+        else {
+            $imageUrl = '';
+        }
+        return $imageUrl;
     }
 }

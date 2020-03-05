@@ -23,5 +23,32 @@ plugin.tx_ifabrealestate_ifabrealestate {
     settings {
         # cat = plugin.tx_ifabrealestate_ifabrealestates//3; type=int+; label=typeNum for AJAX call 
         typeNum = 356736 
+        realestate {
+            metaTags {
+                image {
+                    dimensions {
+                        width = 1000
+                        height = 500c-100
+                    }
+                }
+                general {
+                    author =
+                    designer =
+                    copyright =
+                    Classification =
+                    robots =
+                }
+                facebook {
+                    og:type =
+                    og:site_name =
+                    og:email =
+                }
+                twitter {
+                    twitter:card =
+                    twitter:site =
+                    twitter:creator =
+                }
+            }
+        }
     }
 }

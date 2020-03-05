@@ -16,7 +16,7 @@ In order to get the properties displayed, data must be created.
 - Create a sysfolder and switch to the list module.
 - On the upper left corner click the "+" button and search for the **ifabrik Real Estate** list.
 - Before you create a property, add the necessary data. For example, create an address before adding a property.
-- If the property data is completed and all the information are in place, enable the **Property release** under the Management tab in order to show it in the FrontEnd.
+- If the property data is completed and all the information are in place, enable the **Property release** under the Management tab in order to display it in the FrontEnd.
 
 .. _addPlugin:
 

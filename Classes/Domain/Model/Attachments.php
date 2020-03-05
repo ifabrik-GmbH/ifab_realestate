@@ -37,6 +37,13 @@ class Attachments extends AbstractEntity
     protected $attachmentGroupValueRel = null;
 
     /**
+     * isSharingImage
+     *
+     * @var bool
+     */
+    protected $isSharingImage = false;
+
+    /**
      * __construct
      */
     public function __construct()
@@ -123,5 +130,26 @@ class Attachments extends AbstractEntity
     public function setAttachmentGroupValueRel(ObjectStorage $attachmentGroupValueRel)
     {
         $this->attachmentGroupValueRel = $attachmentGroupValueRel;
+    }
+
+    /**
+     * Returns the isSharingImage
+     *
+     * @return bool $isSharingImage
+     */
+    public function getIsSharingImage()
+    {
+        return $this->isSharingImage;
+    }
+
+    /**
+     * Sets the isSharingImage
+     *
+     * @param bool $isSharingImage
+     * @return void
+     */
+    public function setIsSharingImage($isSharingImage)
+    {
+        $this->isSharingImage = $isSharingImage;
     }
 }

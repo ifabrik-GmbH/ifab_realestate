@@ -258,6 +258,7 @@ CREATE TABLE tx_ifabrealestate_domain_model_attachments (
 	attachment_group_value_rel int(11) unsigned DEFAULT '0' NOT NULL,
 	sorting int(11) DEFAULT '0' NOT NULL,
 	sorting_property int(11) DEFAULT '0' NOT NULL,
+	is_sharing_image smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 

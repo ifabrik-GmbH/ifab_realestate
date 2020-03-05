@@ -169,7 +169,7 @@
 				<source>Available from</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_release">
-				<source>Property's address release</source>
+				<source>Property is ready to be released</source>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.pets">
 				<source>Pets</source>
@@ -502,6 +502,9 @@
 			</trans-unit>
 			<trans-unit id="palette_postoffice">
 				<source>Post office</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachments.is_sharing_image">
+				<source>Social media sharing image</source>
 			</trans-unit>
 		</body>
 	</file>
