@@ -69,3 +69,14 @@ Now you can do something like that:
       </f:if>
     </f:for>
   </f:for>
+
+**Image social media sharing**
+
+The extension gives you the option to set an image which will be included on the sharing information of your website,
+e.g. Facebook (OG), Twitter by storing the url of the image in the meta tags. One image can be rendered. If multiple
+images have been defined as social media sharing, then only the first one will be rendered.
+
+.. figure:: ../../Images/socialMedia.png
+    :class: with-shadow
+    :width: 80%
+    :alt: Social media sharing

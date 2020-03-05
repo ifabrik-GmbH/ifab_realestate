@@ -228,8 +228,8 @@
 				<target>Verfügbar ab</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.property_release">
-				<source>Property's address release</source>
-				<target>Objektadresse freigeben</target>
+				<source>Property is ready to be released</source>
+				<target>Immobilie ist bereit freigegeben zu werden</target>
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.pets">
 				<source>Pets</source>
@@ -668,6 +668,10 @@
 			<trans-unit id="palette_postoffice">
 				<source>Post office</source>
 				<target>Postfach</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachments.is_sharing_image">
+				<source>Social media sharing image</source>
+				<target>Bild zum Teilen</target>
 			</trans-unit>
 		</body>
 	</file>
