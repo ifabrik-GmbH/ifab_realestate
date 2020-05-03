@@ -89,6 +89,6 @@ call_user_func(
     }
 );
 if (TYPO3_MODE === 'BE') {
-    $GLOBALS['TBE_STYLES']['skins']['backend']['stylesheetDirectories']['ifab_realestate'] = 'EXT:' . $_EXTKEY . '/Resources/Public/Backend/Css/';
+    $GLOBALS['TBE_STYLES']['skins']['backend']['stylesheetDirectories']['ifab_realestate'] = 'EXT:ifab_realestate/Resources/Public/Backend/Css/';
 }
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem'][$_EXTKEY] = \Ifabrik\IfabRealestate\Hooks\PageLayoutView\PropertyPreviewRenderer::class;
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['ifab_realestate'] = \Ifabrik\IfabRealestate\Hooks\PageLayoutView\PropertyPreviewRenderer::class;
