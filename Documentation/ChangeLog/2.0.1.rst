@@ -3,7 +3,7 @@
 
 ::
 
-    * 2020-04-06 [Documentation] Changelog information added (Commit: )
+    * 2020-04-06 [Documentation] Changelog information added (Commit: 9a5be16)
     * 2020-04-06 [Version] Version changed to 2.0.1 (Commit: bd09ba5)
     * 2020-04-06 [Documentation] Website Link to automatic importer in introduction page (Commit: bd09ba5)
     * 2020-04-06 [Documentation] Changelog added (Commit: bd09ba5)
