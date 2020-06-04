@@ -1,0 +1,8 @@
+2.0.3 - 2020/06/04
+------------------
+
+::
+    * 2020-04-06 [Version] Version changed to 2.0.3
+    * 2020-04-06 [Composer] Composer changed to 2.0.3
+    * 2020-04-06 [BUGFIX] Wrong Class names fixed
+
