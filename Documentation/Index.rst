@@ -67,3 +67,4 @@ ifabrik Real Estate
     Editor/Index
     Installation/Index
     KnownProblems/Index
+    ChangeLog/Index

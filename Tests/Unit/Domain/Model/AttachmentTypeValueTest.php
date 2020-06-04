@@ -9,14 +9,14 @@ namespace Ifabrik\IfabRealestate\Tests\Unit\Domain\Model;
 class AttachmentTypeValueTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
 {
     /**
-     * @var \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue
+     * @var \Ifabrik\IfabRealestate\Domain\Model\AttachmentGroupValue
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = new \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue();
+        $this->subject = new \Ifabrik\IfabRealestate\Domain\Model\AttachmentGroupValue();
     }
 
     protected function tearDown()
@@ -65,7 +65,7 @@ class AttachmentTypeValueTest extends \TYPO3\TestingFramework\Core\Unit\UnitTest
      */
     public function setAttachmentTypeRelForAttachmentTypeSetsAttachmentTypeRel()
     {
-        $attachmentTypeRelFixture = new \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup();
+        $attachmentTypeRelFixture = new \Ifabrik\IfabRealestate\Domain\Model\AttachmentGroup();
         $this->subject->setAttachmentTypeRel($attachmentTypeRelFixture);
 
         self::assertAttributeEquals(

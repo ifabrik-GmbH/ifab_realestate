@@ -15,48 +15,62 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 /**
  * attachmentGroupRel
  */
-class Attachmentgroupvalue extends AbstractEntity
+class AttachmentGroupValue extends AbstractEntity
 {
 
     /**
      * value
      *
-     * @var string
+     * @var \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvaluerel
      */
-    protected $value = '';
+    protected $valueRel = '';
+
+    /**
+     * importStatus
+     *
+     * @var bool
+     */
+    protected $importStatus = false;
+
+    /**
+     * isImported
+     *
+     * @var bool
+     */
+    protected $isImported = false;
 
     /**
      * attachmentGroupRel
      *
-     * @var \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup
+     * @var \Ifabrik\IfabRealestate\Domain\Model\AttachmentGroup
      */
     protected $attachmentGroupRel = null;
 
     /**
      * Returns the value
      *
-     * @return string $value
+     * @return \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvaluerel $valueRel
      */
-    public function getValue()
+    public function getValueRel()
     {
-        return $this->value;
+        return $this->valueRel;
     }
 
     /**
      * Sets the value
      *
-     * @param string $value
+     * @param \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvaluerel $valueRel
      * @return void
      */
-    public function setValue($value)
+    public function setValueRel(Attachmentgroupvaluerel $valueRel)
     {
-        $this->value = $value;
+        $this->valueRel = $valueRel;
     }
 
     /**
      * Returns the attachmentGroupRel
      *
-     * @return \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup $attachmentGroupRel
+     * @return \Ifabrik\IfabRealestate\Domain\Model\AttachmentGroup $attachmentGroupRel
      */
     public function getAttachmentGroupRel()
     {
@@ -66,11 +80,52 @@ class Attachmentgroupvalue extends AbstractEntity
     /**
      * Sets the $attachmentGroupRel
      *
-     * @param \Ifabrik\IfabRealestate\Domain\Model\Attachmentgroup $attachmentGroupRel
+     * @param \Ifabrik\IfabRealestate\Domain\Model\AttachmentGroup $attachmentGroupRel
      * @return void
      */
-    public function setAttachmentGroupRel(Attachmentgroup $attachmentGroupRel)
+    public function setAttachmentGroupRel(AttachmentGroup $attachmentGroupRel)
     {
         $this->attachmentGroupRel = $attachmentGroupRel;
+    }
+    /**
+     * Returns the importStatus
+     *
+     * @return bool $importStatus
+     */
+    public function getImportStatus()
+    {
+        return $this->importStatus;
+    }
+
+    /**
+     * Sets the importStatus
+     *
+     * @param bool $importStatus
+     * @return void
+     */
+    public function setImportStatus($importStatus)
+    {
+        $this->importStatus = $importStatus;
+    }
+
+    /**
+     * Returns the isImported
+     *
+     * @return bool $isImported
+     */
+    public function getIsImported()
+    {
+        return $this->isImported;
+    }
+
+    /**
+     * Sets the isImported
+     *
+     * @param bool $isImported
+     * @return void
+     */
+    public function setIsImported($isImported)
+    {
+        $this->isImported = $isImported;
     }
 }

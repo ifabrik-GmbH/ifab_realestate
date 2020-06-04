@@ -48,6 +48,20 @@ class PropertyRepository extends Repository
     }
 
     /**
+     * returns a specific property
+     *
+     * @param int $id
+     * @return QueryResultInterface|array
+     */
+    public function findByInternId($id)
+    {
+        $query = $this->createQuery();
+        $query->matching($query->equals('internalPropertyNumber', $id));
+
+        return $query->execute()[0];
+    }
+
+    /**
      * returns a list of properties defined by search parameters.
      *
      * @param array $searchParameter

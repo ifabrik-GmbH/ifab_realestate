@@ -1,0 +1,11 @@
+1.0.2 - 2020/02/18
+------------------
+
+::
+
+    * 2020-02-18 [Version] Version changed to 1.0.2  (Commit: ac0c3cf)
+    * 2020-02-18 [Refactor] List and search template got an if statement to avoid exception on pagination  (Commit: ac0c3cf)
+    * 2020-02-18 [Documentation] Documentation updated   (Commit: ac0c3cf)
+    * 2020-02-18 [BUGFIX] Ajax didn't work due to missing method parameter   (Commit: ac0c3cf)
+	* 2020-02-18 [Composer] path_segment added   (Commit: ac0c3cf)
+

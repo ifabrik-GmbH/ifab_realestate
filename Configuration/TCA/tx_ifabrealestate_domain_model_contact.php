@@ -332,5 +332,25 @@ return [
                 'maxitems' => 1,
             ],
         ],
+        'import_status' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    ['LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status_title', ''],
+                ],
+            ]
+        ],
+        'is_imported' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:is_imported',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    ['', ''],
+                ],
+            ]
+        ],
     ],
 ];

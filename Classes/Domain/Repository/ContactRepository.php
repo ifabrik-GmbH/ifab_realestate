@@ -17,4 +17,26 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
  */
 class ContactRepository extends Repository
 {
+    /**
+     * @param $email
+     * @param $surname
+     * @param $name
+     * @return array|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface
+     */
+    public function findByFields($email, $surname, $name)
+    {
+        $query = $this->createQuery();
+        $query->getQuerySettings()->setRespectStoragePage(FALSE);
+        $query->matching(
+            $query->logicalAnd(
+                [
+                    $query->equals('directEmail', $email),
+                    $query->equals('name', $name),
+                    $query->equals('surname', $surname),
+                ]
+            )
+        );
+
+        return $query->execute();
+    }
 }

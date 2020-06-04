@@ -17,4 +17,22 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
  */
 class PropertyTypeValueRepository extends Repository
 {
+    /**
+     * @param int $propertyId
+     *
+     * @return array|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface
+     */
+    public function findById($propertyId)
+    {
+        $query = $this->createQuery();
+        $query->getQuerySettings()->setRespectStoragePage(FALSE);
+        $query->matching(
+            $query->logicalAnd(
+                [
+                    $query->equals('property', $propertyId)
+                ]
+            )
+        );
+        return $query->execute()[0];
+    }
 }

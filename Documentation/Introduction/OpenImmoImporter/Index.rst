@@ -7,5 +7,5 @@
 OpenImmo Importer
 =================
 
-The extension ifabrik real estate also easily works with an automatic OpenImmo importer. To use this function, please contact info@ifabrik.de.
+The extension ifabrik real estate also easily works with an automatic OpenImmo importer. To use this function, please contact info@ifabrik.de or visit our website: `OpenImmo Importer <https://www.ifabrik.de/loesungen/typo3-extension-real-estate/>`__.
 

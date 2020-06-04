@@ -19,6 +19,47 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
  */
 class Attachments extends AbstractEntity
 {
+    /**
+     * importStatus
+     *
+     * @var bool
+     */
+    protected $importStatus = false;
+
+    /**
+     * isImported
+     *
+     * @var bool
+     */
+    protected $isImported = false;
+
+    /**
+     * Attachment title
+     *
+     * @var string
+     */
+    protected $attachmentTitle = '';
+
+    /**
+     * Attachment format
+     *
+     * @var string
+     */
+    protected $attachmentFormat = '';
+
+    /**
+     * Attachment name
+     *
+     * @var string
+     */
+    protected $attachmentName = '';
+
+    /**
+     * property id
+     *
+     * @var int
+     */
+    protected $propertyId = '';
 
     /**
      * file
@@ -31,7 +72,7 @@ class Attachments extends AbstractEntity
     /**
      * attachmentGroupValueRel
      *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\AttachmentGroupValue>
      * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
      */
     protected $attachmentGroupValueRel = null;
@@ -94,7 +135,7 @@ class Attachments extends AbstractEntity
      * @return void
      */
     public function addAttachmentGroupValueRel(
-        Attachmentgroupvalue $attachmentGroupValueRel
+        AttachmentGroupValue $attachmentGroupValueRel
     ) {
         $this->attachmentGroupValueRel->attach($attachmentGroupValueRel);
     }
@@ -106,7 +147,7 @@ class Attachments extends AbstractEntity
      * @return void
      */
     public function removeAttachmentGroupValueRel(
-        Attachmentgroupvalue $attachmentGroupValueRelToRemove
+        AttachmentGroupValue $attachmentGroupValueRelToRemove
     ) {
         $this->attachmentGroupValueRel->detach($attachmentGroupValueRelToRemove);
     }
@@ -114,7 +155,7 @@ class Attachments extends AbstractEntity
     /**
      * Returns the attachmentTypeValueRel
      *
-     * @return ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue> $attachmentGroupValueRel
+     * @return ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\AttachmentGroupValue> $attachmentGroupValueRel
      */
     public function getAttachmentGroupValueRel()
     {
@@ -124,7 +165,7 @@ class Attachments extends AbstractEntity
     /**
      * Sets the attachmentGroupValueRel
      *
-     * @param ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\Attachmentgroupvalue> $attachmentGroupValueRel
+     * @param ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\AttachmentGroupValue> $attachmentGroupValueRel
      * @return void
      */
     public function setAttachmentGroupValueRel(ObjectStorage $attachmentGroupValueRel)
@@ -151,5 +192,131 @@ class Attachments extends AbstractEntity
     public function setIsSharingImage($isSharingImage)
     {
         $this->isSharingImage = $isSharingImage;
+    }
+
+    /**
+     * Returns the importStatus
+     *
+     * @return bool $importStatus
+     */
+    public function getImportStatus()
+    {
+        return $this->importStatus;
+    }
+
+    /**
+     * Sets the importStatus
+     *
+     * @param bool $importStatus
+     * @return void
+     */
+    public function setImportStatus($importStatus)
+    {
+        $this->importStatus = $importStatus;
+    }
+
+    /**
+     * Returns the isImported
+     *
+     * @return bool $isImported
+     */
+    public function getIsImported()
+    {
+        return $this->isImported;
+    }
+
+    /**
+     * Sets the isImported
+     *
+     * @param bool $isImported
+     * @return void
+     */
+    public function setIsImported($isImported)
+    {
+        $this->isImported = $isImported;
+    }
+
+    /**
+     * Returns the attachmentTitle
+     *
+     * @return string $attachmentTitle
+     */
+    public function getAttachmentTitle()
+    {
+        return $this->attachmentTitle;
+    }
+
+    /**
+     * Sets the attachmentTitle
+     *
+     * @param string $attachmentTitle
+     * @return void
+     */
+    public function setAttachmentTitle($attachmentTitle)
+    {
+        $this->attachmentTitle = $attachmentTitle;
+    }
+
+    /**
+     * Returns the attachmentFormat
+     *
+     * @return string $attachmentFormat
+     */
+    public function getAttachmentFormat()
+    {
+        return $this->attachmentFormat;
+    }
+
+    /**
+     * Sets the attachmentFormat
+     *
+     * @param string $attachmentFormat
+     * @return void
+     */
+    public function setAttachmentFormat($attachmentFormat)
+    {
+        $this->attachmentFormat = $attachmentFormat;
+    }
+
+    /**
+     * Returns the attachmentName
+     *
+     * @return string $attachmentName
+     */
+    public function getAttachmentName()
+    {
+        return $this->attachmentName;
+    }
+
+    /**
+     * Sets the attachmentName
+     *
+     * @param string $attachmentName
+     * @return void
+     */
+    public function setAttachmentName($attachmentName)
+    {
+        $this->attachmentName = $attachmentName;
+    }
+
+    /**
+     * Returns the propertyId
+     *
+     * @return int $propertyId
+     */
+    public function getPropertyId()
+    {
+        return $this->propertyId;
+    }
+
+    /**
+     * Sets the propertyId
+     *
+     * @param int $propertyId
+     * @return void
+     */
+    public function setPropertyId($propertyId)
+    {
+        $this->propertyId = $propertyId;
     }
 }
