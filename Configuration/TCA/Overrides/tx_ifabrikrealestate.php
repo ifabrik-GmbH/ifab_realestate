@@ -7,6 +7,9 @@ $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist']['IfabReal
 $GLOBALS['TCA']['tx_ifabrealestate_domain_model_attachments']['ctrl']['hideTable'] = true;
 $GLOBALS['TCA']['tx_ifabrealestate_domain_model_attachmentgroupvalue']['ctrl']['hideTable'] = true;
 $GLOBALS['TCA']['tx_ifabrealestate_domain_model_propertytypevalue']['ctrl']['hideTable'] = true;
+$GLOBALS['TCA']['tx_ifabrealestate_domain_model_propertyactionvalue']['ctrl']['hideTable'] = true;
+$GLOBALS['TCA']['tx_ifabrealestate_domain_model_propertyactionattribute']['ctrl']['hideTable'] = true;
+$GLOBALS['TCA']['tx_ifabrealestate_domain_model_propertyaction']['ctrl']['hideTable'] = true;
 
 // Change icons
 $GLOBALS['TCA']["tx_ifabrealestate_domain_model_address"]['ctrl']['iconfile'] = "EXT:ifab_realestate/Resources/Public/Icons/address.svg";
@@ -29,4 +32,6 @@ $GLOBALS['TCA']["tx_ifabrealestate_domain_model_propertynature"]['ctrl']['iconfi
 $GLOBALS['TCA']["tx_ifabrealestate_domain_model_propertytype"]['ctrl']['iconfile'] = "EXT:ifab_realestate/Resources/Public/Icons/propertydet.svg";
 $GLOBALS['TCA']["tx_ifabrealestate_domain_model_propertytypevalue"]['ctrl']['iconfile'] = "EXT:ifab_realestate/Resources/Public/Icons/propertydet.svg";
 $GLOBALS['TCA']["tx_ifabrealestate_domain_model_propertyusage"]['ctrl']['iconfile'] = "EXT:ifab_realestate/Resources/Public/Icons/propertydet.svg";
-
+$GLOBALS['TCA']["tx_ifabrealestate_domain_model_propertyactionvalue"]['ctrl']['iconfile'] = "EXT:ifab_realestate/Resources/Public/Icons/propertydet.svg";
+$GLOBALS['TCA']["tx_ifabrealestate_domain_model_propertyactionattribute"]['ctrl']['iconfile'] = "EXT:ifab_realestate/Resources/Public/Icons/propertydet.svg";
+$GLOBALS['TCA']["tx_ifabrealestate_domain_model_propertyaction"]['ctrl']['iconfile'] = "EXT:ifab_realestate/Resources/Public/Icons/propertydet.svg";

@@ -6,7 +6,7 @@
 			<trans-unit id="value.description">
 				<source>The property type value.</source>
 			</trans-unit>
-			<trans-unit id="objektarttype_relation.description">
+			<trans-unit id="objektarttyp_relation.description">
 				<source>Choose a property type</source>
 			</trans-unit>
 		</body>

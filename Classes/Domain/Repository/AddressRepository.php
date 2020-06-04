@@ -72,4 +72,26 @@ class AddressRepository extends Repository
             return null;
         }
     }
+
+    /**
+     * @param $object
+     * @return array|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface|null
+     */
+    public function findByAddress($object)
+    {
+        $query = $this->createQuery();
+        $query->getQuerySettings()->setRespectStoragePage(FALSE);
+        $query->matching(
+            $query->logicalAnd(
+                [
+                    $query->equals('street', $object['strasse']),
+                    $query->equals('zip', $object['plz']),
+                    $query->equals('area', $object['ort']),
+                    $query->equals('addressNumber', $object['hausnummer'])
+                ]
+            )
+        );
+
+        return $query->execute();
+    }
 }

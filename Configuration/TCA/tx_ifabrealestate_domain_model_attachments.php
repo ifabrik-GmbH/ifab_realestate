@@ -191,6 +191,62 @@ return [
                 'default' => 0,
             ]
         ],
+        'import_status' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    ['LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status_title', ''],
+                ],
+            ]
+        ],
+        'is_imported' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:is_imported',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    ['', ''],
+                ],
+            ]
+        ],
+        'attachment_title' => [
+            'exclude' => true,
+            'label' => '',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
+        'attachment_format' => [
+            'exclude' => true,
+            'label' => '',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
+        'attachment_name' => [
+            'exclude' => true,
+            'label' => '',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ],
+        ],
+        'property_id' => [
+            'exclude' => true,
+            'label' => '',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'int'
+            ],
+        ],
         'property' => [
             'config' => [
                 'type' => 'passthrough',

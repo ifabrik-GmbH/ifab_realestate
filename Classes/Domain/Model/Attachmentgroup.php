@@ -13,15 +13,28 @@ namespace Ifabrik\IfabRealestate\Domain\Model;
 /**
  * AttachmentGroup
  */
-class Attachmentgroup extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class AttachmentGroup extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
-
     /**
      * name
      *
      * @var string
      */
     protected $name = '';
+
+    /**
+     * importStatus
+     *
+     * @var bool
+     */
+    protected $importStatus = false;
+
+    /**
+     * isImported
+     *
+     * @var bool
+     */
+    protected $isImported = false;
 
     /**
      * Returns the name
@@ -42,5 +55,47 @@ class Attachmentgroup extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+    /**
+     * Returns the importStatus
+     *
+     * @return bool $importStatus
+     */
+    public function getImportStatus()
+    {
+        return $this->importStatus;
+    }
+
+    /**
+     * Sets the importStatus
+     *
+     * @param bool $importStatus
+     * @return void
+     */
+    public function setImportStatus($importStatus)
+    {
+        $this->importStatus = $importStatus;
+    }
+
+    /**
+     * Returns the isImported
+     *
+     * @return bool $isImported
+     */
+    public function getIsImported()
+    {
+        return $this->isImported;
+    }
+
+    /**
+     * Sets the isImported
+     *
+     * @param bool $isImported
+     * @return void
+     */
+    public function setIsImported($isImported)
+    {
+        $this->isImported = $isImported;
     }
 }

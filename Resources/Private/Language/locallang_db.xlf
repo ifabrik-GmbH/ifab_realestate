@@ -426,6 +426,9 @@
 			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue.value">
 				<source>Value</source>
 			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue.name">
+				<source>Name</source>
+			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_property.path_segment">
 				<source>Path segment</source>
 			</trans-unit>
@@ -444,8 +447,28 @@
 			<trans-unit id="tx_ifab_realestate_ifabrealestate.description">
 				<source>Simply creating an online display of real estates including Ajax search</source>
 			</trans-unit>
-			<trans-unit id="select_empty">
-				<source>Select</source>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyactionvalue">
+				<source>Property action value</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyactionvalue.name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyactionattribute">
+				<source>Property action attribute</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyactionattribute.name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyaction.propertyactionattributevalue_relation">
+				<source>Property atrribute value relation</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyaction.propertyactionattribute_relation">
+				<source>Property attribute relation</source>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_action_rel">
+				<source>Property action relation</source>
 			</trans-unit>
 			<!-- Tabs -->
 			<trans-unit id="tab_general">
@@ -505,6 +528,15 @@
 			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_attachments.is_sharing_image">
 				<source>Social media sharing image</source>
+			</trans-unit>
+			<trans-unit id="import_status">
+				<source>Import status</source>
+			</trans-unit>
+			<trans-unit id="import_status_title">
+				<source>Imported</source>
+			</trans-unit>
+			<trans-unit id="is_imported">
+				<source>Comes from the importer</source>
 			</trans-unit>
 		</body>
 	</file>

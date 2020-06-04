@@ -1,0 +1,8 @@
+1.0.4 - 2020/02/25
+------------------
+
+::
+
+    * 2020-02-25 [BUGFIX] Main.js wrong input form selector   (Commit: 4f09157)
+
+

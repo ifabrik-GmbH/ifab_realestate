@@ -30,7 +30,6 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      */
     protected $pathSegment;
 
-
     /**
      * Indicates the number of floors of the whole building
      *
@@ -417,6 +416,20 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $pets = false;
 
     /**
+     * importStatus
+     *
+     * @var bool
+     */
+    protected $importStatus = false;
+
+    /**
+     * isImported
+     *
+     * @var bool
+     */
+    protected $isImported = false;
+
+    /**
      * internalPropertyNumber
      *
      * @var string
@@ -457,14 +470,6 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @var \Ifabrik\IfabRealestate\Domain\Model\PropertyNature
      */
     protected $propertyNatureRel = null;
-
-    /**
-     * Define the exact nature of the property
-     *
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue>
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
-     */
-    protected $propertyTypeValueRel = null;
 
     /**
      * Select the address in which the property is located.
@@ -538,6 +543,23 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $attachmentsRel = null;
 
     /**
+     * Select the actions
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyAction>
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
+     */
+    protected $propertyActionRel = null;
+
+    /**
+     * Select property type
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyTypeValue>
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
+     */
+    protected $propertyTypeValueRel = null;
+
+
+    /**
      * __construct
      */
     public function __construct()
@@ -560,6 +582,7 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
         $this->propertyUsageRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $this->marketingMethodRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $this->propertyTypeValueRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $this->propertyActionRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $this->contactRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $this->bathroomRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $this->kitchenRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
@@ -2304,6 +2327,48 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
+     * Returns the importStatus
+     *
+     * @return bool $importStatus
+     */
+    public function getImportStatus()
+    {
+        return $this->importStatus;
+    }
+
+    /**
+     * Sets the importStatus
+     *
+     * @param bool $importStatus
+     * @return void
+     */
+    public function setImportStatus($importStatus)
+    {
+        $this->importStatus = $importStatus;
+    }
+
+    /**
+     * Returns the isImported
+     *
+     * @return bool $isImported
+     */
+    public function getIsImported()
+    {
+        return $this->isImported;
+    }
+
+    /**
+     * Sets the isImported
+     *
+     * @param bool $isImported
+     * @return void
+     */
+    public function setIsImported($isImported)
+    {
+        $this->isImported = $isImported;
+    }
+
+    /**
      * Returns the boolean state of pets
      *
      * @return bool
@@ -2437,6 +2502,49 @@ class Property extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setPathSegment($pathSegment)
     {
         $this->pathSegment = $pathSegment;
+    }
+
+    /**
+     * Adds a PropertyAction
+     *
+     * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyAction $propertyActionRel
+     * @return void
+     */
+    public function addPropertyActionRel(PropertyAction $propertyActionRel)
+    {
+        $this->propertyActionRel->attach($propertyActionRel);
+    }
+
+    /**
+     * Removes a PropertyAction
+     *
+     * @param \Ifabrik\IfabRealestate\Domain\Model\PropertyAction $propertyActionRelToRemove The PropertyAction to be removed
+     * @return void
+     */
+    public function removePropertyActionRel(PropertyAction $propertyActionRelToRemove)
+    {
+        $this->propertyActionRel->detach($propertyActionRelToRemove);
+    }
+
+    /**
+     * Returns the propertyActionRel
+     *
+     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyAction> $propertyActionRel
+     */
+    public function getPropertyActionRel()
+    {
+        return $this->propertyActionRel;
+    }
+
+    /**
+     * Sets the propertyActionRel
+     *
+     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\Ifabrik\IfabRealestate\Domain\Model\PropertyAction> $propertyActionRel
+     * @return void
+     */
+    public function setPropertyActionRel(ObjectStorage $propertyActionRel)
+    {
+        $this->propertyActionRel = $propertyActionRel;
     }
 
 }

@@ -17,4 +17,22 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
  */
 class FiringTypeRepository extends Repository
 {
+    /**
+     * @param string $name
+     *
+     * @return array|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface
+     */
+    public function findByName($name)
+    {
+        $query = $this->createQuery();
+        $query->getQuerySettings()->setRespectStoragePage(FALSE);
+        $query->matching(
+            $query->logicalAnd(
+                [
+                    $query->equals('name', $name)
+                ]
+            )
+        );
+        return $query->execute()[0];
+    }
 }

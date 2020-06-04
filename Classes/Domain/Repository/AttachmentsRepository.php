@@ -17,4 +17,54 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
  */
 class AttachmentsRepository extends Repository
 {
+
+    /**
+     * @param string $title
+     * @param string $format
+     * @param string $name
+     * @param int $propertyId
+     *
+     * @return array|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface
+     */
+    public function findByFields($title, $format, $name, $propertyId)
+    {
+        $query = $this->createQuery();
+        $query->getQuerySettings()->setRespectStoragePage(FALSE);
+        $query->matching(
+            $query->logicalAnd(
+                [
+                    $query->equals('attachmentTitle', $title),
+                    $query->equals('attachmentFormat', $format),
+                    $query->equals('attachmentName', $name),
+                    $query->equals('propertyId', $propertyId)
+                ]
+            )
+        );
+        if($query->execute()->count())
+        {
+            return $query->execute();
+        }
+        else {
+            return NULL;
+        }
+    }
+
+    /**
+     * @param int $propertyId
+     *
+     * @return array|\TYPO3\CMS\Extbase\Persistence\QueryResultInterface
+     */
+    public function findByInternalId($propertyId)
+    {
+        $query = $this->createQuery();
+        $query->getQuerySettings()->setRespectStoragePage(FALSE);
+        $query->matching( $query->equals('propertyId', $propertyId));
+        if($query->execute()->count())
+        {
+            return $query->execute();
+        }
+        else {
+            return NULL;
+        }
+    }
 }
