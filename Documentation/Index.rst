@@ -36,7 +36,7 @@ ifabrik Real Estate
                 info@ifabrik.de
 
         :Website:
-                `OpenImmo Importer <https://www.ifabrik.de/loesungen/typo3-extension-real-estate/>`__
+                `ifabrik.de/loesungen/typo3-extension-real-estate <https://www.ifabrik.de/loesungen/typo3-extension-real-estate/>`__
 
         :License:
                This extension documentation is published under the

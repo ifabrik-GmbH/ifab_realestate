@@ -2,7 +2,7 @@
 ------------------
 
 ::
-    * 2020-04-06 [Version] Version changed to 2.0.3
-    * 2020-04-06 [Composer] Composer changed to 2.0.3
-    * 2020-04-06 [BUGFIX] Wrong Class names fixed
+    * 2020-04-06 [Version] Version changed to 2.0.3 (Commit: fe90b2b)
+    * 2020-04-06 [Composer] Composer changed to 2.0.3 (Commit: fe90b2b)
+    * 2020-04-06 [BUGFIX] Wrong Class names fixed (Commit: fe90b2b)
 
