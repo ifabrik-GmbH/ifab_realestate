@@ -1,0 +1,8 @@
+2.0.4 - 2020/06/16
+------------------
+
+::
+    * 2020-04-06 [Version] Version changed to 2.0.4
+    * 2020-04-06 [Composer] Composer changed to 2.0.4
+    * 2020-04-06 [Documentation] Links to automatic OpenImmo Importer
+
