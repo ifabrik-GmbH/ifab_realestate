@@ -99,7 +99,7 @@ $GLOBALS['TCA'][$tableName]['types'][1] = [
             --palette--;;property_palette_11, 
             --palette--;;property_palette_12, 
         --div--;LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tab_management,
-            property_release, available_from, pets,
+            property_release, available_from, pets,property_action_rel,
 	'
 ];
 

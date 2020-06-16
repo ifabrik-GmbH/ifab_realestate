@@ -335,7 +335,7 @@
 				<source>Value</source>
 				<target>Wert</target>
 			</trans-unit>
-			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue.objektarttype_relation">
+			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue.objektarttyp_relation">
 				<source>Select a property type</source>
 				<target>Objekttyp auswählen</target>
 			</trans-unit>
@@ -571,6 +571,10 @@
 				<source>Value</source>
 				<target>Wert</target>
 			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue.name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
 			<trans-unit id="tx_ifabrealestate_domain_model_attachmentgroupvalue.attachment_group_rel">
 				<source>Define an attachment group</source>
 				<target>Anhangsgruppe definieren</target>
@@ -590,6 +594,34 @@
 			<trans-unit id="tx_ifab_realestate_ifabrealestate.description">
 				<source>Simply creating an online display of real estates including Ajax search</source>
 				<target>Einfache Erstellung einer Online-Darstellung von Immobilien mit Ajax-Suche</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyactionvalue">
+				<source>Property action value</source>
+				<target>Immobilienaktionwert</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyactionvalue.name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyactionattribute">
+				<source>Property action attribute</source>
+				<target>Immobilienaktionattribut</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyactionattribute.name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyaction.propertyactionattributevalue_relation">
+				<source>Property atrribute value relation</source>
+				<target>Immobilienwertattributwert Relation</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_propertyaction.propertyactionattribute_relation">
+				<source>Property attribute relation</source>
+				<target>Immobilienwertattribut Relation</target>
+			</trans-unit>
+			<trans-unit id="tx_ifabrealestate_domain_model_property.property_action_rel">
+				<source>Property action relation</source>
+				<target>Immobilienaktion Relation</target>
 			</trans-unit>
 			<trans-unit id="select_empty">
 				<source>Select</source>
@@ -672,6 +704,18 @@
 			<trans-unit id="tx_ifabrealestate_domain_model_attachments.is_sharing_image">
 				<source>Social media sharing image</source>
 				<target>Bild zum Teilen</target>
+			</trans-unit>
+			<trans-unit id="import_status">
+				<source>Import status</source>
+				<target>Importerstatus</target>
+			</trans-unit>
+			<trans-unit id="import_status_title">
+				<source>Imported</source>
+				<target>Importiert</target>
+			</trans-unit>
+			<trans-unit id="is_imported">
+				<source>Comes from the importer</source>
+				<target>Kommt vom Importer</target>
 			</trans-unit>
 		</body>
 	</file>

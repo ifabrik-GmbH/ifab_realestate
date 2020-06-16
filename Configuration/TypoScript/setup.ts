@@ -34,28 +34,14 @@ plugin.tx_ifabrealestate_ifabrealestate {
         typeNum = 356736
         realestate {
             metaTags {
-                image {
-                    dimensions {
-                        width = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.image.dimensions.width}
-                        height = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.image.dimensions.height}
-                    }
-                }
                 general {
-                    author = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.general.author}
-                    designer =  {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.general.designer}
-                    copyright = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.general.copyright}
-                    Classification = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.general.Classification}
-                    robots = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.general.robots}
+
                 }
                 facebook {
-                    og:type = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.facebook.type}
-                    og:site_name = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.facebook.site_name}
-                    og:email = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.facebook.email}
+
                 }
                 twitter {
-                    twitter:card = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.twitter.card}
-                    twitter:site = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.twitter.site}
-                    twitter:creator = {$plugin.tx_ifabrealestate_ifabrealestate.settings.realestate.metaTags.twitter.creator}
+
                 }
             }
         }

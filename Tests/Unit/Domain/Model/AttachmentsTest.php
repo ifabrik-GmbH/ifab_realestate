@@ -67,7 +67,7 @@ class AttachmentsTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
      */
     public function setAttachmentTypeValueRelForObjectStorageContainingAttachmentTypeValueSetsAttachmentTypeValueRel()
     {
-        $attachmentTypeValueRel = new \Ifabrik\IfabRealEstate\Domain\Model\Attachmentgroupvalue();
+        $attachmentTypeValueRel = new \Ifabrik\IfabRealEstate\Domain\Model\AttachmentGroupValue();
         $objectStorageHoldingExactlyOneAttachmentTypeValueRel = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
         $objectStorageHoldingExactlyOneAttachmentTypeValueRel->attach($attachmentTypeValueRel);
         $this->subject->setAttachmentTypeValueRel($objectStorageHoldingExactlyOneAttachmentTypeValueRel);
@@ -84,7 +84,7 @@ class AttachmentsTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
      */
     public function addAttachmentTypeValueRelToObjectStorageHoldingAttachmentTypeValueRel()
     {
-        $attachmentTypeValueRel = new \Ifabrik\IfabRealEstate\Domain\Model\Attachmentgroupvalue();
+        $attachmentTypeValueRel = new \Ifabrik\IfabRealEstate\Domain\Model\AttachmentGroupValue();
         $attachmentTypeValueRelObjectStorageMock = $this->getMockBuilder(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class)
             ->setMethods(['attach'])
             ->disableOriginalConstructor()
@@ -101,7 +101,7 @@ class AttachmentsTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
      */
     public function removeAttachmentTypeValueRelFromObjectStorageHoldingAttachmentTypeValueRel()
     {
-        $attachmentTypeValueRel = new \Ifabrik\IfabRealEstate\Domain\Model\Attachmentgroupvalue();
+        $attachmentTypeValueRel = new \Ifabrik\IfabRealEstate\Domain\Model\AttachmentGroupValue();
         $attachmentTypeValueRelObjectStorageMock = $this->getMockBuilder(\TYPO3\CMS\Extbase\Persistence\ObjectStorage::class)
             ->setMethods(['detach'])
             ->disableOriginalConstructor()

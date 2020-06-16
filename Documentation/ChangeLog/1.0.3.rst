@@ -1,0 +1,8 @@
+1.0.3 - 2020/02/24
+------------------
+
+::
+
+    * 2020-02-24 [BUGFIX] Main.js form selector was too abstract causing problems to other pages where a form is present   (Commit: ab06903)
+
+

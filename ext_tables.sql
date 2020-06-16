@@ -77,34 +77,46 @@ CREATE TABLE tx_ifabrealestate_domain_model_property (
 	firing_rel int(11) unsigned DEFAULT '0' NOT NULL,
 	attachments_rel int(11) unsigned DEFAULT '0' NOT NULL,
 	path_segment varchar(255) DEFAULT '' NOT NULL,
-
+	property_action_rel int(11) unsigned DEFAULT '0' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 );
+
+#
+# Table structure for table 'tx_ifabrealestate_domain_model_attachmentgroupvaluerel'
+#
+CREATE TABLE tx_ifabrealestate_domain_model_attachmentgroupvaluerel (
+	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
+);
+
 
 #
 # Table structure for table 'tx_ifabrealestate_domain_model_propertyusage'
 #
 CREATE TABLE tx_ifabrealestate_domain_model_propertyusage (
-
 	name varchar(255) DEFAULT '' NOT NULL,
-
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 );
 
 #
 # Table structure for table 'tx_ifabrealestate_domain_model_marketingmethod'
 #
 CREATE TABLE tx_ifabrealestate_domain_model_marketingmethod (
-
 	name varchar(255) DEFAULT '' NOT NULL,
-
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 );
 
 #
 # Table structure for table 'tx_ifabrealestate_domain_model_propertynature'
 #
 CREATE TABLE tx_ifabrealestate_domain_model_propertynature (
-
 	name varchar(255) DEFAULT '' NOT NULL,
-
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 );
 
 #
@@ -114,18 +126,59 @@ CREATE TABLE tx_ifabrealestate_domain_model_propertytypevalue (
 
 	property int(11) unsigned DEFAULT '0' NOT NULL,
 
-	value varchar(255) DEFAULT '' NOT NULL,
+	propertytypevaluerel int(11) unsigned DEFAULT '0',
 	objektarttype_relation int(11) unsigned DEFAULT '0',
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
+);
+
+CREATE TABLE tx_ifabrealestate_domain_model_propertytypevaluerel(
+    name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 );
 
 #
 # Table structure for table 'tx_ifabrealestate_domain_model_propertytype'
 #
 CREATE TABLE tx_ifabrealestate_domain_model_propertytype (
-
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
+);
 
+#
+# Table structure for table 'tx_ifabrealestate_domain_model_propertyaction'
+#
+CREATE TABLE tx_ifabrealestate_domain_model_propertyaction (
+
+	property int(11) unsigned DEFAULT '0' NOT NULL,
+
+	propertyactionattributevalue_relation int(11) unsigned DEFAULT '0',
+	propertyactionattribute_relation int(11) unsigned DEFAULT '0',
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
+
+);
+
+
+#
+# Table structure for table 'tx_ifabrealestate_domain_model_propertyactionattribute'
+#
+CREATE TABLE tx_ifabrealestate_domain_model_propertyactionattribute (
+	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
+);
+
+#
+# Table structure for table 'tx_ifabrealestate_domain_model_propertyactionvalue'
+#
+CREATE TABLE tx_ifabrealestate_domain_model_propertyactionvalue (
+	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 );
 
 #
@@ -142,6 +195,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_address (
 	municipality_code varchar(255) DEFAULT '' NOT NULL,
 	subdistrict varchar(255) DEFAULT '' NOT NULL,
 	regional_addition varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -169,6 +224,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_contact (
 	image int(11) unsigned NOT NULL default '0',
 	contact_address_rel int(11) unsigned DEFAULT '0',
 	gender_rel int(11) unsigned DEFAULT '0',
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -181,6 +238,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_contactaddress (
 	address_number varchar(255) DEFAULT '' NOT NULL,
 	area varchar(255) DEFAULT '' NOT NULL,
 	zip varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -190,6 +249,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_contactaddress (
 CREATE TABLE tx_ifabrealestate_domain_model_bathroomtype (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -199,6 +260,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_bathroomtype (
 CREATE TABLE tx_ifabrealestate_domain_model_kitchentype (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -208,6 +271,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_kitchentype (
 CREATE TABLE tx_ifabrealestate_domain_model_floortype (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -217,6 +282,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_floortype (
 CREATE TABLE tx_ifabrealestate_domain_model_heattype (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -226,6 +293,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_heattype (
 CREATE TABLE tx_ifabrealestate_domain_model_elevatortype (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -235,6 +304,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_elevatortype (
 CREATE TABLE tx_ifabrealestate_domain_model_parking (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -244,6 +315,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_parking (
 CREATE TABLE tx_ifabrealestate_domain_model_firingtype (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -254,11 +327,17 @@ CREATE TABLE tx_ifabrealestate_domain_model_attachments (
 
 	property int(11) unsigned DEFAULT '0' NOT NULL,
 
+    attachment_title varchar(255) DEFAULT '' NOT NULL,
+    attachment_format varchar(255) DEFAULT '' NOT NULL,
+    attachment_name varchar(255) DEFAULT '' NOT NULL,
+    property_id int(11) DEFAULT '0' NOT NULL,
 	file int(11) unsigned NOT NULL default '0',
 	attachment_group_value_rel int(11) unsigned DEFAULT '0' NOT NULL,
 	sorting int(11) DEFAULT '0' NOT NULL,
 	sorting_property int(11) DEFAULT '0' NOT NULL,
 	is_sharing_image smallint(5) unsigned DEFAULT '0' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -268,6 +347,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_attachments (
 CREATE TABLE tx_ifabrealestate_domain_model_attachmentgroup (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -278,8 +359,10 @@ CREATE TABLE tx_ifabrealestate_domain_model_attachmentgroupvalue (
 
 	attachments int(11) unsigned DEFAULT '0' NOT NULL,
 
-	value varchar(255) DEFAULT '' NOT NULL,
+	value_rel int(11) unsigned DEFAULT '0',
 	attachment_group_rel int(11) unsigned DEFAULT '0',
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -289,6 +372,8 @@ CREATE TABLE tx_ifabrealestate_domain_model_attachmentgroupvalue (
 CREATE TABLE tx_ifabrealestate_domain_model_gender (
 
 	name varchar(255) DEFAULT '' NOT NULL,
+	import_status smallint(5) unsigned DEFAULT '0' NOT NULL,
+	is_imported smallint(5) unsigned DEFAULT '0' NOT NULL,
 
 );
 
@@ -448,13 +533,4 @@ CREATE TABLE tx_ifabrealestate_property_firingtype_mm (
 	PRIMARY KEY (uid_local,uid_foreign),
 	KEY uid_local (uid_local),
 	KEY uid_foreign (uid_foreign)
-);
-
-#
-# Table structure for table 'tx_ifabrealestate_domain_model_attachmenttypevalue'
-#
-CREATE TABLE tx_ifabrealestate_domain_model_attachmenttypevalue (
-
-	attachments int(11) unsigned DEFAULT '0' NOT NULL,
-
 );

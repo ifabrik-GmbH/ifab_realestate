@@ -331,7 +331,7 @@
 				<source>Value</source>
 				<target>Wert</target>
 			</trans-unit>
-			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue.objektarttype_relation">
+			<trans-unit id="tx_ifabrealestate_domain_model_propertytypevalue.objektarttyp_relation">
 				<source>Select a property type</source>
 				<target>Objektart auswählen</target>
 			</trans-unit>
@@ -586,6 +586,10 @@
 			<trans-unit id="more_details">
 				<source>More</source>
 				<target>Mehr Informationen</target>
+			</trans-unit>
+			<trans-unit id="not_defined">
+				<source>not defined</source>
+				<target>nicht definiert</target>
 			</trans-unit>
 		</body>
 	</file>

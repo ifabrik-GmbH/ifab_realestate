@@ -1,0 +1,7 @@
+1.0.1 - 2020/01/30
+------------------
+
+::
+
+	* 2020-01-30 [Composer] composer description added  (Commit: dbd8f14)
+

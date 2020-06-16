@@ -30,7 +30,7 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     protected $metaTagManagerRegistry;
 
     /**
-     * @var \TYPO3\CMS\Extbase\Service\ImageService;
+     * @var \TYPO3\CMS\Extbase\Service\ImageService
      */
     protected $imageService;
 
@@ -44,7 +44,6 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         ImageService $imageService
     )
     {
-        parent::__construct();
         $this->metaTagManagerRegistry = $metaTagManagerRegistry;
         $this->imageService = $imageService;
     }

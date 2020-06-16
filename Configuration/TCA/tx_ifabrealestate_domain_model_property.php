@@ -740,6 +740,23 @@ return [
                 ],
             ],
         ],
+        'property_action_rel' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_property.property_action_rel',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_ifabrealestate_domain_model_propertyaction',
+                'foreign_field' => 'property',
+                'maxitems' => 9999,
+                'appearance' => [
+                    'collapseAll' => 0,
+                    'levelLinksPosition' => 'top',
+                    'showSynchronizationLink' => 1,
+                    'showPossibleLocalizationRecords' => 1,
+                    'showAllLocalizationLink' => 1
+                ],
+            ],
+        ],
         'address_rel' => [
             'exclude' => true,
             'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_property.address_rel',
@@ -951,6 +968,26 @@ return [
                 ],
             ],
 
+        ],
+        'import_status' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    ['LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status_title', ''],
+                ],
+            ]
+        ],
+        'is_imported' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:is_imported',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    ['', ''],
+                ],
+            ]
         ],
         'attachments_rel' => [
             'exclude' => true,

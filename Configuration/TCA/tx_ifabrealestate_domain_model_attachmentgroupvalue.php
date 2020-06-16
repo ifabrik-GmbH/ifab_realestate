@@ -2,7 +2,7 @@
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_attachmentgroupvalue',
-        'label' => 'value',
+        'label' => 'value_rel',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'sortBy' => 'sorting',
@@ -21,10 +21,15 @@ return [
         'iconfile' => 'EXT:ifab_realestate/Resources/Public/Icons/tx_ifabrealestate_domain_model_attachmentgroupvalue.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, value, attachment_group_rel',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, value_rel, attachment_group_rel',
+    ],
+    'palettes' => [
+        'palette_0' => [
+            'showitem' => 'attachment_group_rel, value_rel,'
+        ]
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, value, attachment_group_rel, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, --palette--;;palette_0, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -116,14 +121,15 @@ return [
                 ]
             ],
         ],
-
-        'value' => [
+        'value_rel' => [
             'exclude' => true,
             'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:tx_ifabrealestate_domain_model_attachmentgroupvalue.value',
             'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim'
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'foreign_table' => 'tx_ifabrealestate_domain_model_attachmentgroupvaluerel',
+                'minitems' => 0,
+                'maxitems' => 1,
             ],
         ],
         'attachment_group_rel' => [
@@ -136,6 +142,26 @@ return [
                 'minitems' => 0,
                 'maxitems' => 1,
             ],
+        ],
+        'import_status' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    ['LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status_title', ''],
+                ],
+            ]
+        ],
+        'is_imported' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:is_imported',
+            'config' => [
+                'type' => 'check',
+                'items' => [
+                    ['', ''],
+                ],
+            ]
         ],
         'attachments' => [
             'config' => [

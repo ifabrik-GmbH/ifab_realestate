@@ -9,14 +9,14 @@ namespace Ifabrik\IfabRealEstate\Tests\Unit\Domain\Model;
 class AttachmentTypeTest extends \TYPO3\TestingFramework\Core\Unit\UnitTestCase
 {
     /**
-     * @var \Ifabrik\IfabRealEstate\Domain\Model\Attachmentgroup
+     * @var \Ifabrik\IfabRealEstate\Domain\Model\AttachmentGroup
      */
     protected $subject = null;
 
     protected function setUp()
     {
         parent::setUp();
-        $this->subject = new \Ifabrik\IfabRealEstate\Domain\Model\Attachmentgroup();
+        $this->subject = new \Ifabrik\IfabRealEstate\Domain\Model\AttachmentGroup();
     }
 
     protected function tearDown()
