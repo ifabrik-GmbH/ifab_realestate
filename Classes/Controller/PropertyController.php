@@ -44,6 +44,11 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         ImageService $imageService
     )
     {
+        if ((float)TYPO3_branch < 10)
+        {
+            parent::__construct();
+        }
+
         $this->metaTagManagerRegistry = $metaTagManagerRegistry;
         $this->imageService = $imageService;
     }
