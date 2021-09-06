@@ -122,6 +122,8 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function searchAction()
     {
+        $args = $this->request->getArguments();
+
         $cheapestProperty = DatabaseQueries::findCheapestProperty();
         $mostExpensiveProperty = DatabaseQueries::findMostExpensiveProperty();
         $marketingMethods = DatabaseQueries::findMarketingMethods();
@@ -133,6 +135,9 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         );
 
         $this->view->assignMultiple([
+            'search_min_surface' => $args['minSurface'],
+            'search_max_coldrent' => $args['maxColdRent'],
+            'formArgs' => $args,
             'minSurface' => $minSurface,
             'propertyNature' => $propertyNature,
             'marketingMethods' => $marketingMethods,
