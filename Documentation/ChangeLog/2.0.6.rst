@@ -1,0 +1,9 @@
+2.0.6 - 2021/09/06
+------------------
+
+::
+    * 2021-09-06 [Version] Version changed to 2.0.6
+    * 2021-09-06 [Composer] Composer changed to 2.0.6
+		* 2021-09-06 [BUGFIX] added missing parameter for search.html
+
+
