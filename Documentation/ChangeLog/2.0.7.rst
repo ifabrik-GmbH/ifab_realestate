@@ -1,0 +1,8 @@
+2.0.8 - 2022/07/18
+------------------
+
+::
+    * 2022-07-18 [Version] Version changed to 2.0.8
+    * 2022-07-18 [Composer] Composer changed to 2.0.8
+
+

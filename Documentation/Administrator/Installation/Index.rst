@@ -18,7 +18,7 @@ or in the **composer.json**
 .. code-block:: json
 
 	"require"      : {
-             "typo3/minimal"           : "9.*",
+             "typo3/minimal"           : "10.*",
              "ifabrik/ifab-realestate" : "*",
         }
 
