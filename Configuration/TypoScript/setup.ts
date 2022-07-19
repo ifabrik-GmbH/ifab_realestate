@@ -7,6 +7,10 @@
 * @author    Aristeidis Karavas
 */
 
+#config.baseURL = TEXT
+config.baseURL.value = {site:base}
+config.baseURL.stdWrap.insertData = 1
+
 plugin.tx_ifabrealestate_ifabrealestate {
     view {
         templateRootPaths.0 = EXT:{extension.extensionKey}/Resources/Private/Templates/
@@ -42,6 +46,12 @@ plugin.tx_ifabrealestate_ifabrealestate {
                 }
                 twitter {
 
+                }
+                image {
+                    dimensions {
+                        width = 1000
+                        height = 500c-100
+                    }
                 }
             }
         }

@@ -18,10 +18,10 @@ $EM_CONF['ifab_realestate'] = [
     'uploadfolder' => 1,
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '2.0.8',
+    'version' => '3.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-10.9.99',
+            'typo3' => '11.5.0-11.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],

@@ -18,6 +18,10 @@ use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 use Ifabrik\IfabRealestate\Domain\Model\Property;
 use TYPO3\CMS\Extbase\Service\ImageService;
 use Ifabrik\IfabRealestate\Domain\Repository\PropertyRepository;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
+use TYPO3\CMS\Fluid\ViewHelpers\DebugViewHelper;
+use Psr\Http\Message\ResponseInterface;
+use TYPO3\CMS\Core\Http\Response;
 
 /**
  * PropertyController
@@ -84,9 +88,8 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function listAction()
     {
-        $settings = $this->settings;
-        $maxItems = (int)$settings['list']['maxItems'];
-        $hiddenPagination = (int)$settings['list']['hidePagination'];
+        $maxItems = (int)$this->settings['list']['maxItems'];
+        $hiddenPagination = (int)$this->settings['list']['hidePagination'];
 
         if ($hiddenPagination === 1 && $maxItems) {
             $properties = $this->propertyRepository->findAllAvailableProperties($maxItems);
@@ -94,7 +97,8 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             $properties = $this->propertyRepository->findAllAvailableProperties();
         }
 
-        $this->view->assign('propertiess', $properties);
+        $this->view->assign('properties', $properties);
+        return $this->htmlResponse();
     }
 
     /**
@@ -113,6 +117,7 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
 
         $this->view->assign('property', $property);
+        return $this->htmlResponse();
     }
 
     /**
@@ -135,8 +140,8 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         );
 
         $this->view->assignMultiple([
-            'search_min_surface' => $args['minSurface'],
-            'search_max_coldrent' => $args['maxColdRent'],
+            'search_min_surface' => isset($args['minSurface']) ? (int)$args['minSurface']:0,
+            'search_max_coldrent' => isset($args['maxColdRent']) ? (int)$args['maxColdRent'] : 0,
             'formArgs' => $args,
             'minSurface' => $minSurface,
             'propertyNature' => $propertyNature,
@@ -144,6 +149,7 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             'prices' => $prices,
             'pageData' => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
         ]);
+        return $this->htmlResponse();
     }
 
     /**
@@ -167,9 +173,10 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         }
 
         $this->view->assignMultiple([
-            'propertiess' => $getSearchedProperties,
+            'properties' => $getSearchedProperties,
             'pageData' => (is_object($GLOBALS['TSFE'])) ? $GLOBALS['TSFE']->page : [],
         ]);
+        return $this->htmlResponse();
     }
 
     /**
@@ -179,45 +186,45 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
     public function addMetaTags($property, $imageUrl)
     {
-        $staticMetaTags = $this->settings['realestate']['metaTags'];
-        $completeMetaTags = [];
-       foreach ($staticMetaTags as $key => $metaTagProvider)
-       {
-           switch ($key){
-               case 'general':
-                   $metaTagProvider['subject'] = $property->getPropertyTitle();
-                   $metaTagProvider['description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
-                   $metaTagProvider['url'] =$this->url;
-                   $completeMetaTags[] = $metaTagProvider;
-                   break;
-               case 'facebook':
-                   $metaTagProvider['og:title'] = $property->getPropertyTitle();
-                   $metaTagProvider['og:description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
-                   $metaTagProvider['og:url'] =$this->url;
-                   $metaTagProvider['og:image'] =$imageUrl;
-                   $completeMetaTags[] = $metaTagProvider;
-                   break;
-               case 'twitter':
-                   if (isset($metaTagProvider['twitter:card']))
-                   {
-                       $removeTwitterCard = $this->metaTagManagerRegistry->getManagerForProperty('twitter:card');
-                       $removeTwitterCard->removeProperty('twitter:card');
-                   }
-                   $metaTagProvider['twitter:title'] = $property->getPropertyTitle();
-                   $metaTagProvider['twitter:description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
-                   $metaTagProvider['twitter:url'] =$this->url;
-                   $metaTagProvider['twitter:image'] =$imageUrl;
-                   $metaTagProvider['twitter:image:alt'] =$property->getPropertyTitle();
-                   $completeMetaTags[] = $metaTagProvider;
-                   break;
+        if ( isset($this->settings['realestate']) ) {
+            $staticMetaTags = $this->settings['realestate']['metaTags'];
+            $completeMetaTags = [];
+            foreach ($staticMetaTags as $key => $metaTagProvider) {
+                switch ($key) {
+                    case 'general':
+                        $metaTagProvider['subject'] = $property->getPropertyTitle();
+                        $metaTagProvider['description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
+                        $metaTagProvider['url'] = $this->url;
+                        $completeMetaTags[] = $metaTagProvider;
+                        break;
+                    case 'facebook':
+                        $metaTagProvider['og:title'] = $property->getPropertyTitle();
+                        $metaTagProvider['og:description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
+                        $metaTagProvider['og:url'] = $this->url;
+                        $metaTagProvider['og:image'] = $imageUrl;
+                        $completeMetaTags[] = $metaTagProvider;
+                        break;
+                    case 'twitter':
+                        if (isset($metaTagProvider['twitter:card'])) {
+                            $removeTwitterCard = $this->metaTagManagerRegistry->getManagerForProperty('twitter:card');
+                            $removeTwitterCard->removeProperty('twitter:card');
+                        }
+                        $metaTagProvider['twitter:title'] = $property->getPropertyTitle();
+                        $metaTagProvider['twitter:description'] = strip_tags(substr($property->getPropertyDescription(), 0, 150));
+                        $metaTagProvider['twitter:url'] = $this->url;
+                        $metaTagProvider['twitter:image'] = $imageUrl;
+                        $metaTagProvider['twitter:image:alt'] = $property->getPropertyTitle();
+                        $completeMetaTags[] = $metaTagProvider;
+                        break;
 
-           }
-       }
-        $finalTagList = array_merge( ...$completeMetaTags);
-        foreach ($finalTagList as $key => $metaTagValue) {
-            $metaTag = $this->metaTagManagerRegistry->getManagerForProperty($key);
-            $metaTag->getProperty($key);
-            $metaTag->addProperty($key, $metaTagValue);
+                }
+            }
+            $finalTagList = array_merge(...$completeMetaTags);
+            foreach ($finalTagList as $key => $metaTagValue) {
+                $metaTag = $this->metaTagManagerRegistry->getManagerForProperty($key);
+                $metaTag->getProperty($key);
+                $metaTag->addProperty($key, $metaTagValue);
+            }
         }
     }
 
@@ -230,10 +237,12 @@ class PropertyController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     public function getSharingImage($property)
     {
         $imageUrl = '';
-        $dimensions = [
-            'width' => $this->settings['realestate']['metaTags']['image']['dimensions']['width'],
-            'height' => $this->settings['realestate']['metaTags']['image']['dimensions']['height']
-        ];
+        if ( isset($this->settings['realestate']) ) {
+            $dimensions = [
+                'width' => $this->settings['realestate']['metaTags']['image']['dimensions']['width'],
+                'height' => $this->settings['realestate']['metaTags']['image']['dimensions']['height']
+            ];
+        }
         if (count($property->getAttachmentsRel())>0)
         {
             foreach ($property->getAttachmentsRel() as $attachment)
