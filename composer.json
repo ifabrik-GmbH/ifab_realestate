@@ -8,9 +8,14 @@
             "role": "Developer"
         }
     ],
-    "version": "2.0.8",
+    "version": "3.0.0",
     "require": {
-		"typo3/cms-core": ">=9.5"
+		"typo3/cms-core": ">=11.5"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ifab_realestate"
+        }
     },
     "autoload": {
         "psr-4": {

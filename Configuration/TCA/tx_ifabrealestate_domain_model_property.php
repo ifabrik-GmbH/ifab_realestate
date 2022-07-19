@@ -20,9 +20,6 @@ return [
         'searchFields' => 'floor,total_floors,apartment_number,extra_property_nature,purchase,purchase_price_net,purchase_price_gross,net_cold_rent,cold_rent,rent_with_heat,additional_costs,heating_costs,flat_rate_rent,rent_price_per_qm,purchase_price_per_qm,guarantee_price,guarantee_price_text,living_space,usable_area,total_size,load_area,storage_area,sales_area,free_area,office_area,office_part_area,number_of_rooms,number_of_bedrooms,number_of_bathrooms,number_of_balconies,number_of_terraces,number_of_logia,construction_year,construction_age,epart,expiration_date,energy_consum_value,primary_energy_source,electricity_value,heat_value,value_class,creation_date,creation_year,building,property_title,property_location,property_equipment,property_description,addition_information,property_text,available_from,pets,internal_property_number,external_property_number,open_immo_id',
         'iconfile' => 'EXT:ifab_realestate/Resources/Public/Icons/tx_ifabrealestate_domain_model_property.gif'
     ],
-    'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, floor, total_floors, apartment_number, extra_property_nature, purchase, purchase_price_net, purchase_price_gross, net_cold_rent, cold_rent, rent_with_heat, additional_costs, heating_costs, flat_rate_rent, rent_price_per_qm, purchase_price_per_qm, guarantee_price, guarantee_price_text, living_space, usable_area, total_size, load_area, storage_area, sales_area, free_area, office_area, office_part_area, number_of_rooms, number_of_bedrooms, number_of_bathrooms, number_of_balconies, number_of_terraces, number_of_logia, wg_suitable, fireplace, clima, construction_year, construction_age, epart, expiration_date, energy_consum_value, primary_energy_source, electricity_value, heat_value, value_class, creation_date, creation_year, building, property_title, property_location, property_equipment, property_description, addition_information, property_text, available_from, property_release, pets, internal_property_number, external_property_number, open_immo_id, property_usage_rel, marketing_method_rel, property_nature_rel, property_type_value_rel, address_rel, contact_rel, bathroom_rel, kitchen_rel, floor_rel, heat_rel, elevator_rel, parking_rel, firing_rel, attachments_rel',
-    ],
     'types' => [
         '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, floor, total_floors, apartment_number, extra_property_nature, purchase, purchase_price_net, purchase_price_gross, net_cold_rent, cold_rent, rent_with_heat, additional_costs, heating_costs, flat_rate_rent, rent_price_per_qm, purchase_price_per_qm, guarantee_price, guarantee_price_text, living_space, usable_area, total_size, load_area, storage_area, sales_area, free_area, office_area, office_part_area, number_of_rooms, number_of_bedrooms, number_of_bathrooms, number_of_balconies, number_of_terraces, number_of_logia, wg_suitable, fireplace, clima, construction_year, construction_age, epart, expiration_date, energy_consum_value, primary_energy_source, electricity_value, heat_value, value_class, creation_date, creation_year, building, property_title, property_location, property_equipment, property_description, addition_information, property_text, available_from, property_release, pets, internal_property_number, external_property_number, open_immo_id, property_usage_rel, marketing_method_rel, property_nature_rel, property_type_value_rel, address_rel, contact_rel, bathroom_rel, kitchen_rel, floor_rel, heat_rel, elevator_rel, parking_rel, firing_rel, attachments_rel, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
@@ -31,22 +28,11 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.language',
             'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'special' => 'languages',
-                'items' => [
-                    [
-                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
-                        -1,
-                        'flags-multiple'
-                    ]
-                ],
-                'default' => 0,
+                'type' => 'language',
             ],
         ],
         'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',

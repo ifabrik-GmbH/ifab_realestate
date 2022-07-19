@@ -1,7 +1,7 @@
 <html xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default"/>
 <f:section name="content"><f:spaceless>
-	<f:form action="searchResults" class="form real_estate_ajax" object="{search}" pageUid="{settings.searchResultsPid}" name="search" noCache="true" method="post" data="{
+	<f:form action="searchResults" class="form real_estate_ajax" object="{search}" pageUid="{settings.searchResultsPid}" name="search" noCache="true" method="get" data="{
 			xhr: '{f:uri.action(controller:\'Ajax\',action:\'ajaxResults\',pageUid:settings.listAjax,noCache: \'true\',pageType:settings.typeNum)}'
 		}">
 		<fieldset>

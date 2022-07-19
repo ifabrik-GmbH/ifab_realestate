@@ -1,0 +1,8 @@
+3.0.0 - 2022/07/19
+------------------
+
+::
+    * 2022-07-19 [FEATURE] Typo3 v11 compatibility
+    * 2022-07-19 [Version] Version changed to 3.0.0
+    * 2022-07-19 [Composer] Composer changed to 3.0.0
+    * 2022-07-19 [Doc] Minor updates to reflect version changes (TYPO3 and this extension)

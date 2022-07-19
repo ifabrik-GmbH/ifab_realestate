@@ -18,20 +18,9 @@ or in the **composer.json**
 .. code-block:: json
 
 	"require"      : {
-             "typo3/minimal"           : "10.*",
+             "typo3/minimal"           : "11.*",
              "ifabrik/ifab-realestate" : "*",
         }
-
-.. _noncomposer:
-
-============
-Non Composer
-============
-
-- Switch on the Extensions module
-- On the upper left corner select the "Get Extensions" from the select menu
-- On the search bar, type: ifab_realestate
-- Click on the cloud icon and download the extension
 
 .. _preparation:
 
