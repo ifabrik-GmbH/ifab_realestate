@@ -117,7 +117,9 @@ return [
             'config' => [
                 'type' => 'check',
                 'items' => [
-                    ['LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status_title', ''],
+                    [
+                    	'LLL:EXT:ifab_realestate/Resources/Private/Language/locallang_db.xlf:import_status_title', ''
+					],
                 ],
             ]
         ],
@@ -127,7 +129,9 @@ return [
             'config' => [
                 'type' => 'check',
                 'items' => [
-                    ['', ''],
+                    [
+                    	'', ''
+					],
                 ],
             ]
         ],
